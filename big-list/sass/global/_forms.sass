@@ -1,0 +1,137 @@
+
+
+
+// forms
+
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+.form-control,
+.custom-select
+	+rem(14)
+	+pht(#9B9B9B)
+
+
+
+select.form-control
+
+.custom-select
+
+.input-group--mobile-ungroup
+	
+	+max767
+		display: block
+
+
+		> .form-control, 
+		> .custom-select,
+		> .custom-file
+			width: 100%
+			margin-bottom: 15px
+
+		> .form-control:not(:last-child),
+		> .custom-select:not(:last-child)
+			border-top-right-radius: $input-border-radius-lg
+			border-bottom-right-radius: $input-border-radius-lg
+
+		> .input-group-append > .btn,
+		> .input-group-append > .input-group-text,
+		> .input-group-prepend:not(:first-child) > .btn,
+		> .input-group-prepend:not(:first-child) > .input-group-text,
+		> .input-group-prepend:first-child > .btn:not(:first-child),
+		> .input-group-prepend:first-child > .input-group-text:not(:first-child)
+			display: block
+			width: 100%
+			border-top-left-radius: $input-border-radius-lg
+			border-bottom-left-radius: $input-border-radius-lg
+
+
+// checkbox
+.custom-checkbox
+	padding-left: 0
+	margin-bottom: 6px
+	cursor: pointer
+
+	label
+		padding-left: 30px
+		cursor: inherit
+
+.custom-control-label::after,
+.custom-control-label::before
+	width: 16px
+	height: 16px
+	border-radius: 3px
+	box-shadow: none
+
+// checked
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after
+	background-image: url(../img/tpl/tick.svg)
+	background-color: $gray-3
+	background-size: 59% auto
+
+.custom-control-label
+	padding-top: 2px
+
+.custom-control-label::before
+	// display: none
+	background-color: #fff
+	border: $gray-3 1px solid
+
+
+
+.custom-control-input:focus ~ .custom-control-label::before
+	box-shadow: none
+
+
+// toggler
+.checkbox-set
+	display: flex
+	align-items: center
+
+.checkbox-set__checkbox
+	+in
+	margin-right: 15px
+	margin-top: 0.15em
+
+.checkbox-set__text
+	+in
+
+.subscribe-form
+
+	.input-group > .form-control:first-child,
+	.input-group > .custom-select:first-child
+		border-top-left-radius: 0
+		border-bottom-left-radius: 0
+
+		+max767
+			border-top-right-radius: 0
+			border-bottom-right-radius: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+
+
+//.section-header
+.section-header.section-header--filters.section-header--place
+
+	.row.align-items-center
+
+		//- .col-lg-7.d-none.d-md-block
+		.col-lg-7
+			
+			// section title with dropdown
+			// this is div, not heading. div can contain dropdown, heading can not
+			.h2.section-title Events at the Barbican Centre
+				
+				//.dropdown
+				.dropdown.dropdown-place.icon-right
+
+					a(href="#0" data-toggle="dropdown"): img(src="img/tpl/info.svg" alt="")
+				
+				
+					//.place-dropdown
+					.dropdown-menu.place-info
+						
+						// img
+						.place-info__img-container
+							img.place-info__img(src="img/media/place.jpg", alt="")
+						
+						.place-info__body
+
+							h3 Barbican Centre
+							
+							//.stars
+							ul.stars
+								li: i.stars__star.fa.fa-star.active
+								li: i.stars__star.fa.fa-star.active
+								li: i.stars__star.fa.fa-star.active
+								li: i.stars__star.fa.fa-star.active
+								li: i.stars__star.fa.fa-star
+
+							| &nbsp;&nbsp;
+
+							a.align-middle(href="#0") Google Reviews
+
+							
+							//.info-item
+							.info-item
+								.info-item__icon.text-muted
+									i.fa.fa-clock-o
+
+								.info-item__body
+
+									h5.info-item__title Opening Hours
+
+									p.text-muted
+										| Mon - Sat: 9am - 11pm
+										br
+										| Sun: 10am - 11pm
+							
+							///.info-item
+
+							
+							//.info-item
+							.info-item
+								.info-item__icon.text-muted
+									i.fa.fa-phone
+
+								.info-item__body
+
+									h5.info-item__title Contact
+
+									p.text-muted
+										a(href="tel:+442076388891") +44 20 7638 8891
+										br
+										a(href="#0") Website
+							
+							///.info-item
+
+							
+							//.info-item
+							.info-item
+								.info-item__icon.text-muted
+									i.fa.fa-map-marker
+
+								.info-item__body
+
+									h5.info-item__title Location
+
+									p.text-muted
+										| Silk Street, London EC2Y
+										br
+										| 8DS, England
+										br
+										| City of London
+										br
+										a(href="#0") Directions (CityMapper)
+
+							///.info-item
+
+							
+							//.info-item
+							.info-item
+								.info-item__icon.text-muted
+									i.fa.fa-subway
+
+								.info-item__body
+
+									h5.info-item__title Nearest Station
+
+									p.text-muted
+										| Barbican, Moorgate
+							
+							///.info-item
+
+
+
+
+					
+					///.place-dropdown
+					
+
+
+				///.dropdown
+
+
+		.col-lg-5
+
+			.section-header__filters.text-md-right.text-center
+					
+				// on off
+				form.on-off__set.mb-0.filter-item
+
+					span.on-off__text Day
+					
+					label.on-off__switch.js-switch
+						input(type="checkbox")
+
+					span.on-off__text Month
+
+				// filter btn
+				a.btn.btn-secondary.filter-item.mb-0.d-md-none(href="#0" data-toggle-class="active" data-target="#filters")
+					| Filter
+					img.icon-right(src="img/tpl/filter.svg", alt="")
+
+				// view
+				.filter-item.dropdown.dropdown-inline.d-none.d-md-inline-block
+					a(href="#0" data-toggle="dropdown") View: Columns
+						img.icon-right.icon-dropdown(src="img/tpl/arrow-down.svg", alt="")
+					
+					//.dropdown-menu
+					.dropdown-menu
+						a.dropdown-item(href="all-activities-list-view.html") List
+						a.dropdown-item(href="all-activities.html") Columns
+
+///.section-header

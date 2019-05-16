@@ -1,0 +1,26 @@
+
+.container,
+.container-fluid
+	position: relative
+
+.container
+	max-width: 1000px
+
+.container--wide
+	max-width: 1140px
+
+
+.container,
+.container--wide
+
+	+max1199
+		max-width: 96%
+
+	+max767
+		max-width: 540px
+
+.container--full-width-mobile
+
+	+max991
+		max-width: 100%
+		padding: 0

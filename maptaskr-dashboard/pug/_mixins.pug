@@ -1,0 +1,206 @@
+
+mixin css(href)
+	link(rel='stylesheet', href= href)
+
+
+mixin input(type, placeholder)
+	
+	input.form-control(type= type, placeholder= placeholder)
+
+
+mixin select($placeholder)
+
+	select.form-control.custom-select
+		option= $placeholder
+		option Option 1
+		option Option 2
+		option Option 3
+
+						
+mixin panel-set($collapseId, $title, $checkboxId)
+
+	//.layers-item__panel-set
+	.layers-item__panel-set.d-flex.align-items-center
+		
+		//toggler
+		h5.mb-0
+			a.layers-item__collapse-toggle(href="#" data-toggle='collapse' data-target= "#" + $collapseId)
+				i.layers-item__collapse-toggle-icon.icon-left.fi-folder
+				= $title
+
+		//drag
+		.layers-item__dropdown.drag-dots.ml-auto
+			.dropdown-toggle.dropdown-toggle--unstyled
+				i.fi-menu-1
+
+		
+		//checkbox
+		span.layers-item__custom-checkbox.custom-control.custom-checkbox
+			input.custom-control-input(type='checkbox' id= $checkboxId, checked)
+			label.custom-control-label(for= $checkboxId)
+
+	///.layers-item__panel-set
+				
+
+mixin indicator($colorClass, $text)
+
+	li.indicator-container
+		div.indicator-square(class="indicator--" + $colorClass)
+		span= $text
+
+
+mixin checkbox-search($text, $id)
+	-var id = "search-by-" + $id
+
+	li
+
+		//checkbox
+		span.custom-control.custom-checkbox
+			input.custom-control-input(type='checkbox' id= $id, checked)
+			label.custom-control-label(for= $id)
+				= $text
+
+
+mixin checkbox-arrive($text, $id)
+	-var id = "arrive-by-" + $id
+
+	li
+
+		//checkbox
+		span.custom-control.custom-checkbox
+			input.custom-control-input(type='checkbox' id= $id, checked)
+			label.custom-control-label(for= $id)
+				= $text
+
+mixin checkbox-interest($text, $id, $icon)
+
+	li
+
+		//checkbox
+		span.custom-control.custom-checkbox
+			input.custom-control-input(type='checkbox' id= $id, checked)
+			label.custom-control-label(for= $id)
+				//- i.icon-left(class="fi-" + $icon)
+				= $text
+
+
+mixin checkbox(id, text)
+	
+	//checkbox
+	span.custom-control.custom-checkbox
+		input.custom-control-input(type='checkbox' id= id, checked)
+		label.custom-control-label(for= id)= text
+
+
+mixin journeyPlannerPoint(letter, inputText)
+
+	//.journey-planner__point
+	.journey-planner__point.d-flex.align-items-center
+
+		//letter
+		.journey-planner__point-letter= letter
+		
+		//input
+		+input("text", inputText)
+
+
+		.ml-auto
+			//drag
+			.drag-dots.btn.btn-sm
+				i.fi-menu-1
+
+		
+	///.journey-planner__point
+
+mixin reorderArrows
+
+	//reorder
+	.reorder-points__container
+		a.reorder-points__btn.btn.btn-link(href="#0")
+			i.fi-sort
+
+
+mixin tool(name, icon, isActive)
+	
+	//tool
+	span.tool(class= isActive)
+		i.tool__icon(class="fi-" + icon)
+		span.tool__name= name
+
+
+
+mixin iconBtn($href, $icon, $tooltipText, $isActive)
+	
+	li
+
+		a.icon-btn__group.btn.btn-warning.btn-group.js-toggle-class__left-nav-opened(data-toggle='tab', class= $isActive, href='#tab-' + $href)
+
+			span.icon-btn__icon(data-toggle="tooltip" data-placement="right" title= $tooltipText)
+				i(class="fi-" + $icon)
+
+			span.icon-btn__text= $tooltipText
+
+
+mixin document(name)
+	
+	li
+
+		//.document-item
+		.document-item
+
+			//name
+			a.document-item__name.text-muted(href="#0")= name
+
+
+			//dropdown menu
+			.dropdown.ml-auto
+				
+				//drag
+				.drag-dots.btn.btn-sm
+					i.fi-menu-1
+					
+
+		///.document-item
+
+
+
+
+mixin documents
+
+	ul.documents-list.list-unstyled
+		+document("Document name - 12/01/2018")
+		+document("Document")
+		+document("Document. Lorem ipsum dolor sit amet, consectetur adipisicing")
+		+document("Document name - 12/01/2018")
+		+document("Document")
+
+
+mixin progress(color, width)
+
+	.progress
+		.progress-bar(class="bg-" + color, style="width: " + width + "%")= width + "%"
+
+
+
+mixin tabPaneToggle(id)
+
+	//close button
+	.off-canvas__toggle.off-canvas__toggle--left.btn.btn-lg.btn-warning.js-nav-tab-pane-hide(data-toggle-class="show active" data-target= id, data-toggle-class-2="active show", data-target-2='[href="' + id + '"]')
+		i.fi-left-chevron
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+include ../_variables.pug
+include ../_mixins.pug
+
+doctype
+html(lang="zxx")
+
+	include ../components/_head.pug
+
+	body.body--header-fixed
+
+		
+		include ../components/_header.pug
+
+		//- content
+		block content
+
+
+		include ../components/_modals.pug
+
+		
+		include ../components/_footer.pug
+
+
+		include ../components/_scripts.pug

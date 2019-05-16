@@ -1,0 +1,92 @@
+extends templates/template.pug
+
+block content
+
+
+
+
+	.section
+
+		.container
+			
+			.subsection
+
+				+sectionTitle('hey there, ', 'team xx!')
+			
+				.text-shape.text-shape--transparent
+					
+					img.text-shape__icon(src="img/icons/binoculars.png", alt="", width='35')
+
+					.text-shape__content
+
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				
+				
+				.row.justify-content-center
+
+					.col-10.col-sm-8
+						
+						.box-border
+
+							img.img-full-width(src="img/media/Secret_Sydney_500W.jpg", alt="")
+
+
+
+
+	.section
+
+		.container
+
+			.subsection
+				
+				+sectionTitle('before ',  'starting')
+
+				p.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				
+
+			.subsection
+
+				.photo-upload__container
+
+					.photo-upload
+
+						input.photo-upload__input(type="file")
+
+						img.photo-upload__img(src="img/photo-upload/selfie-icon.png", alt="", width='235')
+						.photo-upload__text
+							| choose file
+							br
+							| size limit 10 mb
+
+
+			.subsection
+
+				p.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+
+
+	.section
+
+		.container
+
+			.subsection
+
+				.text-center
+
+					a.btn.btn-primary(href="clue.html") play now
+				
+
+
+
+
+				
+						
+
+
+
+
+
+
+

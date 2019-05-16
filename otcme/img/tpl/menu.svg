@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="10px" viewBox="0 0 60 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Visual-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OTCme-Landing-Page-·-Phone-320px-·-V2" transform="translate(-249.000000, -17.000000)">
+            <g id="Menu-/-On" transform="translate(249.000000, 7.000000)">
+                <path d="M10.774,10.024 L9.14199999,10.024 L5.85399999,16.192 L2.54199999,10.024 L0.897999988,10.024 L0.897999988,19 L2.75799999,19 L2.75799999,14.152 L5.24199999,18.904 L6.46599999,18.904 L8.93799999,14.152 L8.93799999,19 L10.774,19 L10.774,10.024 Z M18.746,10.024 L12.986,10.024 L12.986,19 L18.758,19 L18.758,17.356 L14.846,17.356 L14.846,15.196 L18.23,15.196 L18.23,13.6 L14.846,13.6 L14.846,11.656 L18.746,11.656 L18.746,10.024 Z M27.978,10.024 L26.13,10.024 L26.13,15.592 L22.182,10.024 L20.61,10.024 L20.61,19 L22.47,19 L22.47,13.444 L26.406,19 L27.978,19 L27.978,10.024 Z M35.914,10.024 L35.914,15.328 C35.914,16.732 35.23,17.488 33.946,17.488 C32.65,17.488 31.966,16.732 31.966,15.328 L31.966,10.024 L30.118,10.024 L30.118,15.352 C30.118,16.54 30.454,17.476 31.138,18.136 C31.822,18.796 32.758,19.132 33.946,19.132 C35.134,19.132 36.058,18.796 36.742,18.136 C37.426,17.476 37.762,16.54 37.762,15.352 L37.762,10.024 L35.914,10.024 Z" id="MENU" fill="#346AEB" fill-rule="evenodd"></path>
+                <path d="M47,10.75 L59,10.75" id="Line-Copy-2" stroke="#346AEB" stroke-width="1.5" stroke-linecap="round"></path>
+                <path d="M47,17.75 L59,17.75" id="Line-Copy" stroke="#346AEB" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

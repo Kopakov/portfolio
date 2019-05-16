@@ -1,0 +1,103 @@
+
+.hero
+	position: relative
+	padding-top: 118px
+	padding-bottom: 100px
+	background-color: $ph
+	overflow: hidden
+
+	+max1199
+		padding-bottom: 150px
+
+	+max767
+		padding-top: 67px
+
+.hero__title
+
+	+max1199
+		+rem(23)
+		font-weight: 500
+
+.hero__image
+	position: absolute
+	top: 0
+	left: 4%
+
+	+max991
+		left: -45px
+
+	+max767
+		position: static
+		width: 490px
+		margin-top: -60px
+		margin-left: -35px
+		margin-bottom: -370px
+
+
+.js-animate-from-top
+	+tf(translateY(-60px))
+	opacity: 0
+	+ts(all 0.6s ease-out)
+
+	&.active
+		+tf(translateY(0))
+		opacity: 1
+
+
+.js-animate-from-top-2
+	+tf(translateY(-20px))
+	opacity: 0
+	+ts(all 0.6s ease-out)
+
+	&.active
+		+tf(translateY(0))
+		opacity: 1
+
+
+
+
+.hero__mask
+	// display: none
+	display: block
+	position: absolute
+	bottom: -3px
+	left: 0
+	z-index: 2
+	width: 100%
+
+	+max1199
+		width: 125%
+
+
+.atcme-content-logo
+	margin-bottom: 30px
+
+	+max1199
+		width: 129px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

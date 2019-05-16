@@ -1,0 +1,193 @@
+
+// buttons
+
+.btn-group,
+.btn
+	margin-bottom: $mb
+
+.btn
+	// display: inline-flex
+	// align-items: center
+	// justify-content: center
+	// min-height: 42px
+	text-transform: uppercase
+	+nw
+
+.btn-primary,
+.btn-secondary,
+.btn-info,
+.btn-success,
+.btn-warning,
+.btn-danger
+	// border: none
+	
+.btn-warning
+	color: #fff
+
+	+btnH
+		color: #fff
+
+.btn-outline-warning
+
+	+btnH
+		color: #fff
+
+.btn-secondary
+	border-color: $primary
+	color: $primary
+
+	+btnH
+		border-color: $primary
+		color: $primary
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle
+	background-color: $primary
+	border-color: $primary
+	color: #fff
+
+
+.btn-outline-secondary
+	// color: #fff
+
+.btn-secondary--addon
+	border-color: #e1e1e1
+	color: $primary
+	text-align: left
+
+	+btnH
+		border-color: #e1e1e1
+		color: $primary
+
+.btn-secondary--addon:not(:disabled):not(.disabled):active,
+.btn-secondary--addon:not(:disabled):not(.disabled).active,
+.show > .btn-secondary--addon.dropdown-toggle
+	background-color: $primary
+	border-color: #e1e1e1
+	color: #fff
+
+
+.btn--addon
+	display: flex
+	text-transform: none
+	border-radius: 0
+	margin-bottom: $mb
+
+	&.btn-secondary
+		border-color: $bd
+
+.btn__addon
+	display: flex
+	align-items: center
+	min-width: 46px
+	margin-top: -8px
+	margin-bottom: -8px
+	margin-left: -14px
+	padding: $btn-padding-y $btn-padding-x
+	margin-right: $btn-padding-x
+	border: $tr 2px solid
+
+.btn-secondary
+
+	.btn__addon
+		border-color: $primary
+
+
+.btn-link
+
+.btn-success--form
+	border: darken($success, 5%) 2px solid
+	padding-right: 8px
+	padding-left: 8px
+
+// .btn--text-sm
+// 	// +rem(18)
+// 	white-space: wrap
+
+.btn--text-xs
+	padding-top: 3px
+	padding-bottom: 3px
+	+rem(14)
+	white-space: wrap
+	text-transform: none
+
+// groups
+.input-group,
+.btn-group,
+.btn-group-vertical
+
+	.btn,
+	.btn-group
+		margin-bottom: 0
+
+
+
+
+// sizing
+
+.btn-sm,
+.btn-group-sm > .btn
+
+.btn-lg,
+.btn-group-lg > .btn
+
+
+// .btn-group
+
+.btn-group
+
+	> .btn
+		border-radius: 0
+
+.btn-group--full-width
+	display: flex
+
+.btn-group-toggle--vertical
+	display: block
+
+	& > .btn:not(:first-child),
+	& > .btn-group:not(:first-child)
+		margin-left: 0
+
+	> .btn
+		margin-bottom: inherit
+		text-align: inherit
+
+
+// different
+
+// .btn__icon
+// 	vertical-align: middle
+// 	margin-top: -10px
+// 	margin-bottom: -10px
+// 	font-size: 1.4em
+// 	line-height: 0
+
+// .btn__text
+
+// .btn__icon + .btn__text,
+// .btn__text + .btn__icon,
+// .btn__text + .btn__text
+// 	margin-left: 10px
+
+
+
+
+.btn__text-2-lines
+	margin-top: -4px
+	margin-bottom: -4px
+
+
+
+
+
+
+
+
+
+
+
+
+
+

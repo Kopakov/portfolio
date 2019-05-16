@@ -1,0 +1,40 @@
+
+
+//.section-header
+.section-header.section-header--filters
+
+	.row.align-items-center
+
+		.col-lg-7
+			h2.section-title Book Ahead
+
+		.col-lg-5
+
+			.section-header__filters.text-md-right.text-center
+					
+				// on off
+				form.on-off__set.mb-0.filter-item
+
+					span.on-off__text Day
+					
+					label.on-off__switch.js-switch
+						input(type="checkbox")
+
+					span.on-off__text Month
+
+				// filter btn
+				a.btn.btn-secondary.filter-item.mb-0.d-md-none(href="#0" data-toggle-class="active" data-target="#filters")
+					| Filter
+					img.icon-right(src="img/tpl/filter.svg", alt="")
+
+				// view
+				.filter-item.dropdown.dropdown-inline.d-none.d-md-inline-block
+					a(href="#0" data-toggle="dropdown") View: Columns
+						img.icon-right.icon-dropdown(src="img/tpl/arrow-down.svg", alt="")
+					
+					//.dropdown-menu
+					.dropdown-menu
+						a.dropdown-item(href="all-activities-list-view.html") List
+						a.dropdown-item(href="all-activities.html") Columns
+
+///.section-header

@@ -1,0 +1,110 @@
+
+// grid
+
+.pos-rel
+	position: relative
+
+.container,
+.container-fluid
+	position: relative
+
+.container
+	max-width: 1030px
+
+	+min1600
+		max-width: 1600px
+
+	+max1199
+		max-width: 100%
+
+	+max991
+		padding-right: 30px
+		padding-left: 30px
+
+	+max767
+		max-width: 500px
+		padding-right: 15px
+		padding-left: 15px
+
+.container-fluid,
+.page-container
+	max-width: 1600px
+
+.container--right
+
+	+min768
+		padding-right: 30px
+
+.card-grid
+	margin-right: -5px
+	margin-left: -5px
+
+	> .card
+		margin-right: 4px
+		margin-left: 4px
+
+		+min768
+			margin-bottom: 30px
+
+		+max767
+			margin-right: -10px
+			margin-left: -10px
+
+.card-scroll
+
+	+min768
+		overflow: auto
+		+nw
+
+
+
++max767
+
+	.card-grid > .row *:first-child .card,
+	.card-grid--list > *:first-child
+		border-top: none
+
+
+
+.card-grid--list
+
+	.card--list
+		padding-top: 10px
+		padding-bottom: 10px
+
+
+
+
+	
+
++min992
+
+	.col-lg-1-5
+		flex: 0 0 20%
+		max-width: 20%
+
+
++min768
+
+	.col-md-1-5
+		flex: 0 0 20%
+		max-width: 20%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

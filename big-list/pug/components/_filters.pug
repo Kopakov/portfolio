@@ -1,0 +1,149 @@
+
+
+//.filters__container
+.filters__container#filters
+
+	//.filters__content
+	.filters__content
+
+		// close
+		.filters__close.d-md-none(data-toggle-class="active" data-target="#filters")
+			img(src="img/tpl/close.svg", alt="")
+
+		//form
+		form
+
+
+			//.filters__section
+			.filters__section
+
+				h5
+					span.fw700 Date Range
+				
+				// data picker
+				// http://momentjs.com/
+				// http://longbill.github.io/jquery-date-range-picker/
+			
+				// look how to get data in documentation or in main.js. (check browser console also)
+				.date-picker-container.date-picker-container--inside.js-date-picker-container.mb-1
+					
+					input.form-control.js-date-picker-2
+				
+				.text-sm.text-muted.links-hover-underline
+					a(href="#0") Today
+					| &nbsp;&nbsp;&nbsp;&nbsp;
+					a(href="#0") Tomorrow
+					| &nbsp;&nbsp;&nbsp;&nbsp;
+					a(href="#0") Weekend
+
+			///.filters__section
+
+
+
+
+			//.filters__section
+			.filters__section
+
+				h5
+					span.fw700 Price: 
+
+				.js-price-range
+
+			///.filters__section
+
+
+
+
+			//.filters__section
+			.filters__section
+
+				h5
+					span.fw700 Start Time: 
+
+				.js-time-range
+
+			///.filters__section
+
+
+
+			//.filters__section
+			.filters__section
+
+				h5
+					span.fw700 Venue
+
+				.filters__list
+					+checkbox("venue-all", "All")
+					+checkbox("venue-british-museum", "British Museum")
+					+checkbox("venue-national-gallery", "National Gallery")
+					+checkbox("venue-national-portrait-gallery", "National Portrait Gallery")
+					+checkbox("venue-waterstones-talks", "Waterstones Talks")
+					+checkbox("venue-british-library", "British Library")
+					+checkbox("venue-welcome-collection", "Welcome Collection")
+					+checkbox("venue-sloane-museum", "Sloane Museum")
+					
+					//.collapse	
+					.collapse#venue-more
+
+						+checkbox("venue-british-library-2", "British Library 2")
+						+checkbox("venue-welcome-collection-2", "Welcome Collection 2")
+						+checkbox("venue-sloane-museum-2", "Sloane Museum 2")
+
+					a.btn-more(href="#0" data-toggle="collapse" data-target="#venue-more" data-toggle-class-this="active")
+						
+						span.btn-more__text--normal More
+							img.icon-right.icon-dropdown(src="img/tpl/arrow-down.svg", alt="")
+						
+						span.btn-more__text--active Less
+							img.icon-right.icon-dropdown(src="img/tpl/arrow-down.svg", alt="")
+
+			///.filters__section
+
+
+
+			//.filters__section
+			.filters__section
+
+				h5
+					span.fw700 Activities
+
+				.filters__list
+					+checkbox("activities-all", "All")
+					+checkbox("activities-exhibitions", "Exhibitions")
+					+checkbox("activities-talks", "Talks")
+					+checkbox("activities-dance", "Dance")
+					+checkbox("activities-comedy", "Comedy")
+					+checkbox("activities-music", "Music")
+					+checkbox("activities-course", "Course")
+
+
+			///.filters__section
+
+
+
+			//.filters__section
+			.filters__section
+
+				h5
+					span.fw700 Filter
+
+				.filters__list
+					+checkbox("filter-one-day-events", "One day events")
+					+checkbox("filter-ongoing-events", "Ongoing events")
+					+checkbox("filter-offers-only", "Offers only")
+					
+
+
+
+
+
+			///.filters__section
+
+
+
+		///form
+
+	///.filters__content
+
+///.filters__container
+

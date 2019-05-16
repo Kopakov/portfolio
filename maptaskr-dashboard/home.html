@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head-->
+
+<head>
+	<!-- Meta-->
+	<meta charset="utf-8">
+	<!-- Title-->
+	<title>Maptaskr Dashboard</title>
+	<!-- Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3.0, user-scalable=yes">
+	<!--Disable google indexation-->
+	<meta name="robots" content="noindex">
+	<meta name="robots" content="nofollow">
+	<!-- Main-->
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="body-fullscreen">
+	<!--.dashboard-container-->
+	<div class="dashboard-container" id="dashboard-container">
+		<!--.main-nav__container - off-canvas__container-->
+		<div class="main-nav__container">
+			<div class="off-canvas__container off-canvas__container--left main-nav__off-canvas" id="main-nav">
+				<div class="icons-menu__scroll">
+					<!-- tabs-->
+					<ul class="nav icons-menu btn-group-vertical">
+						<li><a class="icon-btn__group icon-btn__group--toggle-text btn btn-warning btn-group" href="#0" data-toggle-class="dashboard-container--link-text-opened" data-target=".dashboard-container"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Toggle text"><i class="fi-menu"></i></span><span class="icon-btn__text">Toggle text</span></a>
+						</li>
+						<!-- mobile close-->
+						<li class="d-md-none"><a class="icon-btn__group btn btn-warning btn-group" href="#0" data-toggle-class="show" data-target="#main-nav" data-toggle-class-2="dashboard-container--left-nav-opened" data-target-2="#dashboard-container"><span class="icon-btn__icon"><i class="fi-left-chevron"></i></span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-home"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Home"><i class="fi-home"></i></span><span class="icon-btn__text">Home</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-search"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Search"><i class="fi-search"></i></span><span class="icon-btn__text">Search</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-saved-searches"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Saved searches"><i class="fi-floppy-disk"></i></span><span class="icon-btn__text">Saved searches</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-draw-tools"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Draw tools"><i class="fi-edit"></i></span><span class="icon-btn__text">Draw tools</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-journey-planner"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Journey planner"><i class="fi-route"></i></span><span class="icon-btn__text">Journey planner</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-planner"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Planner"><i class="fi-calendar"></i></span><span class="icon-btn__text">Planner</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-map-zone"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Map zone"><i class="fi-map"></i></span><span class="icon-btn__text">Map zone</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-telescope"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Telescope"><i class="fi-telescope"></i></span><span class="icon-btn__text">Telescope</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-alert"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Alert"><i class="fi-marketing"></i></span><span class="icon-btn__text">Alert</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-cloud"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Cloud"><i class="fi-cloud"></i></span><span class="icon-btn__text">Cloud</span></a>
+						</li>
+						<li><a class="icon-btn__group btn btn-warning btn-group js-toggle-class__left-nav-opened" data-toggle="tab" href="#tab-library"><span class="icon-btn__icon" data-toggle="tooltip" data-placement="right" title="Library"><i class="fi-book"></i></span><span class="icon-btn__text">Library</span></a>
+						</li>
+					</ul>
+				</div>
+				<!--close button-->
+				<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning main-nav__off-canvas__toggle d-md-none" data-toggle-class="show" data-target="#main-nav" data-toggle-class-2="dashboard-container--left-nav-opened" data-target-2="#dashboard-container"><i class="fi-left-chevron"></i>
+				</div>
+				<!--.menu-content-->
+				<div class="menu-content tab-content">
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-home">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-home" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-home&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>Home</h4>
+									<h5 class="text-muted">Untitled Search<a class="icon-right" href="#0"><i class="fi-save"></i></a></h5>
+								</div>
+								<hr>
+								<h5>Map displayed</h5>
+								<div class="embed-responsive embed-responsive-16by9 bg-placeholder">
+									<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.8701120391543!2d115.20639284295615!3d-8.6861809506277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2z0JHQsNC70ZYsINCG0L3QtNC-0L3QtdC30ZbRjw!5e1!3m2!1suk!2sua!4v1517519498665"></iframe>
+								</div>
+								<hr class="nav-separator">
+								<h5>Workbench</h5>
+								<div class="embed-responsive embed-responsive-16by9 bg-placeholder">
+									<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.8701120391543!2d115.20639284295615!3d-8.6861809506277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2z0JHQsNC70ZYsINCG0L3QtNC-0L3QtdC30ZbRjw!5e1!3m2!1suk!2sua!4v1517519498665"></iframe>
+								</div>
+								<div class="text-right"><a href="#">Export view<i class="icon-right fi-export-document"></i></a>
+								</div>
+								<hr class="nav-separator">
+								<h5>Street view</h5>
+								<div class="embed-responsive embed-responsive-16by9 bg-placeholder">
+									<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.8701120391543!2d115.20639284295615!3d-8.6861809506277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2z0JHQsNC70ZYsINCG0L3QtNC-0L3QtdC30ZbRjw!5e1!3m2!1suk!2sua!4v1517519498665"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-search">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-search" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-search&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>Search Query<a class="icon-right" href="#0"><i class="fi-save"></i></a></h4>
+								</div>
+								<hr>
+								<form>
+									<div class="text-center">
+										<p class="mb-0"><small class="text-muted">Only 1 can be selected - input radio</small>
+										</p>
+										<!-- only 1 can be selected - input radio-->
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-secondary active">
+												<input type="radio" name="search-type" checked><i class="fi-letter-t"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="radio" name="search-type"><i class="fi-hexagon"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="radio" name="search-type"><i class="fi-circle"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="radio" name="search-type"><i class="fi-radar"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="radio" name="search-type"><i class="fi-square"></i>
+											</label>
+										</div>
+										<hr class="nav-separator">
+										<p class="mb-0"><small class="text-muted">Several can be selected - input checkbox</small>
+										</p>
+										<!-- several can be selected - input checkbox-->
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-secondary active">
+												<input type="checkbox" checked><i class="fi-letter-t"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="checkbox"><i class="fi-hexagon"></i>
+											</label>
+											<label class="btn btn-secondary active">
+												<input type="checkbox" checked><i class="fi-circle"></i>
+											</label>
+											<label class="btn btn-secondary active">
+												<input type="checkbox" checked><i class="fi-radar"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="checkbox"><i class="fi-square"></i>
+											</label>
+										</div>
+									</div>
+									<hr class="nav-separator">
+									<h5 class="section-title"><i class="icon-left fi-square-1"></i>Search by</h5>
+									<ul class="options-list">
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="address" checked="checked"/><label class="custom-control-label" for="address">Address</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="city" checked="checked"/><label class="custom-control-label" for="city">City</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="state" checked="checked"/><label class="custom-control-label" for="state">State</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="country" checked="checked"/><label class="custom-control-label" for="country">Country</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="postcode" checked="checked"/><label class="custom-control-label" for="postcode">Postcode</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="phone" checked="checked"/><label class="custom-control-label" for="phone">Phone</label></span>
+										</li>
+									</ul>
+									<hr class="nav-separator">
+									<p>
+										<input class="form-control" type="text" placeholder="Address" />
+									</p>
+									<div class="row row--gutters-small">
+										<div class="col">
+											<p>
+												<input class="form-control" type="text" placeholder="City" />
+											</p>
+										</div>
+										<div class="col">
+											<p>
+												<input class="form-control" type="text" placeholder="State" />
+											</p>
+										</div>
+									</div>
+									<div class="row row--gutters-small">
+										<div class="col">
+											<p>
+												<input class="form-control" type="text" placeholder="Country" />
+											</p>
+										</div>
+										<div class="col">
+											<p>
+												<input class="form-control" type="text" placeholder="Postcode" />
+											</p>
+										</div>
+									</div>
+									<p>
+										<select class="form-control custom-select">
+											<option>Located within</option>
+											<option>Option 1</option>
+											<option>Option 2</option>
+											<option>Option 3</option>
+										</select>
+									</p>
+									<p>
+										<input class="form-control" type="text" placeholder="Free search" />
+									</p>
+									<hr class="nav-separator">
+									<h5 class="section-title"><i class="icon-left fi-database"></i>Data Sources</h5>
+									<div class="row row--gutters-small">
+										<div class="col">
+											<p>
+												<select class="form-control custom-select">
+													<option>Data 1</option>
+													<option>Option 1</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</p>
+										</div>
+										<div class="col">
+											<p>
+												<select class="form-control custom-select">
+													<option>Data 2</option>
+													<option>Option 1</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</p>
+										</div>
+									</div>
+									<div class="row row--gutters-small">
+										<div class="col">
+											<p>
+												<select class="form-control custom-select">
+													<option>Data 3</option>
+													<option>Option 1</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</p>
+										</div>
+										<div class="col">
+											<p>
+												<select class="form-control custom-select">
+													<option>Data 4</option>
+													<option>Option 1</option>
+													<option>Option 2</option>
+													<option>Option 3</option>
+												</select>
+											</p>
+										</div>
+									</div>
+									<hr class="nav-separator">
+									<h5 class="section-title"><i class="icon-left fi-listing-option"></i>Points of Interest</h5>
+									<ul class="options-list">
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="restaurants" checked="checked"/><label class="custom-control-label" for="restaurants">Restaurants</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="bars" checked="checked"/><label class="custom-control-label" for="bars">Bars</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="cafes" checked="checked"/><label class="custom-control-label" for="cafes">Cafes</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="hotels" checked="checked"/><label class="custom-control-label" for="hotels">Hotels</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="attractions" checked="checked"/><label class="custom-control-label" for="attractions">Attractions</label></span>
+										</li>
+										<li>
+											<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="nearby-transit" checked="checked"/><label class="custom-control-label" for="nearby-transit">Nearby Transit</label></span>
+										</li>
+									</ul>
+									<hr class="nav-separator">
+									<button class="btn btn-block btn-primary">Search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-saved-searches">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-saved-searches" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-saved-searches&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>Saved searches</h4>
+								</div>
+								<hr>
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<h5 class="section-title mb-0"><i class="icon-left fi-save"></i><span>My saved maps & searches</span></h5>
+									<!--drag-->
+									<div class="ml-auto">
+										<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+										</div>
+									</div>
+								</div>
+								<ul class="documents-list list-unstyled">
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document name - 12/01/2018</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document. Lorem ipsum dolor sit amet, consectetur adipisicing</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document name - 12/01/2018</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+								</ul>
+								<hr class="nav-separator">
+								<br>
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<h5 class="section-title mb-0"><i class="icon-left fi-share"></i><span>Shared maps & searches</span></h5>
+									<!--drag-->
+									<div class="ml-auto">
+										<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+										</div>
+									</div>
+								</div>
+								<ul class="documents-list list-unstyled">
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document name - 12/01/2018</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document. Lorem ipsum dolor sit amet, consectetur adipisicing</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document name - 12/01/2018</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+								</ul>
+								<hr class="nav-separator">
+								<br>
+								<div class="d-flex justify-content-between align-items-center mb-2">
+									<h5 class="section-title mb-0"><i class="icon-left fi-multiple-users-silhouette"></i><span>Corporate maps</span></h5>
+									<!--drag-->
+									<div class="ml-auto">
+										<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+										</div>
+									</div>
+								</div>
+								<ul class="documents-list list-unstyled">
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document name - 12/01/2018</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document. Lorem ipsum dolor sit amet, consectetur adipisicing</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document name - 12/01/2018</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+									<li>
+										<!--.document-item-->
+										<div class="document-item">
+											<!--name--><a class="document-item__name text-muted" href="#0">Document</a>
+											<!--dropdown menu-->
+											<div class="dropdown ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.document-item-->
+									</li>
+								</ul>
+								<hr class="nav-separator">
+								<br>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-draw-tools">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-draw-tools" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-draw-tools&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>Draw tools</h4>
+								</div>
+								<hr>
+								<h5 class="section-title">Group Title</h5>
+								<!--.tools-scroll-container-->
+								<div class="tools-scroll-container scroll-area">
+									<div class="tools__row">
+										<!--tool--><span class="tool active"><i class="tool__icon fi-line-chart"></i><span class="tool__name">Line</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-hexagon"></i><span class="tool__name">Polygon</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-circle"></i><span class="tool__name">Circle</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-square"></i><span class="tool__name">Square</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-letter-t"></i><span class="tool__name">Text</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-target-concentric-circles-symbol"></i><span class="tool__name">Concentric Circle</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-triangle"></i><span class="tool__name">Triangle</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-placeholder"></i><span class="tool__name">Pin</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-right-up"></i><span class="tool__name">Arrow</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-arrows"></i><span class="tool__name">Arrows</span></span>
+									</div>
+								</div>
+								<!--/.tools-scroll-container-->
+								<hr class="nav-separator">
+								<h5 class="section-title">Measurement</h5>
+								<!--.tools-scroll-container-->
+								<div class="tools-scroll-container scroll-area">
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-rule"></i><span class="tool__name">Line</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-hexagon"></i><span class="tool__name">Polygon</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-circle-1"></i><span class="tool__name">Diametre</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-route"></i><span class="tool__name">Route</span></span>
+									</div>
+								</div>
+								<!--/.tools-scroll-container-->
+								<hr class="nav-separator">
+								<h5 class="section-title">Object Library</h5>
+								<!--.tools-scroll-container-->
+								<div class="tools-scroll-container scroll-area">
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+									<div class="tools__row">
+										<!--tool--><span class="tool"><i class="tool__icon fi-summer"></i><span class="tool__name">Swimming pool</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-water-supply"></i><span class="tool__name">Water tank</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Solar</span></span>
+										<!--tool--><span class="tool"><i class="tool__icon fi-delivery-truck"></i><span class="tool__name">Truck</span></span>
+									</div>
+								</div>
+								<!--/.tools-scroll-container-->
+								<hr class="nav-separator">
+								<h5 class="section-title">Layers Manager</h5>
+								<ul class="indicators-list">
+									<li class="indicator-container"><a href="#0"><i class="fi-layers icon-left icon-lg"></i>Browse and add layer</a>
+									</li>
+									<li class="indicator-container"><a href="#0"><i class="fi-filter icon-left icon-lg"></i>Query</a>
+									</li>
+									<li class="indicator-container"><a href="#0"><i class="fi-locations icon-left icon-lg"></i>Thermatic map</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-journey-planner">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-journey-planner" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-journey-planner&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>Journey planner</h4>
+								</div>
+								<hr>
+								<form>
+									<div class="d-flex justify-content-between align-items-center">
+										<!-- several can be selected - input checkbox-->
+										<div class="btn-group btn-group-toggle" data-toggle="buttons">
+											<label class="btn btn-secondary active">
+												<input type="checkbox" checked><i class="fi-car-compact"></i>
+											</label>
+											<label class="btn btn-secondary active">
+												<input type="checkbox" checked><i class="fi-front-of-bus"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="checkbox"><i class="fi-underground"></i>
+											</label>
+											<label class="btn btn-secondary">
+												<input type="checkbox"><i class="fi-pedestrian-walking"></i>
+											</label>
+										</div><a class="btn btn-link link-simple" href="#0" data-toggle="collapse" data-target="#journey-planner-options">Options<i class="fi-down-arrow icon-right icon-sm"></i></a>
+									</div>
+									<!--.journey-planner__options-->
+									<div class="journey-planner__options collapse" id="journey-planner-options">
+										<div class="section-title"><i class="icon-left fi-listing-option"></i>Options</div>
+										<ul class="options-list">
+											<li>
+												<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="checkbox-option-1" checked="checked"/><label class="custom-control-label" for="checkbox-option-1">Option</label></span>
+											</li>
+											<li>
+												<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="checkbox-option-2" checked="checked"/><label class="custom-control-label" for="checkbox-option-2">Option</label></span>
+											</li>
+										</ul>
+									</div>
+									<!--/.journey-planner__options-->
+									<hr class="nav-separator">
+									<!--.journey-planner__points-container-->
+									<div class="journey-planner__points-container">
+										<!--.journey-planner__point-->
+										<div class="journey-planner__point d-flex align-items-center">
+											<!--letter-->
+											<div class="journey-planner__point-letter">A</div>
+											<!--input-->
+											<input class="form-control" type="text" placeholder="From" />
+											<div class="ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.journey-planner__point-->
+										<!--reorder-->
+										<div class="reorder-points__container"><a class="reorder-points__btn btn btn-link" href="#0"><i class="fi-sort"></i></a>
+										</div>
+										<!--.journey-planner__point-->
+										<div class="journey-planner__point d-flex align-items-center">
+											<!--letter-->
+											<div class="journey-planner__point-letter">B</div>
+											<!--input-->
+											<input class="form-control" type="text" placeholder="To" />
+											<div class="ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.journey-planner__point-->
+										<!--reorder-->
+										<div class="reorder-points__container"><a class="reorder-points__btn btn btn-link" href="#0"><i class="fi-sort"></i></a>
+										</div>
+										<!--.journey-planner__point-->
+										<div class="journey-planner__point d-flex align-items-center">
+											<!--letter-->
+											<div class="journey-planner__point-letter">C</div>
+											<!--input-->
+											<input class="form-control" type="text" placeholder="To" />
+											<div class="ml-auto">
+												<!--drag-->
+												<div class="drag-dots btn btn-sm"><i class="fi-menu-1"></i>
+												</div>
+											</div>
+										</div>
+										<!--/.journey-planner__point-->
+									</div>
+									<!--/.journey-planner__points-container-->
+									<p>
+										<!--add--><a class="btn btn-link" href="#0"><i class="fi-add icon-left"></i>Add point</a>
+									</p>
+									<hr class="nav-separator">
+									<div class="row">
+										<div class="col">
+											<p class="text-muted"><i class="fi-clock icon-left"></i><a class="link-simple" href="#0" data-toggle="collapse" data-target="#leave-options">Leave now</a>
+											</p>
+										</div>
+										<div class="col">
+											<p>
+												<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="checkbox-show-traffic" checked="checked"/><label class="custom-control-label" for="checkbox-show-traffic">Show traffic</label></span>
+											</p>
+										</div>
+									</div>
+									<div class="collapse" id="leave-options">
+										<div class="section-title"><i class="icon-left fi-listing-option"></i>Arrive by</div>
+										<ul class="options-list">
+											<li>
+												<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="car-compact" checked="checked"/><label class="custom-control-label" for="car-compact">Car</label></span>
+											</li>
+											<li>
+												<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="front-of-bus" checked="checked"/><label class="custom-control-label" for="front-of-bus">Bus</label></span>
+											</li>
+											<li>
+												<!--checkbox--><span class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="underground" checked="checked"/><label class="custom-control-label" for="underground">Subway</label></span>
+											</li>
+										</ul>
+										<hr class="nav-separator">
+									</div>
+									<button class="btn btn-block btn-primary">Go</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-planner">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-planner" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-planner&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>#tab-planner</h4>
+								</div>
+								<hr>
+								<p>Any content here.</p>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-map-zone">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-map-zone" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-map-zone&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>#tab-map-zone</h4>
+								</div>
+								<hr>
+								<p>Any content here.</p>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-telescope">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-telescope" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-telescope&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>#tab-telescope</h4>
+								</div>
+								<hr>
+								<p>Any content here.</p>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-alert">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-alert" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-alert&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>#tab-alert</h4>
+								</div>
+								<hr>
+								<p>Any content here.</p>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-cloud">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-cloud" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-cloud&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>#tab-cloud</h4>
+								</div>
+								<hr>
+								<p>Any content here.</p>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+					<!--.tab-pane-->
+					<div class="tab-pane nav__tab-pane" id="tab-library">
+						<!--close button-->
+						<div class="off-canvas__toggle off-canvas__toggle--left btn btn-lg btn-warning js-nav-tab-pane-hide" data-toggle-class="show active" data-target="#tab-library" data-toggle-class-2="active show" data-target-2="[href=&quot;#tab-library&quot;]"><i class="fi-left-chevron"></i>
+						</div>
+						<div class="tab-pane__sroll">
+							<div class="layers-item__container">
+								<div class="nav__tab-header">
+									<h4>#tab-library</h4>
+								</div>
+								<hr>
+								<p>Any content here.</p>
+							</div>
+						</div>
+					</div>
+					<!--/.tab-pane-->
+				</div>
+				<!--/.menu-content-->
+			</div>
+		</div>
+		<!--/.main-nav__container-->
+		<!--.map__container-->
+		<div class="map__container">
+			<!--left nav toggle-->
+			<div class="map__toggle map__toggle--left btn btn-primary btn-lg d-md-none" data-toggle-class="show" data-target="#main-nav" data-toggle-class-2="dashboard-container--left-nav-opened" data-target-2="#dashboard-container"><i class="fi-menu"></i>
+			</div>
+			<!--.pointer-popup-->
+			<!--hidden by default. add class show to make it visible-->
+			<div class="pointer-popup__container show" id="pointer-popup__container">
+				<div class="pointer-popup">
+					<div class="d-flex justify-content-between">
+						<h3>Terri Moakes </h3><a class="pointer-popup__close btn btn-sm btn-link float-right" href="#0" data-toggle-class="show" data-target="#pointer-popup__container"><i class="fi-cross-out"></i></a>
+					</div>
+					<p>4 Big Muster Drive Dinner Plain VICTORIA 3898 Australia</p>
+					<!--tabs-->
+					<ul class="nav nav-tabs">
+						<li class="nav-item"><a class="nav-link active" href="#property-details" data-toggle="tab">Property details</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#manage-customer" data-toggle="tab">Manage Customer</a>
+						</li>
+					</ul>
+					<!--.tab-content-->
+					<div class="tab-content">
+						<!--.tab-pane-->
+						<div class="tab-pane fade show active" id="property-details">
+							<!--.pointer-popup__scroll-->
+							<div class="pointer-popup__scroll scroll-area">
+								<h5 class="title-marked"><i class="fi-home icon-left"></i>Building Details</h5>
+								<table class="table">
+									<tr>
+										<td>Elevation</td>
+										<td>36.64</td>
+									</tr>
+									<tr>
+										<td>Maximum Roof Height</td>
+										<td>5.9</td>
+									</tr>
+									<tr>
+										<td>Average Eave Height</td>
+										<td>2.9</td>
+									</tr>
+									<tr>
+										<td>Area</td>
+										<td>335.25</td>
+									</tr>
+									<tr>
+										<td>Number of Vertices</td>
+										<td>23.0</td>
+									</tr>
+									<tr>
+										<td>Swimming Pool Adjacent</td>
+										<td>No</td>
+									</tr>
+									<tr>
+										<td>Max Tree Height</td>
+										<td>6.64</td>
+									</tr>
+								</table>
+								<h5 class="title-marked"><i class="fi-house-roof icon-left"></i>Roof Details</h5>
+								<table class="table">
+									<tr>
+										<td>Roof Material</td>
+										<td>Tile</td>
+									</tr>
+									<tr>
+										<td>Roof heigh:</td>
+										<td>11.3m</td>
+									</tr>
+									<tr>
+										<td>Roof Type</td>
+										<td>Moderate Pitch</td>
+									</tr>
+									<tr>
+										<td>Solar panels</td>
+										<td>Yes</td>
+									</tr>
+								</table>
+							</div>
+							<!--/.pointer-popup__scroll-->
+						</div>
+						<!--/.tab-pane-->
+						<!--.tab-pane-->
+						<div class="tab-pane fade" id="manage-customer">
+							<!--.pointer-popup__scroll-->
+							<div class="pointer-popup__scroll scroll-area">
+								<div class="tools__row">
+									<!--tool--><span class="tool"><i class="tool__icon fi-people"></i><span class="tool__name">View</span></span>
+									<!--tool--><span class="tool"><i class="tool__icon fi-placeholder"></i><span class="tool__name">Pin</span></span>
+									<!--tool--><span class="tool"><i class="tool__icon fi-hand-shake"></i><span class="tool__name">Book appointment</span></span>
+									<!--tool--><span class="tool"><i class="tool__icon fi-list"></i><span class="tool__name">Assign</span></span>
+								</div>
+								<div class="tools__row">
+									<!--tool--><span class="tool"><i class="tool__icon fi-route"></i><span class="tool__name">Add to route</span></span>
+									<!--tool--><span class="tool"><i class="tool__icon fi-file"></i><span class="tool__name">Add task</span></span>
+									<!--tool--><span class="tool"><i class="tool__icon fi-solar-battery"></i><span class="tool__name">Add as source</span></span>
+									<!--tool--><span class="tool"><i class="tool__icon fi-mark"></i><span class="tool__name">Add as destination</span></span>
+								</div>
+								<p><span class="badge badge-info">87<small>%</small></span>&nbsp;<span class="badge badge-dark">36<small>%</small></span>&nbsp;<span class="badge badge-success">24<small>%</small></span>
+								</p>
+								<div class="progressbars__container">
+									<div class="progress">
+										<div class="progress-bar bg-dark" style="width: 95%">95%</div>
+									</div>
+									<div class="progress">
+										<div class="progress-bar bg-info" style="width: 45%">45%</div>
+									</div>
+									<div class="progress">
+										<div class="progress-bar bg-secondary" style="width: 25%">25%</div>
+									</div>
+									<div class="progress">
+										<div class="progress-bar bg-success" style="width: 100%">100%</div>
+									</div>
+									<div class="progress">
+										<div class="progress-bar bg-danger" style="width: 35%">35%</div>
+									</div>
+									<div class="progress">
+										<div class="progress-bar bg-warning" style="width: 15%">15%</div>
+									</div>
+									<div class="progress">
+										<div class="progress-bar bg-warning" style="width: 0%">0%</div>
+									</div>
+								</div>
+							</div>
+							<!--/.pointer-popup__scroll-->
+						</div>
+						<!--/.tab-pane-->
+					</div>
+				</div>
+			</div>
+			<!--/.pointer-popup-->
+			<!--.map__embed-->
+			<div class="embed-responsive embed-responsive-16by9 map__embed">
+				<iframe class="map__iframe embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.8701120391543!2d115.20639284295615!3d-8.6861809506277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd141d3e8100fa1%3A0x24910fb14b24e690!2z0JHQsNC70ZYsINCG0L3QtNC-0L3QtdC30ZbRjw!5e1!3m2!1suk!2sua!4v1517519498665"></iframe>
+			</div>
+			<!--layers toggle-->
+			<div class="map__toggle map__toggle--right btn btn-primary btn-lg" data-toggle-class="show" data-target="#layers" data-toggle-class-2="dashboard-container--right-layers-opened" data-target-2="#dashboard-container"><i class="fi-layers"></i>
+			</div>
+			<!--map zoom controls-->
+			<div class="map__controls">
+				<!--zoom in-->
+				<div class="map__control btn btn-primary"><i class="fi-add"></i>
+				</div>
+				<!--zoom out-->
+				<div class="map__control btn btn-primary"><i class="fi-substract"></i>
+				</div>
+			</div>
+		</div>
+		<!--/.map__container-->
+		<!--.map-view__tabs-container-->
+		<div class="map-view__tabs-container" id="map-satellite-and-data">
+			<!--map view toggle-->
+			<div class="map__view-toggle-container btn-group"><a class="map__view-toggle btn btn-primary" href="#0" data-target="#satellite"><i class="map__view-icon icon-left fi-satellite"></i>Satellite</a><a class="map__view-toggle btn btn-primary" href="#0" data-target="#data"><i class="map__view-icon icon-left fi-graphic"></i>Data</a>
+			</div>
+			<!--.map-view__tabs-->
+			<div class="map-view__tabs">
+				<!--.collapse-->
+				<div class="map-view__tab" id="satellite" data-parent="#map-satellite-and-data">
+					<div class="container-fluid">
+						<br>
+						<h5>Satellite options</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur debitis id nisi veritatis, aliquid velit odit quo praesentium ducimus. Tempora ratione provident qui saepe perspiciatis corporis atque quam ad eaque!</p>
+					</div>
+				</div>
+				<!--/.collapse-->
+				<!--.collapse-->
+				<div class="map-view__tab" id="data" data-parent="#map-satellite-and-data">
+					<div class="container-fluid">
+						<br>
+						<h5>Data options</h5>
+						<p>Any content here</p>
+						<p>Any content here</p>
+						<p>Any content here</p>
+						<p>Any content here</p>
+						<p>Any content here</p>
+						<p>Any content here</p>
+						<p>Any content here</p>
+					</div>
+				</div>
+				<!--/.collapse-->
+			</div>
+			<!--/.map-view__tabs-->
+		</div>
+		<!--/.map-view__tabs-container-->
+		<!--.layers__container - off-canvas__container-->
+		<div class="layers__container off-canvas__container off-canvas__container--right" id="layers">
+			<!--close button-->
+			<div class="off-canvas__toggle off-canvas__toggle--right btn btn-lg btn-warning" data-toggle-class="show" data-target="#layers" data-toggle-class-2="dashboard-container--right-layers-opened" data-target-2="#dashboard-container"><i class="fi-right-chevron"></i>
+			</div>
+			<!--.off-canvas__scroll-->
+			<div class="off-canvas__scroll">
+				<div class="layers-item__container">
+					<!--.layers-item-->
+					<div class="layers-item">
+						<div class="layers__header">
+							<h5>Base Map</h5>
+							<p>
+								<select class="form-control custom-select">
+									<option>Aerial</option>
+									<option>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+								</select>
+							</p>
+						</div>
+					</div>
+					<!--/.layers-item-->
+					<hr class="nav-separator">
+					<!--.layers-item-->
+					<div class="layers-item">
+						<div class="d-flex justify-content-between align-items-center">
+							<h5 class="mb-0">Map Layers</h5>
+							<!-- toggle all legends--><a class="btn btn-link" href="#0" data-toggle="collapse-all" data-target=".js-legend">Collapse all</a>
+						</div>
+					</div>
+					<!--/.layers-item-->
+					<hr class="nav-separator">
+					<!--.layers-item-->
+					<div class="layers-item">
+						<!--.layers-item__panel-set-->
+						<div class="layers-item__panel-set d-flex align-items-center">
+							<!--toggler-->
+							<h5 class="mb-0"><a class="layers-item__collapse-toggle" href="#" data-toggle="collapse" data-target="#collapse-swimming-pool"><i class="layers-item__collapse-toggle-icon icon-left fi-folder"></i>Swimming Pools</a></h5>
+							<!--drag-->
+							<div class="layers-item__dropdown drag-dots ml-auto">
+								<div class="dropdown-toggle dropdown-toggle--unstyled"><i class="fi-menu-1"></i>
+								</div>
+							</div>
+							<!--checkbox--><span class="layers-item__custom-checkbox custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="checkbox-swimming-pools" checked="checked"/><label class="custom-control-label" for="checkbox-swimming-pools"></label></span>
+						</div>
+						<!--/.layers-item__panel-set-->
+						<!--.layers-item__collapse - collapsible part. if it has class "show" it is visible on load-->
+						<div class="layers-item__collapse collapse show js-legend" id="collapse-swimming-pool">
+							<ul class="indicators-list">
+								<li class="indicator-container">
+									<div class="indicator-circle">
+										<div class="indicator-circle__dot indicator--blue-dark"></div>
+									</div><span>Pool</span>
+								</li>
+							</ul>
+						</div>
+						<!--/.layers-item__collapse-->
+					</div>
+					<!--/.layers-item-->
+					<hr class="nav-separator">
+					<!--.layers-item-->
+					<div class="layers-item">
+						<!--.layers-item__panel-set-->
+						<div class="layers-item__panel-set d-flex align-items-center">
+							<!--toggler-->
+							<h5 class="mb-0"><a class="layers-item__collapse-toggle" href="#" data-toggle="collapse" data-target="#collapse-solar-panels"><i class="layers-item__collapse-toggle-icon icon-left fi-folder"></i>Solar Panels</a></h5>
+							<!--drag-->
+							<div class="layers-item__dropdown drag-dots ml-auto">
+								<div class="dropdown-toggle dropdown-toggle--unstyled"><i class="fi-menu-1"></i>
+								</div>
+							</div>
+							<!--checkbox--><span class="layers-item__custom-checkbox custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="checkbox-solar-panels" checked="checked"/><label class="custom-control-label" for="checkbox-solar-panels"></label></span>
+						</div>
+						<!--/.layers-item__panel-set-->
+						<!--.layers-item__collapse - collapsible part. if it has class "show" it is visible on load-->
+						<div class="layers-item__collapse collapse show js-legend" id="collapse-solar-panels">
+							<ul class="indicators-list">
+								<li class="indicator-container">
+									<div class="indicator-square indicator--white"></div><span>No</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--yellow"></div><span>Yes</span>
+								</li>
+							</ul>
+						</div>
+						<!--/.layers-item__collapse-->
+					</div>
+					<!--/.layers-item-->
+					<hr class="nav-separator">
+					<!--.layers-item-->
+					<div class="layers-item">
+						<!--.layers-item__panel-set-->
+						<div class="layers-item__panel-set d-flex align-items-center">
+							<!--toggler-->
+							<h5 class="mb-0"><a class="layers-item__collapse-toggle" href="#" data-toggle="collapse" data-target="#collapse-primary-roof-material"><i class="layers-item__collapse-toggle-icon icon-left fi-folder"></i>Primary Roof Material</a></h5>
+							<!--drag-->
+							<div class="layers-item__dropdown drag-dots ml-auto">
+								<div class="dropdown-toggle dropdown-toggle--unstyled"><i class="fi-menu-1"></i>
+								</div>
+							</div>
+							<!--checkbox--><span class="layers-item__custom-checkbox custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="checkbox-primary-roof-material" checked="checked"/><label class="custom-control-label" for="checkbox-primary-roof-material"></label></span>
+						</div>
+						<!--/.layers-item__panel-set-->
+						<!--.layers-item__collapse - collapsible part. if it has class "show" it is visible on load-->
+						<div class="layers-item__collapse collapse show js-legend" id="collapse-primary-roof-material">
+							<ul class="indicators-list">
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-8"></div><span>Fibreglass/Plastic</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-7"></div><span>Flat Concrete</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--silver"></div><span>Metal</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--pink"></div><span>Tile</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--green"></div><span>Unclassified</span>
+								</li>
+							</ul>
+						</div>
+						<!--/.layers-item__collapse-->
+					</div>
+					<!--/.layers-item-->
+					<hr class="nav-separator">
+					<!--.layers-item-->
+					<div class="layers-item">
+						<!--.layers-item__panel-set-->
+						<div class="layers-item__panel-set d-flex align-items-center">
+							<!--toggler-->
+							<h5 class="mb-0"><a class="layers-item__collapse-toggle" href="#" data-toggle="collapse" data-target="#collapse-maximum-roof-height"><i class="layers-item__collapse-toggle-icon icon-left fi-folder"></i>Maximum Roof Height</a></h5>
+							<!--drag-->
+							<div class="layers-item__dropdown drag-dots ml-auto">
+								<div class="dropdown-toggle dropdown-toggle--unstyled"><i class="fi-menu-1"></i>
+								</div>
+							</div>
+							<!--checkbox--><span class="layers-item__custom-checkbox custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="checkbox-maximum-roof-height" checked="checked"/><label class="custom-control-label" for="checkbox-maximum-roof-height"></label></span>
+						</div>
+						<!--/.layers-item__panel-set-->
+						<!--.layers-item__collapse - collapsible part. add/remove class "show" to make it is visible on load-->
+						<div class="layers-item__collapse collapse show js-legend" id="collapse-maximum-roof-height">
+							<ul class="indicators-list">
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-1"></div><span>0 to 5</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-2"></div><span>6 to 10</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-3"></div><span>11 to 15</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-4"></div><span>16 to 20</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-5"></div><span>21 to 25</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-6"></div><span>26 to 30</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-7"></div><span>31 to 35</span>
+								</li>
+								<li class="indicator-container">
+									<div class="indicator-square indicator--violet-8"></div><span>36+</span>
+								</li>
+							</ul>
+						</div>
+						<!--/.layers-item__collapse-->
+					</div>
+					<!--/.layers-item-->
+				</div>
+				<!--/.layers-item__container-->
+			</div>
+			<!--/.off-canvas__scroll-->
+		</div>
+		<!--/.layers__container-->
+	</div>
+	<!--/.dashboard-container-->
+	<!-- Scripts-->
+	<!-- jQuery-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Framework-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Custom-->
+	<script src="js/styleguide.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

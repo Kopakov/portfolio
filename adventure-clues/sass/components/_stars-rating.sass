@@ -1,0 +1,24 @@
+
+.stars-rating
+	display: flex
+	justify-content: center
+	padding-left: 0
+	list-style-type: none
+
+	li
+		width: 34px
+		height: 32px
+		background-image: url(../img/icons/star.png)
+		background-size: 32px
+		background-repeat: no-repeat
+		background-position: center center
+		cursor: pointer
+		
+		// &:hover,
+		&.hovered,
+		&.active
+			background-image: url(../img/icons/star-active.png)
+
+
+
+

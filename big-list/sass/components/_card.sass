@@ -1,0 +1,323 @@
+
+.card
+	border-color: $border-dark
+	border-radius: 0
+	box-shadow: 0 2px 4px 0 $shadow
+	+cl
+	white-space: normal
+
+	+min768
+
+		&:not(.card--list)
+			display: inline-flex
+			vertical-align: top
+			width: 189px
+			height: 300px
+
+	+max767
+		display: block
+		border-top: none
+		border-right: none
+		border-left: none
+		padding-top: 16px
+		padding-bottom: 10px
+		box-shadow: none
+	
+		margin-right: -15px
+		margin-left: -15px
+		padding-right: 15px
+		padding-left: 15px
+
+		font-weight: 300
+
+		+l
+			border-bottom: none
+
+	a:not(.badge, .btn)
+		color: inherit
+
+
+		
+.card-lg
+
+	+min768
+
+		&:not(.card--list)
+			width: 325px
+			height: 372px
+
+.card--no-verlay
+
+	.card-overlay,
+	.card-favorite
+		display: none
+
+
+.card-title
+	margin-bottom: 1px
+
+	+max767
+		font-weight: inherit
+
+.card-img-top
+	position: relative
+	width: auto
+	background: $ph
+	overflow: hidden
+
+	+min768
+		margin-top: -1px
+		margin-right: -1px
+		margin-left: -1px
+
+	+max767
+		float: left
+		width: 41%
+
+.card-body,
+.card-overlay,
+.card-footer
+	padding: 15px 8px 1px
+
+
+
+.card-overlay
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.85)
+	opacity: 0
+	+ts-card
+
+	// +max767
+	+max1199
+
+		.btn
+			padding: 4px 10px
+			// margin-bottom: 0px
+			+rem(13)
+
+
+.card
+
+	&.active,
+	&:hover
+
+		.card-overlay
+			// top: 0
+			opacity: 1
+
+
+.card-overlay__content
+	position: relative
+
+
+.card-overlay__additional
+	position: absolute
+	top: 100%
+	left: 0
+	width: 100%
+	z-index: 1
+
+	+max767
+		display: none
+
+.card-category
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 2
+
+
+.card-body
+
+	+max767
+		float: left
+		width: 59%
+		padding-top: 0
+		padding-left: 15px
+
+.card-text
+	line-height: 1.4
+
+	+max767
+
+		+lt
+			margin-bottom: 0
+
+	
+
+.card-footer
+	display: block
+	border-top: none
+	background-color: transparent
+	padding-top: 6px 
+	padding-bottom: 6px
+
+	+min768
+		text-align: right
+
+	+max991
+		padding-top: 3px
+
+	+max767
+		float: right
+		width: 59%
+		padding-left: 15px
+		padding-bottom: 1px
+
+	+hd
+		font-weight: 300
+
+
+.card-favorite
+	position: absolute
+	top: 0px
+	// margin-top: 150px
+	right: 0px
+	z-index: 2
+	+rem(26)
+	color: #fff
+	opacity: 0
+	+ts-card
+	cursor: pointer
+
+	// +max767
+	+max1199
+		margin-top: 0
+		opacity: 1
+		+remPhone(19)
+
+
+// active hover
+.card.active .card-favorite,
+.card:hover .card-favorite,
+.card-favorite.active,
+.card--list .card-favorite
+	margin-top: 0
+	opacity: 1
+
+
+.card--list
+	padding-top: 10px
+	padding-bottom: 10px
+	border-bottom: none
+	border-right: none
+	border-left: none
+	border-top-color: $border
+	box-shadow: none
+	background-color: transparent
+
+	.card-img-top
+		margin: 0
+
+		+min768
+			margin-right: 15px
+
+		+max767
+			float: none
+			width: auto
+			margin-right: -15px
+
+	.card-body
+		padding-top: 2px
+		padding-left: 0
+		padding-bottom: 0
+		// padding-right: 15px
+		padding-right: 0
+
+		+max767
+			width: auto
+			padding-top: 0
+			padding-left: 15px
+
+	.card-title
+
+		+min768
+			font-weight: 400
+
+		+max767
+			font-size: 1rem
+
+	.card-text
+		// +rem(16)
+
+		+lt
+			margin-bottom: 0
+
+	.favorite__active,
+	.favorite__default
+
+		+min768
+			padding: 3px 5px
+			+rem(18)
+
+	.card-category
+
+		+min768
+			display: none
+
+.card--place
+	
+	&,
+	&:not(.card--list)
+
+		+min768
+			height: 234px
+
+	// .card-category,
+	// .card-overlay
+	// 	display: none
+
+.card--list__price
+
+	+max767
+		display: block
+		padding-top: 3px
+		color: $main
+		// font-weight: 500
+
+
+
+
++min1200
+
+	.card--list__btn
+		display: none
+
+	.card--list:hover
+		.card--list__btn
+			display: inline-block
+
+
+.card__event-type
+
+	+max767
+		+remPhone(13)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

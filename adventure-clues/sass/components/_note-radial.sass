@@ -1,0 +1,31 @@
+
+.note-radial
+	position: relative
+	width: 114px
+	+mxa
+	text-align: center
+	overflow: hidden
+	
+	+b
+		+ct
+		position: absolute
+		top: 0
+		left: 0%
+		right: 0%
+		z-index: 0
+		height: 80px
+		background-color: #e2f0f4
+		border-top-right-radius: 50%
+		border-top-left-radius: 50%
+
+.note-radial__content
+	position: relative
+	z-index: 1
+	padding-top: 10px
+	color: $info
+	+rem(12)
+
+.note-radial--transparent
+
+	+b
+		display: none

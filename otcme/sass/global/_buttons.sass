@@ -1,0 +1,239 @@
+
+// buttons
+
+.btn-group,
+.btn
+	margin-bottom: 15px
+
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger
+	color: #fff
+	+shadow
+
+	+hf
+		box-shadow: $shadow-hover
+
+.btn
+	min-width: 200px
+	padding: 15px 23px
+	border-width: 0
+	+tm
+	font-weight: 700
+	border-radius: 100px
+
+
+
+
+
+
+
+
+//.btn-outline
+
+.btn-outline-primary,
+.btn-outline-info,
+.btn-outline-success,
+.btn-outline-warning,
+.btn-outline-danger,
+.btn-outline-secondary
+	border-width: 1px
+
+.btn-secondary,
+.btn-outline-secondary
+	color: $main
+
+.btn-secondary,
+	background-color: #fff
+
+	+bootstrapBtnHover
+		background-color: #fff
+
+
+.btn-outline-info
+
+	+bootstrapBtnHover
+		color: #fff
+
+
+
+.btn.disabled
+		box-shadow: none
+
+.btn-link
+	color: $primary
+	box-shadow: none
+
+	+hf
+		box-shadow: none
+
+.btn-info.disabled,
+.btn-info:disabled
+	color: #fff
+
+
+
+
+
+//.btn--with-icons
+
+.btn--with-icons
+	display: inline-flex
+	align-items: center
+	justify-content: start
+	min-width: 232px
+
+.btn__icon
+	+in
+	margin-top: -10px
+	margin-bottom: -10px
+
+.btn__icon--left
+	padding-right: 0.5em
+	+em(25)
+
+	+max1199
+		+em(23)
+
+.btn__icon--right
+	margin-left: auto
+	padding-left: 0.5em
+	+em(21)
+
+
+.btn__icon--semitransparent
+	opacity: 0.5
+
+.btn__text
+	display: inline-block
+	vertical-align: 0.1em
+	/*compensate font file wrong line-height*/
+	position: relative
+	bottom: -0.15em
+
+	+max1199
+		// bottom: -0.14em
+
+
+
+
+
+
+
+
+
+
+
+
+
+// groups
+.input-group,
+.btn-group,
+.btn-group-vertical
+
+	.btn,
+	.btn-group
+		min-width: 0
+		margin-bottom: 0
+
+
+
+
+// sizing
+.btn-lg,
+.btn-group-lg > .btn
+	+rem(24)
+	padding: 15px 45px
+	border-radius: 8px
+	min-width: 320px
+
+	+max991
+		min-width: 290px
+
+	+max767
+		min-width: 230px
+		padding: 10px 30px
+		+remP(18)
+
+
+
+.btn-sm,
+.btn-group-sm > .btn
+
+
+
+
+
+
+
+// different
+
+.action__buttons
+	display: block
+	
+	.btn + .btn
+		margin-left: 15px
+
+	+max767
+		margin-right: -7px
+		margin-left: -7px
+		
+		.btn
+			margin-right: 7px
+		
+		.btn,
+		.btn + .btn
+			margin-left: 7px
+
+
+.action__buttons--shorted-mobile
+
+	+max1199
+		
+		.btn
+			min-width: 144px
+			padding: 11px 16px
+			+rem(12)
+
+	+max767
+		margin-right: 0
+		margin-left: 0
+		+nw
+		
+		.btn
+			margin-right: 0
+			margin-left: 0
+		
+		.btn + .btn
+			// margin-left: 7px
+			
+
+
+
+.action__buttons--only-icons
+
+	+max767
+		
+		.btn
+			min-width: 64px
+			margin-bottom: 0
+		
+		.btn__icon--left
+			padding-right: 0.2em
+
+		.btn__icon--right
+			margin-left: auto
+			padding-left: 0.2em
+
+
+
+
+
+
+
+
+
+

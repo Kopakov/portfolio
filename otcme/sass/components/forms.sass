@@ -1,0 +1,95 @@
+
+
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+.form-control,
+.custom-select
+	border-top: none
+	border-right: none
+	border-left: none
+	border-bottom-color: $main
+	border-radius: 0
+
+	margin-bottom: 25px
+	// margin-bottom: 15px
+	
+	padding-left: 0
+	padding-right: 0
+
+	font-weight: 500
+
+	+fc
+		box-shadow: none
+		border-color: $primary
+		
+.form-control
+	/*caret color*/
+	color: $primary
+	text-shadow: 0px 0px 0px $main
+	-webkit-text-fill-color: transparent
+
+	&::-webkit-input-placeholder
+		
+		/*caret color*/
+		color: $main
+		text-shadow: none
+		-webkit-text-fill-color: initial
+
+	+fc
+		/*caret color*/
+		color: $primary
+
+
+.custom-select
+	background: url(../img/tpl/icons/chevron-down.svg)
+	background-repeat: no-repeat
+	background-position: right 15px center
+
+
+
+
+// texassinuscenter form
+
+._field-wrapper
+	position: relative
+
+	._has_error
+		border-color: $danger
+
+	._error
+		position: absolute
+		top: 100%
+		left: 0
+		z-index: 1
+		margin-top: -5px
+		padding: 10px 0
+		color: $danger
+		+tm
+		font-weight: 700
+		+rem(12)
+		// text-transform: uppercase
+
+		&._above
+
+
+
+
+
+
+
+
+
+
+
+

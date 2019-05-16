@@ -1,0 +1,194 @@
+
+.date-picker-container
+	position: relative
+
+
+.date-picker-wrapper.no-topbar,
+.date-picker-wrapper
+	height: auto !important
+	// padding: 19px 20px
+	padding: 0
+	border-color: $border-dark
+	box-shadow: 0 6px 11px rgba(#656565, 0.6)
+	background-color: #fff
+	box-sizing: border-box
+	font-family: inherit
+	z-index: 6
+
+	+b
+		/*separator*/
+		+ct
+		position: absolute
+		top: 0
+		left: 50%
+		width: 1px
+		height: 100%
+		background-color: $border-dark
+
+		+max767
+			display: none
+			// top: 50%
+			// left: 0
+			// width: 100%
+			// height: 1px
+
+.dropdown-datepicker--hero
+	
+	.date-picker-wrapper
+		top: 100% !important
+		left: 50% !important
+		margin-left: -(574px/2) !important
+
+		+max767
+			margin-left: -(282px/2) !important
+
+
+.date-picker-wrapper
+	width: 574px
+
+	+max767
+		width: 282px
+	
+	.month-wrapper
+		width: auto !important
+		padding: 0
+		border: none
+		border-radius: 0
+		background-color: transparent
+		+cl
+
+		table,
+		table.month1,
+		table.month2
+			width: 44%
+			margin: 19px 3%
+
+			+max767
+				width: 86%
+				+mx(7%)
+
+		table th,
+		table td
+			line-height: inherit
+
+		table
+			color: $main
+			+rem(13)
+
+			.week-name
+
+				th
+					padding-top: 15px
+					padding-bottom: 10px
+					font-weight: 500
+					text-transform: capitalize
+				
+				td
+					padding-top: 10px
+
+			.day
+				padding: 10px 0
+				font-size: inherit
+
+			&.month2
+				float: right
+
+			&.month1,
+			&.month2
+				+max767
+					float: none
+
+	.month-name
+		font-weight: 500
+		+rem(14)
+		text-transform: capitalize
+
+
+	table
+
+		.caption
+			.prev,
+			.next
+				display: block
+				height: 30px
+				padding-top: 9px
+				font-size: 0
+
+				+b
+					+ct
+					border: transparent 6px solid
+
+				+hf
+					background-color: transparent
+
+			.prev
+
+				+b
+					border-right-color: $main
+
+			.next
+
+				+b
+					border-left-color: $main
+
+
+	.gap
+		display: none
+		width: 12%
+		margin-left: 0
+		margin-right: 0
+		background-color: transparent
+
+		+max767
+			display: block
+			width: 100%
+			height: 0 !important
+			visibility: visible !important
+			border-top: $border-dark 1px solid
+
+			> *
+				display: none
+
+
+		.gap-line
+			display: none !important
+
+	.footer
+		display: none
+
+.date-picker-wrapper .first-date-selected,
+.date-picker-wrapper .last-date-selected,
+.date-picker-wrapper .month-wrapper table .day.toMonth.hovering,
+.first-date-selected,
+.last-date-selected,
+.date-picker-wrapper .month-wrapper table .day.checked
+	background-color: $gray-2 !important
+	color: inherit !important
+
+.date-picker-wrapper .real-today
+	background-color: transparent !important
+
+
+.date-picker-container--inside
+
+	.date-picker-wrapper
+
+		left: 0 !important
+		margin-left: 0 !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

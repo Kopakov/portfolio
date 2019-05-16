@@ -1,0 +1,43 @@
+
+.text-shape
+	position: relative
+	padding: 35px 35px 15px
+	background-image: url(../img/text-shape/text-shape.png)
+	background-size: 100% 100%
+	background-repeat: no-repeat
+	color: #fff
+
+	+min414
+		margin-right: -15px
+		margin-left: -15px
+		padding-right: 50px
+		padding-left: 50px
+
+
+	+max413
+		padding-right: 30px
+		padding-left: 30px
+
+.text-shape__icon
+	position: absolute
+	top: -4px
+	left: 50px
+	z-index: 1
+
+.text-shape__icon--right
+	left: auto
+	right: 50px
+	+tf(rotateY(180deg))
+
+.text-shape__content
+	// make higher then foot steps image
+	position: relative
+	z-index: 2
+	text-align: center
+
+.text-shape--green
+	background-image: url(../img/text-shape/text-shape-green.png)
+
+.text-shape--transparent
+	background-image: none
+	color: inherit

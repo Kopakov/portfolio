@@ -1,0 +1,13 @@
+//- mixins
+include ../_mixins.pug
+
+doctype
+html(lang="zxx")
+
+	include ../components/_head.pug
+
+	body.body-fullscreen
+
+		block content
+
+		include ../components/_scripts.pug

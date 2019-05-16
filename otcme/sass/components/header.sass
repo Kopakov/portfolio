@@ -1,0 +1,158 @@
+
+.header
+	height: 70px
+	border-bottom: transparent 1px solid
+	+tm
+
+	+max767
+		height: 52px
+	
+	&.fixed
+		height: 52px
+		background-color: rgba(#fff, 0.97)
+		border-bottom-color: $border
+
+
+.navbar-custom
+
+	+min768
+		padding-right: 15px
+		padding-left: 15px
+
+.logo
+	+in
+
+.logo__img
+	max-width: 100%
+
+.logo__img--phone-short
+	
+	+max767
+		width: 23px
+
+.logo--footer
+	margin-bottom: 93px
+	
+.navbar-nav
+
+	+min768
+		flex-direction: row
+
+	+max767
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+		display: block
+		background-color: rgba(#fff, 0.97)
+		overflow-x: hidden
+		overflow-y: scroll
+		+tf(translateX(100%))
+		+tm
+
+		&.opened
+			+tf(translateX(0))
+
+	.nav-item
+		
+		+max767
+			border-bottom: $border 1px solid
+	
+	.nav-link
+		position: relative
+		padding: 16px 20px
+		color: $primary
+		+rem(12)
+		text-transform: uppercase
+		font-weight: 700
+	
+		// hover
+		+min768
+
+			+b
+				+ct
+				position: absolute
+				top: 100%
+				left: 0
+				width: 100%
+				height: 1px
+				background-color: $primary
+				+tm
+				opacity: 0
+
+			+h
+				+b
+					opacity: 1
+
+
+
+// .mobile-header
+
+.mobile-header-default,
+.mobile-header-fixed
+	position: absolute
+	left: 0
+	width: 100%
+	height: 100%
+	+tm
+
+	+min768
+		display: none
+
+.mobile-header-default
+	top: 0
+	z-index: 2
+
+.mobile-header-fixed
+	top: 20px
+	z-index: 1
+	opacity: 0
+	
+
+.header.fixed
+		
+	+max767
+
+		.mobile-header-default
+			// hide default
+			top: -20px
+			opacity: 0
+			z-index: 1
+		
+		.mobile-header-fixed
+			// show fixed
+			top: 0
+			opacity: 1
+			z-index: 2
+
+
+.navbar-toggler
+	padding: 8px 0px 8px 15px
+	border: none
+
+	+fc
+		outline: none
+
+
+.navbar-nav .navbar-close,
+.navbar-close
+	+remP(20)
+	padding-right: 18px
+	line-height: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

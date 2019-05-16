@@ -1,0 +1,7 @@
+Client wanted to update his website with new design.
+
+He had some code done. I reviewed that and adviced to use framework and create base for future pages - styleguide:
+https://kopakov.com/portfolio/otcme/styleguide.html
+
+After completion I uploaded it to their hosting:
+http://otcme.com/

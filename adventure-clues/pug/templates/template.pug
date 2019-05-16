@@ -1,0 +1,28 @@
+include ../_variables.pug
+include ../_mixins.pug
+
+doctype
+html(lang="zxx")
+
+	include ../inc/_head.pug
+
+	body
+
+		.page-content
+		
+			//foot steps on left side
+			img.foot-steps-left(src="img/body/foot-steps-left.png", alt="")
+			
+			//foot steps on bottom
+			img.foot-steps-bottom(src="img/body/foot-steps-bottom.png", alt="")
+
+			include ../inc/_header.pug
+
+			block content
+			
+			include ../inc/_navbar.pug
+		
+		include ../inc/_modals.pug
+
+		include ../inc/_scripts.pug
+		

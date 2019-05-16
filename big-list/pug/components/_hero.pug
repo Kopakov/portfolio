@@ -1,0 +1,73 @@
+//.hero
+.hero.bg-placeholder.color-white.js-bg.section-overlay
+	
+	//background image
+	//javascript takes this image and insert it as background for hero. set any image in src and it wil became background. images are sliced in folder "img/media/hero/"
+	img.js-bg-img(src="img/media/hero/hero-5.jpg", alt="")
+	
+	//color overlay
+	.overlay.overlay--hero
+
+	//.hero__content
+	.hero__content.section-overlay__content
+	
+		.container-fluid
+
+			.text-center
+				
+				//title
+				h1.hero__title Things To Do In London
+
+				//buttons
+				.btn-set
+
+					a.btn.btn-primary.btn-lg(href="all-activities.html") Today
+
+					a.btn.btn-primary.btn-lg(href="all-activities.html") Tomorrow
+					
+					//visible in mobile
+					br.d-md-none
+					
+					a.btn.btn-primary.btn-lg(href="all-activities.html") Next 7 days
+					
+
+					//hidden in mobile
+					br.d-none.d-md-block
+
+
+					a.btn.btn-primary.btn-lg(href="all-activities.html") Weekend
+					
+					//visible in mobile
+					br.d-md-none
+
+					// data picker
+					// http://momentjs.com/
+					// http://longbill.github.io/jquery-date-range-picker/
+					
+					.dropdown.dropdown-inline
+					
+						// look how to get data in documentation or in main.js. (check browser console also)
+						.btn.btn-primary.btn-lg.btn--dropdown.date-picker-container(data-toggle="dropdown") Custom
+							i.dropdown__icon--date.icon-right
+
+						.dropdown-menu.dropdown-menu-unstyled.dropdown-menu--date.dropdown-datepicker--hero.js-date-picker-container
+
+							.js-date-picker
+
+
+	//.hero__content
+	
+
+
+	//.hero__event-link
+	.hero__event-link
+		
+		.container-fluid
+			
+			p
+				a(href="http://google.com" target="_blank") The Saracens, The British Museum, Ends 24 Jan 2018
+
+	
+
+
+///.hero

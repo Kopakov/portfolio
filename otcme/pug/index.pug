@@ -1,0 +1,510 @@
+extends templates/template.pug
+
+block content
+
+			
+
+	//.hero
+	.hero
+
+		.container.container--wide.h-100.position-static
+
+			.row.h-100
+
+				.col-md-6.z-3.order-md-2
+
+					//.subsection
+					.subsection
+
+						//.hero__content
+						//delay in miliseconds
+						.hero__content.js-animate-from-top(data-delay="1000")
+							
+							//hidden in phone
+							img.atcme-content-logo.d-none.d-md-block(src="img/media/otcme.svg", alt="")
+
+							h2.hero__title
+								| Paying too much for over-the-counter medication? 
+								br
+								| The OTCme app can help.
+
+							.text-muted
+								p Let OTCme do your over-the-counter medicine searching for you. Find the best matches, at the best prices, from the most convenient locations to purchase or order online.
+							
+							include components/_action-buttons.pug
+
+						//.hero__content
+					
+					///.subsection
+
+
+				.col-md-6.z-1.order-md-1
+
+					.js-animate-from-top(data-delay="300")
+
+						//.hero__image
+						img.hero__image(src="img/media/hero-phone.jpg", data-parallax, width="570" alt="")
+
+
+				//.hero__mask
+				img.hero__mask.z-2(src="img/tpl/wave.svg", alt="")
+
+		
+	///.hero
+
+
+
+
+
+
+
+
+
+	//.section
+	section.section
+
+		.container.container--wide
+
+			//.subsection
+			.subsection
+
+				//.section-header
+				.section-header
+
+					.text-center
+
+						h3 Be confident in the decisions you make.
+
+				///.section-header
+
+
+				.row
+
+					+cardItem(
+						"man-pill.jpg",
+						"142",
+						"card-item__img--horizontal",
+						"Search Accurately",
+						"Find the right OTC meds the first time with search custom to you and your symptoms."
+					)
+
+
+					+cardItem(
+						"pill-badges.jpg",
+						"145",
+						"card-item__img--horizontal",
+						"Save Money",
+						"Discover generics and coupons for thousands of OTC medications."
+					)
+				
+					+cardItem(
+						"rating-ok.jpg",
+						"163",
+						"card-item__img--horizontal",
+						"Shop Smarter",
+						"The OTCme review process makes sure reviews are honest and unbiased."
+					)
+				
+					+cardItem(
+						"hands-app.jpg",
+						"138",
+						"card-item__img--vertical",
+						"Stay Informed",
+						"Read labels, drug facts, and reviews conveniently from your phone."
+					)
+
+			///.subsection
+
+	///.section
+
+
+
+
+
+
+
+
+
+	//.section
+	section.section
+
+		.container
+
+			.row.align-items-center
+
+
+				.col-lg-5.col-md-6.order-md-2
+
+					//.subsection
+					.subsection
+
+						//.section__text-middle
+						.section__text-middle
+
+							h6.label.text-primary SEARCH ACCURATELY
+							h3 Personalized searching means always finding the right medicine for you.
+
+							p Our patent pending technology selects drugs that match your symptoms. 
+							p OTCme search profiles make it easy to search meds for yourself, friends and family.
+							p Age and gender specific searches.
+						
+						///.section__text-middle
+					
+					///.subsection
+
+
+				.col-lg-7.col-md-6.order-md-1
+
+					//.subsection
+					.subsection
+
+						.text-center.text-md-left
+
+							img.personalized-search-img(src="img/media/personalized-searching.jpg", width="422" alt="")
+
+					///.subsection
+
+
+	///.section
+
+
+
+
+
+
+
+
+
+	//.section
+	section.section
+
+		.container
+
+			.row.align-items-center
+
+
+				.col-lg-5.col-md-6
+
+					//.subsection
+					.subsection
+
+						//.section__text-middle
+						.section__text-middle
+
+							h6.label.text-primary SAVE MONEY
+							h3 The right OTC meds at the right price.
+
+							p Find the best pricing.
+							p Find discounts, store offers and coupons.
+							p Over 1400 generics.
+							p Print manufacturer coupons.
+
+						///.section__text-middle
+					
+					///.subsection
+
+
+				.col-lg-7.col-md-6
+
+					//.subsection
+					.subsection
+
+						.text-md-right.text-center
+
+							img.right-place-img(src="img/media/right-place.jpg", width="424" alt="")
+
+					///.subsection
+
+
+	///.section
+
+
+
+
+
+
+
+
+
+	//.section
+	section.section
+
+		.container
+
+
+			.row
+
+
+				.col-lg-8.mx-auto.col-md-10
+					
+
+					//.subsection
+					.subsection.position-relative.z-1
+
+						.text-center
+							
+							img.img-fluid(src="img/media/decisions.jpg", width="299" alt="", data-parallax)
+
+					///.subsection
+
+
+
+					//.subsection
+					.subsection.position-relative.z-2
+
+						.text-md-center
+
+							h6.label.text-primary SHOP SMARTER
+							h3 Make smart OTC medicine decisions with reviews you can trust.
+
+							p It’s difficult to know whether online reviews are truthful. With OTCme’s review process, we make sure reviewers provide accurate information and proper context to support you purchasing decision. 
+							
+							ul.list-marked.d-inline-block
+								li Reviews displayed from actual OTCme users
+								li Reviews matched to symptoms
+								li Verified effectiveness of symptom relief
+						
+
+					///.subsection
+
+
+	///.section
+
+
+
+
+
+
+
+
+
+	//.section
+	section.section
+
+		.container
+
+			.row.align-items-center
+
+
+				.col-lg-5.col-md-6
+
+					//.subsection
+					.subsection
+
+						//.section__text-middle
+						.section__text-middle
+
+							h6.label.text-primary STAY INFORMED
+							h3 Know your choices, select the right product and avoid medications that won't work for you.
+
+							p Reading the label will help you decide if you have selected the right product for your symptoms.
+							p Understand the dosing instructions and be aware of any warning that may apply to you.
+							p If you have more questions ask your pharmacist, healthcare provider or doctor.
+						
+						///.section__text-middle
+
+					
+					///.subsection
+
+
+				.col-lg-7.col-md-6
+
+					//.subsection
+					.subsection
+
+						.text-right
+
+							img.stay-informed-img(src="img/media/stay-informed.jpg", width="374" alt="")
+
+					///.subsection
+
+
+	///.section
+
+
+
+
+
+
+
+	//.section__overflow
+	.section__overflow
+
+
+		//.section
+		section.section.section--colored
+
+			.container
+
+				.row
+
+
+					.col-lg-5.col-md-6.align-self-center
+
+						//.subsection
+						.subsection
+
+							h3 An app created by healthcare professionals for their patients.
+
+							p Tired of seeing their patients taking the wrong OTC meds and not getting better, they decided to create OTCme. Developed with their patients in mind, you can now get the right medicine, save money, and feel better too. 
+
+						
+						///.subsection
+
+
+					.col-lg-7.col-md-6
+
+						//.subsection
+						.subsection
+
+							.text-right
+
+								img.created-by-professionals-img(src="img/media/proffesionals.png", alt="", width="578")
+
+						///.subsection
+
+
+		///.section
+
+
+	///.section__overflow
+
+
+
+
+
+
+
+	//.section
+	section.section#faqs
+
+		.container
+
+			//.subsection
+			.subsection
+
+
+				//.section-header
+				.section-header
+
+					.text-center
+
+						.text-muted
+
+							strong Frequently Asked Questions 
+
+				///.section-header
+
+				//.accordion
+				.accordion#faqs-accordion
+
+					+faqPanel(
+						"Who is behind OTCme?",
+						"1",
+						"OTCme began in a small medical practice in Texas. While caring for our patients we noticed more prescription medications becoming accessible over-the-counter with nothing available to guide people at the pharmacy. OTCme was borne out of a passion to help people find the medication they need and stop wasting money on the wrong medications. We feel fortunate that we are able to combine our passion for helping others with talent from great developers and designers to bring you OTCme. If there is anything you would like us to add please let us know."
+					)
+
+					+faqPanel(
+						"Why isn’t a medication I see at the pharmacy in the database?",
+						"2",
+						"There are several criteria we use to determine what medications to include in our app. If you have a specific medication you would like for us to consider including please email support@OTCme.com with the information. We will review your request and get back to you quickly."
+					)
+
+					+faqPanel(
+						"Why isn’t my local pharmacy included?",
+						"3",
+						"Many pharmacies, even some large chains, do not put their OTC medications online. If the pharmacy you are asking about has OTC medications available online and you would like us to include them, email support@OTCme.com with the pharmacy information, and we will check it out."
+					)
+
+					+faqPanel(
+						"Why are some of the prices in the app and those online different?",
+						"4",
+						"Online prices change frequently. If the prices are off by a small amount, it is just that the price recently changed and has not been updated in the app. If you are concerned the price is dramatically off, please email support@OTCme.com and we will correct it."
+					)
+
+					+faqPanel(
+						"How can I suggest updates to medication information?",
+						"5",
+						"We work diligently to keep our data up to date and accurate, however if you notice an error, we greatly appreciate you taking the time to report it to support@OTCme.com"
+					)
+
+					+faqPanel(
+						"Will the pharmacy accept my coupons?",
+						"6",
+						"The printed coupons in our app are manufacturer’s coupons. Usually, they will need to be printed and brought to the pharmacy, but as long as the coupon has not expired, they should be accepted by the pharmacy."
+					)
+
+					+faqPanel(
+						"Why don’t you include which medications are safe during pregnancy?",
+						"7",
+						"We want to keep our users safe, and the complexity of which medications are safe during pregnancy is beyond the scope of this app. There are good apps available that address this particular topic. When pregnant, considering pregnancy, or lactating it is safest to consult your physician prior to taking any over the counter medications."
+					)
+
+					+faqPanel(
+						"Contact Us",
+						"8",
+						"To report a bug or recommend any improvements please email support@OTCme.com. Your input is greatly appreciated."
+					)
+				
+
+				///.accordion
+				
+
+			///.subsection
+
+
+
+
+	///.section
+
+
+
+
+
+
+
+
+
+
+	.container.container--full-width-mobile
+
+		//.subsection
+		.subsection
+
+			//.jumbotron
+			.jumbotron(data-parallax)
+
+
+				//.section-header
+				.section-header
+
+					.text-center
+
+						h3 Try it out. Download the app today.
+
+				///.section-header
+				
+
+				.text-center
+
+					include components/_action-buttons-bottom.pug
+				
+			///.jumbotron
+
+		///.subsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

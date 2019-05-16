@@ -1,0 +1,98 @@
+
+mixin noFollow()
+	
+	//Disable google indexation
+	meta(name="robots" content="noindex")
+	meta(name="robots" content="nofollow")
+		
+
+mixin css(href)
+	link(rel='stylesheet', href= href)
+
+
+mixin input(type, placeholder, autofocus)
+	
+	if autofocus
+		input.form-control(type= type, placeholder= placeholder, autofocus)
+	else
+		input.form-control(type= type, placeholder= placeholder,)
+
+
+mixin select(placeholder, options)
+
+	select.custom-select
+
+		if placeholder
+			option= placeholder
+		else
+			option &nbsp;
+
+		each option in options
+			option= option
+
+		
+
+mixin checkbox(id, text)
+	
+	//checkbox
+	span.custom-control.custom-checkbox
+		input.custom-control-input(type='checkbox' id= id, checked)
+		label.custom-control-label(for= id)= text
+
+
+
+mixin progress(color, width)
+
+	.progress
+		.progress-bar(class="bg-" + color, style="width: " + width + "%")
+
+
+
+mixin cardItem(img, imgWidth, imgClass, title, text)
+
+	.col-md-3
+
+		//.card-item
+		.card-item.subsection
+
+			//.card-item__img-container
+			.card-item__img-container
+				
+				//use classes "card-item__img--horizontal" and "card-item__img--vertical" for correct images scaling in tablet/phone
+				img.card-item__img(class= imgClass ,src="img/media/features/" + img, width= imgWidth, alt="")
+
+			//.card-item__body
+			.card-item__body
+
+				h6= title
+				p= text
+		
+		///.card-item
+
+
+
+
+mixin faqPanel(title, id, text, isActive)
+
+	//.panel
+	.panel
+
+		//.panel__header
+		.panel__header(data-toggle="collapse", data-target="#faq-question-" + id)
+			h5.panel__title= title
+			.panel-toggle
+				img.panel-toggle__icon.panel-toggle__icon--closed(src="img/tpl/icons/plus.svg", alt="")
+				img.panel-toggle__icon.panel-toggle__icon--opened(src="img/tpl/icons/minus.svg", alt="")
+		
+		.collapse(data-parent="#faqs-accordion", id="faq-question-" + id)
+			//.panel__body
+			.panel__body
+				p= text
+		
+
+	///.panel
+
+
+
+
+

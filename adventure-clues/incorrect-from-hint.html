@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head-->
+
+<head>
+	<!-- Meta-->
+	<meta charset="utf-8">
+	<!-- Title-->
+	<title>Adventure Clues</title>
+	<!-- Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3.0, user-scalable=yes">
+	<!--Customized website preview when share it to social networks or anywhere-->
+	<meta property="og:title" content="Adventure Clues">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="img/share-preview/share-preview.jpg">
+	<!-- Main-->
+	<!--mixin css-->
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<div class="page-content">
+		<!--foot steps on left side-->
+		<img class="foot-steps-left" src="img/body/foot-steps-left.png" alt="">
+		<!--foot steps on bottom-->
+		<img class="foot-steps-bottom" src="img/body/foot-steps-bottom.png" alt="">
+		<header class="header">
+			<div class="container">
+				<div class="logo">
+					<img class="logo__img" src="img/header/logo.png" alt="" width="134">
+				</div>
+			</div>
+		</header>
+		<div class="section">
+			<div class="container">
+				<div class="subsection">
+					<h2 class="section-title">oops... try again</h2>
+					<div class="text-shape">
+						<img class="text-shape__icon" src="img/icons/binoculars.png" alt="" width="35">
+						<div class="text-shape__content">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+								dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+				</div>
+				<div class="subsection">
+					<form>
+						<div class="input-group">
+							<!--mixin input-->
+							<input class="form-control" type="text" placeholder="Type your answer HERE" />
+							<div class="input-group-append">
+								<button class="btn btn-success btn-success--form" type="submit">OK</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="subsection">
+					<div class="row justify-content-center">
+						<div class="col-6">
+							<div class="note-radial">
+								<div class="note-radial__content"><span class="text-lg">-10 </span>POINTS</div>
+							</div><a class="btn btn-primary btn-block" href="#0" data-toggle="modal" data-target="#modal-reveal">Reveal</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navbar fixed-bottom">
+			<div class="container">
+				<ul class="main-nav nav nav-justified">
+					<li class="nav-item dropup dropdown-tooltip dropdown-tooltip--left">
+						<a class="nav-link" href="#0" data-toggle="dropdown">
+							<div class="nav-link__img">
+								<img src="img/navbar/points.svg" alt="" width="38">
+							</div>Points</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-menu__triangle"></div>
+							<div class="color-primary text-center">
+								<h3 class="mb-0 font-main">25</h3>
+								<p class="mb-0 text-uppercase">points</p>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropup dropdown-tooltip">
+						<a class="nav-link" href="#0" data-toggle="dropdown">
+							<div class="nav-link__img">
+								<img src="img/navbar/time.svg" alt="" width="30">
+							</div>Time</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-menu__triangle"></div>
+							<div class="color-primary text-center">
+								<h3 class="mb-0 font-main">0m:14s</h3>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropup dropdown-tooltip dropdown-tooltip--rules">
+						<a class="nav-link" href="#0" data-toggle="dropdown">
+							<div class="nav-link__img">
+								<img src="img/navbar/rules.svg" alt="" width="26">
+							</div>Rules</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-menu__triangle"></div>
+							<div class="dropdown-tooltip__scroll">
+								<p>To answer a question simply type your answer in the field. Once sure of your answer press OK to submit.</p>
+								<ul>
+									<li>If you answer correctly first time 25 points!</li>
+									<li>If you are struggling to answer the clue, you can type hint (-5 points).</li>
+									<li>If you are really struggling or get a little lost along the way, you can type reveal which will reveal the answer and also provide you with a map of the start location for the next clue (-10 points).</li>
+									<li>Each time you answer incorrectly -10 points so make sure to make the most of the hints.</li>
+									<li>Keep track of your points and time during the trail by touching the menu icons at bottom of page.</li>
+									<li>If you are experiencing any technical difficulties during the trail, simply click on help for live chat help via WhatsApp. We will be happy to assist.</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#0">
+							<div class="nav-link__img">
+								<img src="img/navbar/whatsapp.svg" alt="" width="29">
+							</div>Help</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--modals-->
+	<div class="modal" id="modal-hint">
+		<div class="modal-dialog modal-sm modal-dialog-centered">
+			<div class="modal-content">
+				<div class="box">
+					<div class="box__content">
+						<div class="text-center color-primary">
+							<h2 class="font-main">Are you sure you want to use  HINT?</h2>
+							<br>
+							<br>
+							<div class="row">
+								<div class="col-6"><a class="btn btn-primary btn-block" href="hint.html">YES</a>
+								</div>
+								<div class="col-6"><a class="btn btn-primary btn-block" href="#0" data-toggle="modal" data-target="#modal-hint">No</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="modal-reveal">
+		<div class="modal-dialog modal-sm modal-dialog-centered">
+			<div class="modal-content">
+				<div class="box">
+					<div class="box__content">
+						<div class="text-center color-primary">
+							<h2 class="font-main">Are you sure you want to use REVEAL?</h2>
+							<br>
+							<br>
+							<div class="row">
+								<div class="col-6"><a class="btn btn-primary btn-block" href="reveal.html">YES</a>
+								</div>
+								<div class="col-6"><a class="btn btn-primary btn-block" href="#0" data-toggle="modal" data-target="#modal-reveal">No</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Scripts-->
+	<!--jQuery-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--Framework - Bootstrap-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Main - plugins init-->
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+//anchor for scroll to top
+#top
+
+//.header
+header.header.fixed-top.js-fixed-header
+
+	//.navbar-custom
+	nav.navbar-custom.h-100
+
+
+		//.mobile-header-default
+		//visible in phone only
+		.mobile-header-default.d-md-none.h-100
+			
+			.container-fluid.h-100
+
+				.row.align-items-center.h-100
+
+					.col-6
+						
+						//.logo
+						a.logo.js-smooth-scroll(href="#top")
+							img.logo__img--phone(src="img/tpl/logo-phone.svg", alt="")
+					
+					.col-6
+
+						.text-right
+						
+							//.navbar-toggler
+							button.navbar-toggler(type="button" data-toggle-class="opened" data-target="#menu") 
+								img(src="img/tpl/menu.svg", alt="")
+
+		///.mobile-header-default
+
+			
+			
+		//.mobile-header-fixed
+		//visible in phone only
+		.mobile-header-fixed.h-100
+			
+			.container-fluid.h-100
+
+				.row.align-items-center.h-100
+
+					.col-4
+						
+						//.logo
+						a.logo.js-smooth-scroll(href="#top")
+							img.logo__img--phone-short(src="img/tpl/logo.svg", alt="")
+					
+					.col-8
+
+						.text-right
+						
+							
+							//.action__buttons
+							span.action__buttons.action__buttons--shorted-mobile.action__buttons--only-icons
+
+								a.btn.btn--with-icons.btn-primary(target="_blank" href= iosLink)
+									i.btn__icon.btn__icon--left.fa.fa-apple
+									span.btn__text &nbsp;
+									i.btn__icon.btn__icon--right.btn__icon--semitransparent.fa.fa-angle-right
+
+								a.btn.btn--with-icons.btn-secondary(href="#0" data-toggle="modal" data-target="#modal-android-waitlist")
+									i.btn__icon.btn__icon--left.fa.fa-android
+									span.btn__text &nbsp;
+									i.btn__icon.btn__icon--right.btn__icon--semitransparent.fa.fa-angle-right
+								
+							///.action__buttons
+
+
+		///.mobile-header-fixed
+
+
+
+
+
+		.container-fluid.h-100
+
+			.row.align-items-center.h-100
+				
+				//hidden in phone
+				.col-3.d-none.d-md-block
+					
+					//.logo
+					a.logo.js-smooth-scroll(href="#top")
+						img.logo__img(src="img/tpl/logo.svg", alt="")
+				
+
+				.col-md-9
+
+					//.navbar-nav
+					ul.navbar-nav.ml-auto.justify-content-end#menu
+						
+						//visible in phone
+						li.d-md-none
+							.text-right
+								a.nav-link.navbar-close(href="#0" data-toggle-class="opened" data-target="#menu")
+									i.fa.fa-angle-right
+						
+						li.nav-item
+							a.nav-link.js-smooth-scroll(href="#faqs" data-toggle-class="opened" data-target="#menu") FAQs
+						
+						li.nav-item
+							a.nav-link(href="mailto:support@otcme.com") Contact
+					
+					///.navbar-nav
+
+
+	///.navbar-custom
+
+
+///.header
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+

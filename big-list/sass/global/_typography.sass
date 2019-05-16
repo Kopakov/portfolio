@@ -1,0 +1,500 @@
+
+// main
+
+html
+	font-size: $font-size-base-custom + px
+
+	+max767
+		font-size: $font-size-base-mobile + px
+
+
+body
+	+fm
+	word-break: break-word
+	color: $main
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+
+// font weights
++fw(200)
++fw(300)
++fw(400)
++fw(500)
++fw(600)
++fw(700)
+
+
+// headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+b,
+strong
+	// font-weight: 400
+	// line-height: 1.3
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+	margin-bottom: 0.6em
+
+h1,
+.h1
+	+rem(33)
+
+	+max767
+		+remPhone(24)
+
+h2,
+.h2
+	+rem(21)
+
+	+max767
+		+remPhone(16)
+
+h3,
+.h3
+	+rem(18)
+
+	+max767
+		// +remPhone(14)
+		+remPhone(19)
+
+h4,
+.h4
+	+rem(16)
+
+	+max767
+		// +remPhone(13)
+		+remPhone(16)
+
+h5,
+.h5
+	+rem(13)
+
+	+max767
+		+remPhone(13)
+
+h6,
+.h6
+	+rem(11)
+
+	+max767
+		+remPhone(11)
+
+
+
+
+.display-1,
+.display-2,
+.display-3,
+.display-4
+	font-weight: 400
+
+// .display-1
+// 	+rem(60)
+
+// .display-2
+// 	+rem(44)
+
+// .display-3
+// 	+rem(30)
+
+// .display-4
+// 	+rem(26)
+
+
+
+
+
+// links
+
+a
+	// color: inherit
+
+	+hf
+		// color: inherit
+		text-decoration: none
+
+.color-inherit
+	color: inherit
+
+	+hf
+		color: inherit
+
+.links-hover-underline
+
+	a:not(.badge, .btn)
+		+hf
+			text-decoration: underline
+
+
+// dropdown-menu
+
+.dropdown-inline
+	+in
+
+.dropdown-menu
+	min-width: 1px
+	box-shadow: 0 3px 5px 0 rgba(#656565, 0.5)
+
+.dropdown-menu-unstyled
+	padding: 0
+	border: none
+	margin: 0
+	min-width: 0
+
+.dropdown-menu--date
+	top: 100% !important
+	margin-top: -16px
+	left: 50% !important
+	+tf(none !important)
+
+.dropdown-large
+	padding: 0
+	// width: 388px
+	// max-width: 100%
+
+.dropdown-column
+	padding-top: 9px
+	padding-bottom: 14px
+
+.dropdown-section
+	padding: 20px 20px 8px
+
+.dropdown-section__list
+	
+	a
+		display: block
+		padding-top: 3px
+		padding-bottom: 3px
+		+nw
+		color: $gray
+
+		+hf
+			color: $main
+
+.dropdown-item
+	padding: 6px 15px
+	+tm
+	
+	+hf
+		color: inherit
+		background-color: $secondary
+
+
+
+
+
+
+
+
+
+// backgrounds
+.bg-placeholder
+	background-color: $placeholder
+
+
+// colors
+.color-gray
+	color: $gray
+
+.color-white
+	color: #fff
+
+.color-film
+	color: $film
+	
+.color-theatre
+	color: $theatre
+	
+.color-music
+	color: $music
+	
+.color-dance
+	color: $dance
+	
+.color-talk
+	color: $talk
+	
+.color-exhibition
+	color: $exhibition
+	
+.color-all-activities
+	color: $all-activities
+	
+.color-event
+	color: $event
+	
+
+
+// image
+
+.img-full-width
+	display: block
+	width: 100%
+	height: auto
+
+
+// icons
+
+.icon-left
+	margin-right: 0.7em
+
+.icon-right
+	margin-left: 0.7em
+
+.icon-dropdown
+	margin-top: -3px
+	margin-left: 6px
+
+.dropdown__icon--date
+	+md
+	margin-bottom: -6px
+		
+	+b
+		+ct
+		border: transparent 7px solid
+		border-top: rgba(#000, 0.25) 8px solid 
+
+
+
+
+
+
+
+
+
+
+
+
+// text
+
+.text-sm
+	+rem(12)
+
+.text-lg
+	+rem(16)
+
+
+
+
+
+		
+
+
+// line, hr, border
+
+.separator
+	border-top: $border 1px solid
+
+.border-bottom
+	border-bottom: $border 1px solid
+
+.border-right
+	border-right: $border 1px solid
+
+.border-left
+	border-left: $border 1px solid
+
+.border-top
+	border-top: $border 1px solid
+
+
+
+
+
+
+// different
+
+.favorite
+	position: relative
+
+.favorite__default
+	display: block
+	padding: 8px
+
+	+max1199
+		padding: 5px
+
+.favorite__active
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 1
+	opacity: 0
+	padding: 8px
+	color: $primary
+	+ts-card
+
+	+max1199
+		padding: 5px
+
+.favorite.active
+
+	.favorite__default
+		opacity: 0
+	
+	.favorite__active
+		opacity: 1
+
+
+
+
+
+
+
+
+// bottom margins
+
+p,
+ol,
+ul,
+dl,
+blockquote,
+address
+	margin-bottom: 1em
+
+
+
+
+
+
+// embed
+
+.embed-responsive-3by2
+	+b
+		padding-top: 66%
+
+
+
+
+// lists
+
+.social-list
+
+	> li
+		display: inline-block
+		vertical-align: middle
+
+		+ li
+			margin-left: 6px
+
+
+
+
+
+
+// badge
+
+.badge
+	padding: 6px 8px
+	border-radius: 0
+	+rem(10)
+	font-weight: 400
+
+	+max767
+		+remPhone(10)
+
+
+
+
+
+
+// pagination
+
+.pagination-custom
+	margin-bottom: 60px
+	text-align: right
+
+	+max1199
+		margin-bottom: 45px
+
+	+max767
+		margin-bottom: 15px
+		text-align: center
+
+	.dropdown-menu
+		min-width: 1px
+		width: 100%
+
+
+.pagination__item
+	+ .pagination__item
+		margin-left: 20px
+
+.pagination__icon
+	+md
+		
+	+b
+		+ct
+		border: transparent 6px solid
+		border-left: $main 7px solid 
+
+
+
+
+
+// stars
+
+.stars
+	display: inline-block
+	vertical-align: top
+	list-style-type: none
+	padding-left: 0
+	> li
+		display: inline-block
+		vertical-align: top
+
+.stars__star
+	+in
+	color: $gray-3
+	+rem(17)
+	
+	&.active
+		color: $warning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

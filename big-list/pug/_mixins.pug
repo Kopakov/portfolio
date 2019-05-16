@@ -1,0 +1,294 @@
+
+mixin css(href)
+	link(rel='stylesheet', href= href)
+
+
+
+mixin input(type, placeholder)
+
+	input.form-control(type= type, placeholder= placeholder)
+
+
+
+mixin cardContent(badgeText, badgeBg, imgSrc, additionalText, categoryText, categoryColor, title, text1, text2, text3, price, large)
+
+	//image
+	.card-img-top.js-card-img
+		.embed-responsive.embed-responsive-3by2
+			img.embed-responsive-item(src="img/media/" + imgSrc, alt="")
+		
+
+		if categoryText
+
+			// category - look available backgrounds in styleguide
+			// search by criteria
+			a.card-category.badge(href="all-activities.html" class="badge-" + badgeBg)= badgeText
+		
+
+		//favorite
+		// add class "active" to make heart active
+		.card-favorite.favorite(data-toggle-class="active")
+			i.fa.fa-heart-o.favorite__default
+			i.fa.fa-heart.favorite__active
+
+
+
+		//overlay
+		.card-overlay.js-card-overlay
+				
+			.row.h-100.align-items-center
+
+				.col
+				
+					//main text
+					.card-overlay__content
+
+						.text-center
+							
+							// event
+							a.btn.btn-primary(href="#0") More Info
+							
+							if additionalText
+								.card-overlay__additional
+									span.text-warning= additionalText
+
+
+	
+
+	//.card-body
+	.card-body
+
+		//title
+		// look available colors in styleguide
+		p.card__event-type.mb-0(class="color-" + categoryColor)
+
+			// all events in category
+			a(href="all-activities.html")= categoryText
+
+		h5.card-title
+			// event
+			a(href="#0")= title
+		
+		.card-text.text-muted
+			p
+				// all events in this place
+				a(href="place.html")= text1
+				br
+
+				
+				=text2
+				br
+				=text3
+		
+		//.card-footer - visible in mobile
+		span.card--list__price.d-md-none= price
+
+	.clearfix.d-md-none
+		
+	//.card-footer - hidden in mobile
+	.card-footer.d-none.d-md-block
+		h5.mb-0= price
+
+
+
+mixin card(badgeText, badgeBg, imgSrc, additionalText, categoryText, categoryColor, title, text1, text2, text3, price, large, popular)
+	
+
+	if large
+		
+		//.card
+		.card.card-lg.js-card
+			
+			+cardContent(badgeText, badgeBg, imgSrc, additionalText, categoryText, categoryColor, title, text1, text2, text3, price, large)
+		
+		///.card
+
+	else if popular
+		
+		//.card
+		.card.card--no-verlay.js-card
+
+			+cardContent(badgeText, badgeBg, imgSrc, additionalText, categoryText, categoryColor, title, text1, text2, text3, price, large)
+	
+		///.card
+
+	else
+		
+		//.card
+		.card.js-card
+
+			+cardContent(badgeText, badgeBg, imgSrc, additionalText, categoryText, categoryColor, title, text1, text2, text3, price, large)
+	
+		///.card
+
+
+
+mixin card-list(badgeText, badgeBg, imgSrc, additionalText, categoryText, categoryColor, title, text1, text2, text3, price)
+
+	//.card
+	.card.card--list
+
+		.row
+
+			.col-xl-2.col-lg-3.col-md-4.col-5
+		
+				//image
+				.card-img-top.js-card-img
+					.embed-responsive.embed-responsive-3by2
+						img.embed-responsive-item(src="img/media/" + imgSrc, alt="")
+					
+
+					if categoryText
+
+						// category - look available backgrounds in styleguide
+						// search by criteria
+						a.card-category.badge(href="all-activities.html" class="badge-" + badgeBg)= badgeText
+					
+
+					//favorite
+					// add class "active" to make heart active
+					.card-favorite.favorite(data-toggle-class="active")
+						i.fa.fa-heart-o.favorite__default
+						i.fa.fa-heart.favorite__active
+
+
+
+			.col-xl-10.col-lg-9.col-md-8.pl-0.col-7
+
+				//.card-body
+				.card-body.h-100
+
+					.row.h-100
+
+						.col-lg-9.col-md-8
+
+							//title
+							// look available colors in styleguide
+							p.card__event-type.mb-0(class="color-" + categoryColor)
+
+								// all events in category
+								a(href="all-activities.html")= categoryText
+
+							h4.card-title
+								// event
+								a(href="#0")= title
+							
+							.card-text.text-muted
+								p
+									// all events in this place
+									a(href="place.html")= text1
+									
+									span.d-none.d-md-inline  •  
+									br.d-md-none
+
+									
+									=text2
+
+									span.d-none.d-md-inline  •  
+									br.d-md-none
+
+									=text3
+
+									span.d-none.d-md-inline  •  
+									br.d-md-none
+
+									span.card--list__price= price
+						
+						// hidden in mobile
+						.col-lg-3.col-md-4.align-self-center.d-none.d-md-block
+					
+							// button
+							.text-right
+								
+								// event
+								a.btn.btn-primary.btn-sm.card--list__btn(href="#0") More Info
+									
+
+
+	///.card
+
+
+
+mixin checkbox(id, text)
+	
+	//checkbox
+	span.custom-control.custom-checkbox
+		input.custom-control-input(type='checkbox' id= id, checked)
+		label.custom-control-label(for= id)= text
+
+
+
+
+
+mixin card-place(badgeText, badgeBg, imgSrc, additionalText, categoryText, categoryColor, title, text1, text2, text3, price)
+
+	//.card
+	.card.card--place.js-card
+		
+		//image
+		.card-img-top.js-card-img
+			.embed-responsive.embed-responsive-4by3
+				img.embed-responsive-item(src="img/media/" + imgSrc, alt="")
+			
+
+			//- if categoryText
+
+			//- 	// category - look available backgrounds in styleguide
+			//- 	// search by criteria
+			//- 	a.card-category.badge(href="#0" class="badge-" + badgeBg)= badgeText
+			
+
+			//- //favorite
+			//- // add class "active" to make heart active
+			//- .card-favorite.favorite(data-toggle-class="active")
+			//- 	i.fa.fa-heart-o.favorite__default
+			//- 	i.fa.fa-heart.favorite__active
+
+
+
+			//- //overlay
+			//- .card-overlay.js-card-overlay
+					
+			//- 	.row.h-100.align-items-center
+
+			//- 		.col
+					
+			//- 			//main text
+			//- 			.card-overlay__content
+
+			//- 				.text-center
+								
+			//- 					// event
+			//- 					a.btn.btn-primary(href="#0") More Info
+								
+			//- 					if additionalText
+			//- 						.card-overlay__additional
+			//- 							span.text-warning= additionalText
+
+
+		
+
+		//.card-body
+		.card-body
+
+			h5.card-title
+				// event
+				a(href="place.html")= title
+			
+			.card-text.text-muted
+				p
+					// all events in this place
+					a(href="#0")= text1
+
+	///.card
+
+
+
+
+
+
+
+
+
+
+

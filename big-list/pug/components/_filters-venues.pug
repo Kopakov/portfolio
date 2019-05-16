@@ -1,0 +1,58 @@
+
+
+//.filters__container
+.filters__container#filters
+
+	//.filters__content
+	.filters__content
+
+		// close
+		.filters__close.d-md-none(data-toggle-class="active" data-target="#filters")
+			img(src="img/tpl/close.svg", alt="")
+
+		//form
+		form
+
+
+			//.filters__section
+			.filters__section
+
+				h5
+					span.fw700 Type
+				
+
+				.filters__list
+					+checkbox("venue-all", "All")
+					+checkbox("venue-british-museum", "British Museum")
+					+checkbox("venue-national-gallery", "National Gallery")
+					+checkbox("venue-national-portrait-gallery", "National Portrait Gallery")
+					+checkbox("venue-waterstones-talks", "Waterstones Talks")
+					+checkbox("venue-british-library", "British Library")
+					+checkbox("venue-welcome-collection", "Welcome Collection")
+					+checkbox("venue-sloane-museum", "Sloane Museum")
+					
+					//.collapse	
+					.collapse#venue-more
+
+						+checkbox("venue-british-library-2", "British Library 2")
+						+checkbox("venue-welcome-collection-2", "Welcome Collection 2")
+						+checkbox("venue-sloane-museum-2", "Sloane Museum 2")
+
+					a.btn-more(href="#0" data-toggle="collapse" data-target="#venue-more" data-toggle-class-this="active")
+						
+						span.btn-more__text--normal More
+							img.icon-right.icon-dropdown(src="img/tpl/arrow-down.svg", alt="")
+						
+						span.btn-more__text--active Less
+							img.icon-right.icon-dropdown(src="img/tpl/arrow-down.svg", alt="")
+
+			///.filters__section
+
+
+
+		///form
+
+	///.filters__content
+
+///.filters__container
+

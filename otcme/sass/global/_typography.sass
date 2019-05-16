@@ -1,0 +1,341 @@
+
+// main
+
+html
+	font-size: $font-size-base-custom + px
+
+body
+	+fm
+	word-break: break-word
+	color: $main
+	+smooth
+	line-height: 1.6
+
+
+// font weights
++fw(200)
++fw(300)
++fw(400)
++fw(500)
++fw(600)
++fw(700)
++fw(800)
++fw(900)
+
+
+// headings
+
+h1,
+.h1,
+h2,
+.h2
+	margin-bottom: 0.5em
+	font-weight: 400
+
+h3,
+.h3,
+h4,
+.h4
+	margin-bottom: 0.5em
+	font-weight: 500
+
+h5,
+.h5,
+h6,
+.h6
+	font-weight: 700
+
+h1,
+.h1
+	+rem(46)
+
+h2,
+.h2
+	+rem(37)
+
+h3,
+.h3
+	+rem(29)
+
+h4,
+.h4
+	+rem(23)
+
+h5,
+.h5
+	+rem(19)
+
+h6,
+.h6
+	+rem(15)
+
+.label
+	margin-bottom: 15px
+	text-transform: uppercase
+	+rem(9)
+	font-weight: 700
+	letter-spacing: 0.1em
+
+
+// .display-1,
+// .display-2,
+// .display-3,
+// .display-4
+// 	+fs
+// 	font-weight: 700
+
+// .display-1
+// 	+rem()
+
+// .display-2
+// 	+rem()
+
+// .display-3
+// 	+rem()
+
+// .display-4
+// 	+rem()
+
+
+b,
+strong
+	font-weight: 500
+
+
+
+// links
+
+a
+	// color: inherit
+
+	+hf
+		// color: inherit
+		// text-decoration: none
+
+.color-inherit
+	color: inherit
+
+	+hf
+		color: inherit
+
+// texts
+
+.lead
+	// +rem(24)
+
+.text-sm,
+small
+	display: inline-block
+	+em(12)
+
+// .text-lg
+	// +rem(16)
+
+
+
+
+// line, hr, border
+
+.hr--inverse
+	border-top-color: rgba(#fff, 0.1)
+
+
+
+
+// different
+
+.d-xxl-block
+	display: none
+
+	+min1920
+		display: block !important
+
+
+.overlay
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+
++z(10)
+
+
+
+
+
+// utilities
+
+// .hidden-phone
+
+// 	+max767
+// 		display: none !important
+
+
+
+
+	
+
+
+// styleguide
+
+.bs-component
+	position: relative
+
+#source-button
+	position: absolute
+	top: 0px
+	right: 10px
+	min-width: 1px
+	z-index: 5
+
+
+
+
+// bottom margins
+
+p,
+ol,
+ul,
+dl,
+blockquote,
+address
+	margin-bottom: 1.6em
+
+
+
+
+
+// embed
+
+
+
+
+
+// lists
+
+.social-list
+	+md
+	margin-bottom: 0
+	
+	a
+		display: block
+		+whl(18)
+		+rem(24)
+
+
+.list-marked
+	margin-top: 16px
+	padding-left: 0
+
+	li
+		display: flex
+		margin-bottom: 15px
+
+		+b
+			display: block
+			content: url(../img/tpl/icons/ok.svg)
+			margin-right: 20px
+
+
+
+
+
+
+
+
+// badge
+
+.badge
+	color: #fff
+
+
+
+// table
+
+.table-responsive
+
+	.table
+		margin-bottom: 0
+
+
+// images
+
+.js-bg
+	background-size: cover
+	background-repeat: no-repeat
+
+
+.personalized-search-img
+
+
+	+max991
+		position: relative
+		left: -45px
+
+	+min768-max991
+		max-width: 120%
+
+	+max767
+		left: -26px
+
+
+.right-place-img
+
+	+max991
+		position: relative
+		left: -45px
+
+	+max767
+		// width: 350px
+		width: 450px
+		max-width: 116%
+		left: -8%
+
+.stay-informed-img
+	
+	+max991
+		position: relative
+		left: -40px
+
+	+max767
+		left: -60px
+
+
+.created-by-professionals-img
+	margin-top: -80px
+
+	+max767
+		width: 480px
+		margin-top: -10px
+
+
+
++max767
+
+	// .display-1
+	// 	+remP(62)
+
+	// .display-2
+	// 	+remP(44)
+
+	// .display-3
+	// 	+remP(36)
+
+	// .display-4
+	// 	+remP(30)
+
+	// .lead
+	// 	+remP(18)
+
+
+
+
+
+
+
+
+
+
+
+

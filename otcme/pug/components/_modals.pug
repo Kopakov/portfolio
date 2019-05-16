@@ -1,0 +1,102 @@
+
+//modals before footer
+
+
+
+//#modal-android-waitlist
+.modal.fade#modal-android-waitlist
+
+	.modal-dialog.modal-dialog-centered
+		
+		.modal-content
+			
+			.modal-header
+				button.close(type="button", data-dismiss="modal")
+					img(src="img/tpl/icons/close.svg", alt="")
+			
+			.modal-body
+
+				.row
+
+					.col-md-8.mx-auto
+
+						h3.text-center Join the Android waitlist.
+
+						include _form.pug
+						
+							
+						//- form
+
+						//- 	label.label.text-muted.mb-0 FULL NAME
+						//- 	+input("text", "", "autofocus")
+
+						//- 	label.label.text-muted.mb-0 EMAIL
+						//- 	+input("text")
+
+
+						//- 	.text-center
+
+						//- 		p.text-muted
+						//- 			small Submitting your information allows us to inform you when OTCme will be available on Android devices. You will not receive any other promotional emails.
+								
+						//- 		//use class "disabled" for disabled properties
+						//- 		//<button class="btn btn-primary disabled" type="submit">Submit</button>
+						//- 		//- button.btn.btn-primary.disabled(type="submit") Submit
+								
+						//- 		//thank you modal demo
+						//- 		button.btn.btn-primary.disabled.js-show-thank-you-modal(type="button") Submit
+					
+
+///#modal-android-waitlist
+
+
+
+
+
+
+
+
+
+
+
+
+//#modal-success
+.modal.fade#modal-success
+
+	.modal-dialog.modal-dialog-centered
+		
+		.modal-content
+			
+			.modal-header
+				button.close(type="button", data-dismiss="modal")
+					img(src="img/tpl/icons/close.svg", alt="")
+			
+			.modal-body
+
+				.row
+
+					.col-md-8.mx-auto
+
+						.text-center
+
+							br
+							br
+							p.text-muted
+								img.mb-2(src="img/tpl/icons/ok-big.svg", alt="")
+								br
+								| Added to Waitlist
+
+							br
+
+							h3 Thanks for your interest!
+							br
+							br
+							
+							button.btn.btn-primary(data-dismiss="modal") Close
+							br
+							br
+							br
+							br
+					
+
+///#modal-success

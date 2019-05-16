@@ -1,0 +1,143 @@
+
+.header
+	+rem(16)
+	background-color: #fff
+	border-bottom: $border 1px solid
+	
+
+	+max767
+		+remPhone(14)
+
+	
+	.nav-link
+		padding: 12px 10px
+		color: inherit
+
+
+
+.container-fluid-2
+
+	+min768
+		padding-right: 30px
+		padding-left: 30px
+
+			
+.header-top
+	padding-top: 8px
+	padding-bottom: 10px
+
+	+max767
+		padding-top: 0
+		padding-bottom: 7px
+
+.secondary-nav
+
+	.icon-dropdown
+		// margin-top: -0.5em
+	
+
+.logo
+
+	+max767
+		width: 102px
+
+.header-bottom
+	
+	+max767
+		
+		> .container-fluid
+			padding-right: 0
+			// padding-left: 0
+
+.main-nav,
+.main-nav .nav-link
+	height: 52px
+	line-height: 52px
+	
+	+max767
+		// height: 39px
+		// line-height: 39px
+
+.main-nav
+	text-align: center
+
+	.nav
+		/* fallback */
+		display: inline-block
+		+nw
+		display: inline-flex
+		flex-wrap: nowrap
+
+		li
+			display: inline-block
+
+
+	.nav-link
+		padding-top: 0
+		padding-bottom: 0
+		border-bottom: transparent 3px solid
+		+tm
+		
+		// color variants
+		&.link--exhibitions
+			+hf
+				border-bottom-color: $exhibition
+
+		&.link--talks
+			+hf
+				border-bottom-color: $talk
+
+		&.link--theatre
+			+hf
+				border-bottom-color: $theatre
+
+		&.link--music
+			+hf
+				border-bottom-color: $music
+
+		&.link--dance
+			+hf
+				border-bottom-color: $dance
+
+		&.link--film
+			+hf
+				border-bottom-color: $film
+
+		&.link--all-activities
+			+hf
+				border-bottom-color: $primary
+
+
+
+.horizontal-scroll__container
+	height: 100%
+	overflow: hidden
+
+.horizontal-scroll
+	// scroll with hidden scrollbar
+	height: 100%
+	padding-bottom: 20px
+	box-sizing: content-box
+	overflow: auto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+

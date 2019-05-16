@@ -1,0 +1,233 @@
+
+
+.map__container
+	position: relative
+	z-index: 1
+	height: 100%
+
+.map__content
+
+.map__embed
+	height: 100%
+	margin-bottom: 0
+	background-color: $placeholder
+
+	// padding-bottom: 40%
+
+.map__iframe
+
+.map__toggle
+	position: absolute
+	top: 15px
+	z-index: 2
+	width: 55px
+	height: 55px
+	line-height: 55px
+	padding-top: 0
+	padding-bottom: 0
+	border-radius: 50%
+	+rem(24)
+
+	+max767
+		padding-right: 5px
+		padding-left: 5px
+		+whl(44)
+		+rem(18)
+
+.map__toggle--right
+	right: 15px
+
+.map__toggle--left
+	left: 15px
+	+tm
+
+.map__controls
+	position: absolute
+	right: 15px
+	bottom: 15px
+	z-index: 2
+
+.map__control
+	+whl(40)
+	padding: 0
+	border-radius: 50%
+	display: block
+	border: none
+
+	+max767
+		+whl(32)
+
+
+	+ .map__control
+		margin-top: 5px
+
+	i
+		display: block
+		+b
+			display: block
+
+
+.map__view-toggle-container
+	position: absolute
+	left: 50%
+	bottom: 100%
+	z-index: 2
+	margin-left: -110px
+	width: 220px
+	text-align: center
+
+.map__view-toggle
+	width: 110px
+
+	&[aria-expanded="true"]
+		background-color: darken($primary, 10%)
+
+	+max767
+		padding: 4px 8px
+
+
+.map__view-icon
+	font-size: 1.1em
+
+.pointer-popup__container
+	display: none
+	position: absolute
+	bottom: 80px
+	left: 50%
+	z-index: 3
+
+	&.show
+		display: block
+
+.pointer-popup
+	position: absolute
+	bottom: 0
+	left: 50%
+	margin-left: -160px
+	width: 320px
+	padding: 15px 15px 5px
+	background-color: #fff
+	border-radius: $border-radius
+	margin-bottom: 13px
+	box-shadow: 0px 0px 3px 0px rgba(#000, 0.3)
+
+	+a
+		+ct
+		position: absolute
+		top: 100%
+		left: 50%
+		width: 0
+		margin-top: -2px
+		margin-left: -15px
+		border: transparent 15px solid
+		border-top: #fff 15px solid
+
+	+max767
+		width: 290px
+		margin-left: -145px
+
+		.nav-link
+			padding-right: 8px
+			padding-left: 8px
+
+	.tab-pane
+		padding-top: 15px
+		padding-bottom: 15px
+
+
+.pointer-popup__close
+	
+
+.pointer-popup__scroll
+	height: 200px
+
+	+max767
+		height: 170px
+
+
+.title-marked
+	padding: 6px 0px
+	// background-color: $gray
+	margin-bottom: 0
+
+
+.map-view__tabs-container
+	position: absolute
+	right: 0
+	bottom: 0
+	left: 43px
+	z-index: 1
+	max-height: 50%
+	+tm
+	// +tf(translateY(100%))
+	box-shadow: 0px 0px 3px 0px rgba(#000, 0.3)
+
+	+max1199
+		left: 0
+		z-index: 2
+
+	+max767
+		z-index: 1
+
+.map-view__tab
+	height: 0
+	background-color: #fff
+	+ts(height $tt ease-out)
+
+	&.show
+		position: relative
+		z-index: 1
+		display: block
+		height: 185px
+		overflow: auto
+		
+
+.dashboard-container--left-nav-opened
+	
+	.map-view__tabs-container
+		left: 320px
+		
+		+max1199
+			left: 0
+
+	+max767
+
+		.map__toggle--left
+			left: -30px
+
+.dashboard-container--right-layers-opened
+
+	.map-view__tabs-container
+		right: 320px
+		
+		+max1199
+			right: 0
+
+.dashboard-container--link-text-opened
+	
+	.map-view__tabs-container
+		left: 200px
+		
+		+max1199
+			left: 0
+
+
+.dashboard-container--left-nav-opened.dashboard-container--link-text-opened
+	
+	.map-view__tabs-container
+		left: 477px
+		
+		+max1199
+			left: 0
+
+
+
+
+
+
+
+
+
+
+
+

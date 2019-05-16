@@ -1,0 +1,25 @@
+
+//.pagination
+.pagination-custom
+	
+	//- // prev
+	//- a.btn.btn-secondary.btn-lg.pagination__item(href="#0")
+	//- 	i.fa.fa-caret-left.icon-left.icon-dropdown
+	//- 	| Prev
+	
+	// numbers
+	.dropdown.dropdown-inline.pagination__item
+		a.btn.btn-white.btn-lg.btn-pagination-number(href="#0" data-toggle="dropdown") 1
+			img.icon-right.icon-dropdown(src="img/tpl/arrow-down.svg", alt="")
+
+		.dropdown-menu
+			a.btn.btn-dropdown.btn-lg.btn-pagination-number(href="#0") 2
+			a.btn.btn-dropdown.btn-lg.btn-pagination-number(href="#0") 3
+			a.btn.btn-dropdown.btn-lg.btn-pagination-number(href="#0") 4
+			a.btn.btn-dropdown.btn-lg.btn-pagination-number(href="#0") 5
+	
+	// next
+	a.btn.btn-secondary.btn-lg.pagination__item.pagination__btn(href="#0") Next
+		i.pagination__icon.pagination__icon--right.icon-right
+
+///.pagination

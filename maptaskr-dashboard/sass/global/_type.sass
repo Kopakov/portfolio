@@ -1,0 +1,143 @@
+
+
+html
+	font-size: $font-size-base-custom + px
+	
+body
+	word-break: break-word
+
+
+// font weights
++fw(200)
++fw(300)
++fw(400)
++fw(500)
++fw(600)
++fw(700)
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+	font-weight: 400
+
+a
+	+hf
+		text-decoration: none
+
+.link-simple
+	color: inherit
+
+	+hf
+		color: inherit
+
+.dropdown-menu
+
+.dropdown-menu--document
+	min-width: 1px
+	padding: 0
+	// border: none
+
+.dropdown-toggle--unstyled
+	+a
+		display: none
+
+.dropdown-item
+	padding: 6px 15px
+
+.drag-dots,
+.drag-dots.btn:not(:disabled):not(.disabled)
+	cursor: move
+
+.embed-responsive
+	margin-bottom: 15px
+
+.nav-separator
+	max-width: 90%
+	+mxa
+
+.bg-placeholder
+	background-color: $placeholder
+
+.section-title
+	display: flex
+	margin-bottom: 10px
+
+.badge
+	// padding: 8px 8px
+	+rem(14)
+	font-weight: 400
+	color: #fff
+
+.badge-dark
+
+.progressbars__container
+	margin-bottom: 1rem
+
+
+.progress
+	background-color: transparent
+	margin-bottom: 5px
+
+.progress-bar
+	border-radius: inherit
+	padding-left: 5px
+	padding-right: 5px
+	text-align: right
+	+nw
+	min-width: 24px
+
+.bg-dark
+	background-color: $dark
+
+.progress-bar.bg-secondary
+	color: $body-color
+
+.nav-tabs
+
+	.nav-link
+		color: $text-muted
+
+hr
+	+my(10px)
+
+ul, ol, dl
+	margin-bottom: 10px
+
+p
+	margin-bottom: 10px
+
+.table
+	th,
+	td
+		padding: 5px
+
+
+.row--gutters-small
+	margin-right: -6px
+	margin-left: -6px
+
+	> [class^="col"]
+		padding-right: 6px
+		padding-left: 6px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

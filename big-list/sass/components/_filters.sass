@@ -1,0 +1,144 @@
+
+.filters__container
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	z-index: 1
+	width: 264px
+	background-color: #F3F3F3
+	overflow: auto
+	border-right: $gray-2 1px solid
+
+	+max1199
+		width: 240px
+
+	+max767
+		position: fixed
+		width: 264px
+		// width: 100%
+		height: 100%
+		z-index: 6
+		+tf(translateX(-100%))
+		+tm
+
+		&.active
+			+tf(translateX(0))
+
+.filters__content
+	padding: 49px 23px 58px 29px
+	
+	+max767
+		position: relative
+		max-width: 264px
+		// 	margin: auto
+
+.filters__section
+	padding-bottom: 1px
+	margin-bottom: 28px
+
+	a:not(.badge, .btn)
+		color: inherit
+		
+.filter-item
+	+md
+
+	+ .filter-item
+		margin-left: 30px
+
+		// +max767
+		// 	margin-left: 25px
+
+	a:not(.badge, .btn)
+		color: inherit
+
+
+.filters__close
+	+in
+	position: absolute
+	top: 0
+	left: 0
+	padding: 0px 15px
+	+rem(30)
+	cursor: pointer
+
+.filters__list
+	// max-height: 200px
+	// overflow: hidden
+
+.days-toggler__container
+	position: relative
+	padding-top: 40px
+
+.days-toggler
+	position: absolute
+	top: 0
+	left: -15px
+	right: -15px
+	z-index: 5
+	height: 40px
+	border-top: $border 1px solid
+	border-bottom: $border 1px solid
+
+	&.fixed
+		position: fixed
+		right: 0
+		left: 0
+		background-color: #fff
+	
+
+.days-toggler__text
+	+md
+	padding: 8px 10px
+	+remPhone(14)
+
+.days-toggler__btn
+	+md
+	padding: 12px 9px
+	// +rem(22)
+	font-size: 0
+	cursor: pointer
+
+.days-toggler__icon
+	+md
+
+	+b
+		+ct
+		border: transparent 6px solid
+
+.days-toggler__icon--right
+	+b
+		border-left: $main 7px solid 
+
+.days-toggler__icon--left
+	+b
+		border-right: $main 7px solid 
+
+
+.section-header__filters
+
+	.btn
+		padding-top: 8px
+		padding-bottom: 8px
+		+remPhone(13)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

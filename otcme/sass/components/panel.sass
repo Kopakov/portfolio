@@ -1,0 +1,89 @@
+
+.accordion
+	margin-bottom: 30px
+	border-top: $border 1px solid
+
+.panel
+	border-bottom: $border 1px solid
+
+.panel__header,
+.panel__body
+	padding-right: 65px
+	padding-left: 65px
+
+	+max1199
+		padding-right: 15px
+		padding-left: 15px
+
+	+max991
+		padding-right: 0
+		padding-left: 0
+
+.panel__header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 17px
+	padding-bottom: 17px
+	cursor: pointer
+
+
+	&:hover
+		
+		.panel-toggle
+			background-color: rgba($primary, 0.1)
+
+.panel__title
+	margin-bottom: 0
+
+	+max767
+		+remP(15)
+
+.panel-toggle
+	+whl(42)
+	min-width: 42px
+	margin-left: 15px
+	border-radius: 50%
+	+tm
+	text-align: center
+	
+
+.panel-toggle__icon
+	color: $primary
+	+rem(20)
+	+tm
+
+.panel-toggle__icon--opened
+	display: none
+
+.panel-toggle__icon--closed
+
+
+// opened
+.panel__header[aria-expanded="true"]
+	
+	.panel-toggle__icon--opened
+		display: inline-block
+
+	.panel-toggle__icon--closed
+		display: none
+
+.panel__body
+	padding-bottom: 6px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

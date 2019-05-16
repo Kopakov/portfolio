@@ -1,0 +1,276 @@
+extends templates/template.pug
+
+block content
+
+	//.page-container
+	.page-container
+
+		include components/_filters.pug
+
+		//.page-content
+		.page-content.page-content--filters
+
+			.container.container--right.ml-md-0
+
+
+				//.section
+				section.section
+
+					include components/_book-ahead-header.pug
+					
+
+					include components/_section-subtitle-month.pug
+				
+
+					include components/_days-toggler.pug
+
+
+				
+					//.card-grid
+					.card-grid
+
+
+						+card(
+							"Most Popular",
+							"warning",
+
+							"sport.jpg",
+							"£5 Off. Code RFH50",
+
+							"Event",
+							"event",
+
+							"Six Day London 2017",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"9am - 6pm",
+
+							"SOLD OUT",
+							"",
+							"popular"
+						)
+
+
+
+						+card(
+							"Special Offer",
+							"primary",
+
+							"man.jpg",
+							"",
+
+							"Talk",
+							"talk",
+
+							"Paul McKenna: Confident, Happy and Abundant!",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"5.30pm",
+
+							"£10",
+							"",
+							"popular"
+						)
+
+
+
+						+card(
+							"",
+							"",
+
+							"sport.jpg",
+							"Lorem ipsum dolor.",
+
+							"Music",
+							"music",
+
+							"Lorem ipsum dolor sit amet, consectetur adipisicing",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"5.30pm - 7.30pm",
+
+							"£43 - £78"
+						)
+
+
+
+						+card(
+							"",
+							"",
+
+							"man.jpg",
+							"",
+
+							"Dance",
+							"dance",
+
+							"Lorem ipsum dolor",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"5.30pm - 7.30pm",
+
+							"£43 - £78"
+						)
+
+
+					///.card-grid
+
+
+					include components/_section-subtitle-month.pug
+					
+				
+					//.card-grid
+					.card-grid
+
+
+						+card(
+							"Most Popular",
+							"warning",
+
+							"sport.jpg",
+							"£5 Off. Code RFH50",
+
+							"Event",
+							"event",
+
+							"Six Day London 2017",
+
+							"Sport",
+							"Wednesday 13 Nov",
+							"9am - 6pm",
+
+							"SOLD OUT",
+							"",
+							"popular"
+						)
+
+
+
+						+card(
+							"Special Offer",
+							"primary",
+
+							"man.jpg",
+							"",
+
+							"Talk",
+							"talk",
+
+							"Paul McKenna: Confident, Happy and Abundant!",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"5.30pm",
+
+							"£10",
+							"",
+							"popular"
+						)
+
+
+
+						+card(
+							"",
+							"",
+
+							"sport.jpg",
+							"Lorem ipsum dolor.",
+
+							"Music",
+							"music",
+
+							"Lorem ipsum dolor sit amet, consectetur adipisicing",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"5.30pm - 7.30pm",
+
+							"£43 - £78"
+						)
+
+
+
+						+card(
+							"",
+							"",
+
+							"man.jpg",
+							"",
+
+							"Dance",
+							"dance",
+
+							"Lorem ipsum dolor",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"5.30pm - 7.30pm",
+
+							"£43 - £78"
+						)
+
+
+
+						+card(
+							"Most Popular",
+							"warning",
+
+							"sport.jpg",
+							"£5 Off. Code RFH50",
+
+							"Event",
+							"event",
+
+							"Six Day London 2017",
+
+							"Sport",
+							"Wednesday 13 Nov",
+							"9am - 6pm",
+
+							"SOLD OUT",
+							"",
+							"popular"
+						)
+
+
+
+						+card(
+							"Special Offer",
+							"primary",
+
+							"man.jpg",
+							"",
+
+							"Talk",
+							"talk",
+
+							"Paul McKenna: Confident, Happy and Abundant!",
+
+							"Barbican Centre",
+							"Wednesday 13 Nov",
+							"5.30pm",
+
+							"£10",
+							"",
+							"popular"
+						)
+
+
+					///.card-grid
+
+				///.section
+
+				hr.separator-mobile.d-md-none
+				
+				include components/_pagination.pug
+				
+
+		///.page-content
+
+
+	///.page-container
+

@@ -1,0 +1,197 @@
+extends templates/template.pug
+
+block content
+
+
+
+
+	.section
+
+		.container
+			
+			.subsection
+
+				+sectionTitle('survey')
+
+			.subsection
+				
+				form
+
+					.row.justify-content-center
+
+						.col-10
+
+							h5.text-center.font-main How do you rate your experience from 1 to 10?
+					
+
+
+					//stars rating. see main.js for info
+					ul.stars-rating(data-stars-rating='', data-stars-rating-message='#stars-rating-message-1' data-stars-rating-log-to='#data-stars-rating-log-1', data-stars-rating-input='#stars-rating-input-1')
+						li
+						li
+						li
+						li
+						li
+						li
+						li
+						li
+						li
+						li
+					
+					//hidden input where value of stars logs. take it here for backend
+					input(type="hidden")#stars-rating-input-1
+
+
+					p.text-center.mb-0.hidden#stars-rating-message-1
+						| You rated 
+						span#data-stars-rating-log-1 x 
+						|  of 10
+
+			hr.separator
+
+			
+			.subsection
+
+				h5.text-center.font-main How did you find out about us? If it was a person then please provide their email because we’d like to thank them. 
+
+			.subsection
+
+				include inc/_form.pug
+
+			hr.separator
+			
+			.subsection
+
+				h5.text-center.font-main Would you recommend exploring the city this way to your friends and family?
+
+			.subsection
+
+				.row.justify-content-center
+
+					.col-lg-10
+
+
+						.btn-group.btn-group-toggle.btn-group--full-width(data-toggle='buttons')
+							label.btn.btn-secondary
+								input(type='radio' value='1')
+								| 1
+							label.btn.btn-secondary
+								input(type='radio' value='2')
+								| 2
+							label.btn.btn-secondary
+								input(type='radio' value='3')
+								| 3
+							label.btn.btn-secondary
+								input(type='radio' value='4')
+								| 4
+							label.btn.btn-secondary
+								input(type='radio' value='5')
+								| 5
+
+
+						.row
+
+							.col-6
+
+								p.color-primary Not likely
+
+							.col-6
+
+								.text-right
+
+									p.color-primary Very likely
+				
+			hr.separator
+						
+			.subsection
+
+				h5.text-center.font-main Are you just visiting the city or do you live here?
+
+			.subsection
+
+				.row.justify-content-center
+
+					.col-lg-10
+
+
+						.btn-group.btn-group-toggle.btn-group-toggle--vertical(data-toggle='buttons')
+							
+							label.btn.btn-secondary.btn--addon
+								input(type='radio' value='A')
+								span.btn__addon A
+								| Visiting
+							
+							label.btn.btn-secondary.btn--addon
+								input(type='radio' value='B')
+								span.btn__addon B
+								| Live in Sydney
+							
+							label.btn.btn-secondary.btn--addon
+								input(type='radio' value='C')
+								span.btn__addon C
+								span.btn__text-2-lines.text-sm
+									| None of the above. 
+									br
+									| I come from outer space!
+
+
+			hr.separator
+						
+			.subsection
+
+				h5.text-center.font-main How would you improve the trail in one sentence?
+
+			.subsection
+
+				include inc/_form.pug
+
+
+
+
+
+
+
+	.section
+
+		.container
+
+			.subsection
+
+				.text-center
+
+					a.btn.btn-primary(href="stats.html") CONTINUE TO STATS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

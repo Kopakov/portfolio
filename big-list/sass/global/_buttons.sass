@@ -1,0 +1,157 @@
+
+// buttons
+
+.btn
+	margin-bottom: 1.1em
+	+rem(15)
+
+	+max767
+		padding: 11px 13px
+		+remPhone(14)
+		margin-bottom: .8em
+
+.input-group,
+.btn-group,
+.btn-group-vertical
+	.btn
+		margin-bottom: 0
+
+.btn-lg
+	min-width: 118px
+
+	+max767
+		&:not(.pagination__btn)
+			min-width: 1px
+
+.btn-lg,
+.btn-group-lg > .btn
+
+	+max767
+		// padding: 9px 5px
+		// +remPhone(18)
+
+
+.btn-sm,
+.btn-group-sm > .btn
+	+rem(12)
+
+.btn-set
+
+	.btn
+		margin-right: 10px
+		margin-left: 10px
+
+		+max767
+			min-width: 101px
+			margin-right: 5px
+			margin-left: 5px
+
+
+.btn-white
+	color: inherit
+	border: $gray-2 1px solid
+	background-color: #fff
+
+	+hf
+		color: inherit
+		border-color: $gray-3
+		box-shadow: none
+
+
+.btn-secondary
+	// background-color: #F2F2F2
+	border-color: $gray-3
+
+.btn-pagination-number
+	min-width: 94px
+
+	// +max767
+		// min-width: 1px
+
+.btn-dropdown
+	border-radius: 0
+	width: 100%
+	min-width: 1px
+	margin: 0
+	margin-bottom: 0
+	color: inherit
+
+	+hf
+		background-color: $secondary
+		color: inherit
+
+.btn-more
+	+in
+	margin-top: 5px
+
+	&.active
+		.btn-more__text--normal
+			display: none
+
+		.btn-more__text--active
+			display: block
+
+.btn-more__icon
+	+md
+
+.btn-more__text--normal
+	display: block
+
+	.btn-more__icon
+		margin-top: -4px
+
+.btn-more__text--active
+	display: none
+
+	.icon-dropdown
+		margin-top: 4px
+		+tf(rotate(180deg))
+
+
+.btn-outline-secondary
+	color: inherit
+	border-color: $border-dark
+
+	+hf
+		border-color: darken($border-dark, 10%)
+
+
+.btn-success,
+.btn-warning
+
+	&,
+	&.disabled,
+	&:disabled
+		color: #fff
+		
+		+hf
+			color: #fff
+
+
+.btn--dropdown
+
+	.icon-dropdown
+		opacity: 0.3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

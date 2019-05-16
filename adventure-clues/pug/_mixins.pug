@@ -1,0 +1,146 @@
+
+mixin css(href)
+	//mixin css
+
+	link(rel='stylesheet', href= href)
+
+
+
+
+
+mixin js(filePath)
+	//mixin js
+
+	script(src= filePath)
+
+
+
+
+
+mixin nf
+	//mixin nf
+
+	//Disable google indexation
+	meta(name="robots" content="noindex")
+	meta(name="robots" content="nofollow")
+
+
+
+
+
+mixin input(type, placeholder, classes)
+	//mixin input
+	
+	input.form-control(class=classes, type= type, placeholder= placeholder)
+
+
+mixin select(value)
+
+	select.custom-select
+		option= value
+		option Option 2
+		option Option 3
+		option Option 4
+		option Option 5
+
+
+mixin radio(text, name, checked, classes)
+	//mixin radio
+
+
+	.custom-control(class= classes)
+		input.custom-control-input(type='radio' name= name, checked= checked)
+		label.custom-control-label= text
+
+
+
+
+
+
+
+mixin checkbox(id, text, checked, classes)
+	
+	
+	//checkbox
+	span.custom-control.custom-checkbox(class= classes)
+		if checked
+			input.custom-control-input(type='checkbox' id= id, checked)
+		else
+			input.custom-control-input(type='checkbox' id= id)
+		
+		label.custom-control-label(for= id)= text
+
+
+
+
+
+
+mixin progress(color, width)
+	//mixin progress
+
+
+	.progress
+		.progress-bar(class="bg-" + color, style="width: " + width + "%")
+
+
+
+
+
+
+
+
+
+
+mixin toggler(text, classes, classesContainer)
+	//mixin toggler
+
+
+	.toggler__container(class= classesContainer, data-toggler-container='')
+		.toggler(class= classes, data-toggler='')
+		.toggler__text= text
+
+		if classes == 'active'
+			input.toggler__input(type='hidden', value='on', data-toggler-input='')
+		else
+			input.toggler__input(type='hidden', value='off', data-toggler-input='')
+
+
+
+
+
+mixin sectionTitle(text1, text2)
+	
+	h2.section-title
+		= text1
+		
+		if text2
+			br
+			= text2
+
+
+
+
+mixin btnHint(classes)
+
+	.note-radial(class= classes)
+
+		.note-radial__content
+			span.text-lg -5 
+			| POINTS
+
+	a.btn.btn-primary.btn-block(href="#0" data-toggle='modal' data-target='#modal-hint') HINT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+.hero
+	margin-top: -1px
+	position: relative
+	z-index: 3
+	padding-top: 64px
+	padding-bottom: 64px
+	background-size: cover
+	background-position: right top
+	// min-height: 312px
+
+	+min1400
+		padding-top: 114px
+		padding-bottom: 114px
+		// min-height: 412px
+
+	+max767
+		min-height: 318px
+		padding-top: 51px
+		padding-bottom: 54px
+
+.hero__title
+	font-weight: 400
+
+.hero__event-link
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	z-index: 0
+
+	a
+		color: inherit
+
+.hero__content
+	position: relative
+	z-index: 1
+
+.overlay--hero
+	display: none
+	background-color: rgba(#000, 0.6)
+
+	+max991
+		display: block
