@@ -1,0 +1,86 @@
+
+.side-menu
+	+lu
+
+	+min992
+		color: $gray-black
+
+	+max991
+		display: inline-block
+
+.side-menu__item
+
+.side-menu__link
+
+.side-link
+	display: flex
+	align-items: center
+	height: 70px
+	padding-top: 21px
+	padding-bottom: 21px
+
+	+min992
+		border-left: $tr 2px solid
+
+		&:hover,
+		&.active
+			text-decoration: none
+			background-color: $gray
+			border-color: $warning
+
+	+max1199
+		height: 60px
+		padding-top: 15px
+		padding-bottom: 15px
+
+	+max991
+		height: auto
+		padding: $nav-link-padding-y $nav-link-padding-x
+		// justify-content: center
+	
+	&:hover
+		text-decoration: none
+
+	&:active
+		background-color: $gray-active
+
+.side-link__icon
+	width: 27px
+	margin-right: 30px
+	+rem(27)
+
+	// +max991
+	// 	display: none
+
+
+.side-link__text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

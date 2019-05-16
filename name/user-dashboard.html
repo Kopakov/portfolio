@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head-->
+
+<head>
+	<!-- Meta-->
+	<meta charset="utf-8">
+	<!-- Title-->
+	<title>Name</title>
+	<!-- Viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3.0, user-scalable=yes">
+	<!--Google fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i" />
+	<!--Font Awesome 5 Free Version-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<!--Styles-->
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<div class="row h-100 no-gutters">
+		<div class="col-lg-3 h-lg-100">
+			<!--sidebar - toggleable part (menu)-->
+			<aside class="sidebar sidebar--dashboard h-100" id="sidebar">
+				<div class="vertical-space__container">
+					<!--header--dashboard - hidden in tablet/phone-->
+					<div class="header header--dashboard-sidebar">
+						<div class="container-fluid container--first-level">
+							<div class="row align-items-center">
+								<div class="col-6 col-lg-12">
+									<!--desktop logo-->
+									<a class="logo d-none d-lg-block note-set" href="#0">
+										<img class="logo__img" src="img/header/logo.svg" alt="">
+										<div class="note-set__note color-primary">Spectactor</div>
+									</a>
+									<!--tablet/phone logo-->
+									<a class="logo d-lg-none note-set" href="#0">
+										<img class="logo__img" src="img/header/logo-white.svg" alt="">
+										<div class="note-set__note color-primary">Spectactor</div>
+									</a>
+								</div>
+								<div class="col-6 d-lg-none">
+									<!--close menu button--><a class="navbar-toggle-close" href="#0" data-toggle-class="show" data-target="#sidebar"><span class="mr-3">Close</span><img src="img/icons/close.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--.vertical-space__filler will take all available vertical space-->
+					<div class="vertical-space__filler">
+						<!--menu mobile-->
+						<div class="menu-mobile-dashboard">
+							<h2 class="menu-mobile__title d-lg-none">Menu</h2>
+							<!--side-menu-->
+							<ul class="side-menu">
+								<li class="side-menu__item"><a class="side-link active" href="#0"><i class="side-link__icon fa fa-list"></i><div class="side-link__text">Feed</div></a><a class="side-link" href="#0"><i class="side-link__icon fa fa-search"></i><div class="side-link__text">Find Friends</div></a>
+									<a
+									class="side-link" href="#0"><i class="side-link__icon far fa-star"></i>
+										<div class="side-link__text">Liked Games</div>
+										</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+		<div class="col-lg-9 h-100">
+			<!--page content - big right part-->
+			<div class="page-content h-100">
+				<div class="vertical-space__container">
+					<!--header--dashboard-->
+					<div class="header header--dashboard-content">
+						<div class="container-fluid container--first-level">
+							<div class="row align-items-center row--gutters-phone-sm">
+								<!--logo - visible in tablet/phone-->
+								<div class="col-md-2 d-lg-none col-5">
+									<a class="logo note-set" href="#0">
+										<img class="logo__img" src="img/header/logo.svg" alt="">
+										<div class="note-set__note color-primary">Spectactor</div>
+									</a>
+								</div>
+								<!--this search form is hidden in phone. instead new one is shown below-->
+								<div class="col-xl-8 col-lg-7 col-md col-12 hidden-phone">
+									<!--search form-->
+									<form>
+										<input class="form-control form-control--search" type="search" placeholder="Search">
+									</form>
+								</div>
+								<div class="col-auto mx-md-auto ml-auto">
+									<!--notifications-->
+									<div class="dropdown dropdown--notifications dropdown--no-triangle">
+										<div class="dropdown-toggle" data-toggle="dropdown">
+											<div class="counter-icon counter-icon--sm-phone">
+												<img class="counter-icon__icon" src="img/icons/bell-gray.svg" alt="">
+												<div class="counter-icon__badge bg-danger">2</div>
+											</div>
+										</div>
+										<div class="dropdown-menu dropdown-menu-right">
+											<a class="dropdown-item" href="#0">
+												<div class="alert-dismissible alert--dropdown show">
+													<p class="mb-0">You have new notification
+														<br>Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur.</p>
+													<div class="close" data-dismiss="alert">&times;</div>
+												</div>
+											</a>
+											<a class="dropdown-item" href="#0">
+												<div class="alert-dismissible alert--dropdown show">
+													<p class="mb-0">You have new notification
+														<br>Lorem ipsum dolor sit amet, consectetur.</p>
+													<div class="close" data-dismiss="alert">&times;</div>
+												</div>
+											</a>
+											<a class="dropdown-item" href="#0">
+												<div class="alert-dismissible alert--dropdown show">
+													<p class="mb-0">You have new notification
+														<br>Lorem ipsum dolor sit amet, consectetur.</p>
+													<div class="close" data-dismiss="alert">&times;</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-auto">
+									<!--user-->
+									<div class="dropdown dropdown--no-triangle">
+										<div class="dropdown-toggle" data-toggle="dropdown">
+											<div class="user-set">
+												<h3 class="user-set__name d-none d-lg-block">Jane Doe</h3>
+												<img class="user-set__photo" src="img/user/avatar.jpg" alt="">
+											</div>
+										</div>
+										<div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#0">User Link</a><a class="dropdown-item" href="#0">User Link</a><a class="dropdown-item" href="#0">User Link</a><a class="dropdown-item" href="#0">User Link</a>
+										</div>
+									</div>
+								</div>
+								<!--tablet/phone toggler of side-menu-->
+								<div class="col-auto d-lg-none">
+									<!--menu button-->
+									<button class="navbar-toggle" data-toggle-class="show" data-target="#sidebar"><span class="navbar-toggle__line"></span><span class="navbar-toggle__line"></span><span class="navbar-toggle__line"></span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--.vertical-space__filler will take all available vertical space-->
+					<div class="vertical-space__filler">
+						<!--one more vertical space for fixed search form in phone view-->
+						<div class="vertical-space__container">
+							<!--this search form is for phone. hidden in tablet/desktop-->
+							<div class="d-md-none py-2">
+								<div class="container-fluid container--first-level">
+									<!--search form-->
+									<form>
+										<input class="form-control form-control--search" type="search" placeholder="Search">
+									</form>
+								</div>
+							</div>
+							<!--.vertical-space__filler will take all available vertical space-->
+							<div class="vertical-space__filler">
+								<!--one more vertical space for fixed page title-->
+								<div class="vertical-space__container">
+									<div class="container-fluid container--first-level">
+										<!--title	-->
+										<h2>Feed</h2>
+									</div>
+									<!--.vertical-space__filler will take all available vertical space-->
+									<div class="vertical-space__filler">
+										<div class="container-fluid container--first-level h-100">
+											<div class="py-3">
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+												<p>Lorem.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Scripts-->
+	<!--jQuery-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--Framework - Bootstrap-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--Slider-->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Main - plugins init, custom scripts-->
+	<script src="js/main.js"></script>
+</body>
+
+</html>

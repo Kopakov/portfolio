@@ -1,0 +1,143 @@
+
+// dropdown-menu
+
+.dropdown
+
+
+.dropdown-toggle
+	cursor: pointer
+
+.dropdown-menu
+
+	+min768
+		top: 100% !important
+		+tf(none !important)
+		left: 0 !important
+
+	+max767
+		// top: 100% !important
+		// +tf(none !important)
+		max-height: 70vh
+		overflow: auto
+
+.dropdown-menu-right
+
+	+min768
+		left: auto !important
+		right: 0 !important
+
+.dropdown-item
+	font-weight: inherit
+
+	&:active
+		background-color: inherit
+		color: inherit
+		
+
+
+
+
+// variants
+
+.dropdown--no-triangle
+
+	.dropdown-toggle
+		
+		+a
+			display: none
+
+.dropdown--notifications
+
+	.dropdown-menu
+		width: 380px
+
+		+max767
+			width: 290px
+
+
+.dropdown--full-width
+
+	.dropdown-menu
+		// min-width: 100%
+
+	
+
+.language-dropdown
+
+	+max1199
+		margin-top: 50px
+
+	.dropdown-toggle
+		// padding-top: 12px
+		// padding-bottom: 12px
+		color: #9D9D9D
+		
+		+a
+			display: none
+		
+		+max1199
+			display: none
+
+	.dropdown-menu
+		
+		+max1199
+			position: static !important
+			+tf(none !important)
+			
+			float: none
+			display: block !important
+			background-color: $tr
+			border: none
+			color: inherit
+			text-align: center
+
+	.dropdown-item
+		
+		+max1199
+			display: inline-block
+			width: auto
+			margin: 5px
+			padding-right: 10px
+			padding-left: 10px
+			color: inherit
+			text-align: center
+
+			+hf
+				background-color: $tr
+
+		&.active
+			background-color: $tr
+			color: inherit
+
+			+max1199
+				border-bottom: #fff 2px solid
+
+			+h
+				background-color: $dropdown-link-hover-bg
+
+				+max1199
+					background-color: $tr
+
+.language-dropdown__current
+	display: inline-block
+	min-width: 80px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

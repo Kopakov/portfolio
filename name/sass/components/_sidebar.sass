@@ -1,0 +1,39 @@
+
+
+.sidebar
+	
+	+min992
+		border-right: $bd 2px solid
+
+.sidebar--dashboard
+
+
+	+max991
+		// display: none
+
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 4
+		background-color: $primary
+		color: #fff
+
+		opacity: 0
+		+tf(scale(0.98))
+		
+		width: 0
+		height: 0
+		overflow: hidden
+
+
+	&.show
+		
+		+max991
+
+			width: 100%
+			height: auto
+			overflow: visible
+
+			opacity: 1
+			+tf(scale(1))
+			+ts((opacity $ttt, transform $ttt !important))

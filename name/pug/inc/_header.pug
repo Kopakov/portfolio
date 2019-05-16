@@ -1,0 +1,104 @@
+
+//header main
+header.header.header--main
+
+	.container-fluid.container--first-level
+		
+		//navbar
+		nav.navbar-custom.navbar-expand-xl
+		
+			.row.align-items-center.flex-xl-nowrap
+
+				.col-xl-2.col-6
+
+					a.logo(href="login-main.html")
+						img.logo__img(src="img/header/logo.svg", alt="")
+				
+				.col-6.d-xl-none
+
+					//menu button
+					button.navbar-toggle(data-toggle='collapse' data-target='#menu')
+						span.navbar-toggle__line
+						span.navbar-toggle__line
+						span.navbar-toggle__line
+
+				.col-lg-10.col-md-9
+					
+					//toggleable part
+					.collapse.navbar-collapse#menu
+						
+						//hidden in 1200 up
+						.header-mobile.d-xl-none
+
+							.row.align-items-center
+
+								.col-6
+
+									a.logo(href="login-main.html")
+										img.logo__img(src="img/header/logo-white.svg", alt="")
+
+								.col-6
+
+									//close menu button
+									a.navbar-toggle-close(href='#0' data-toggle='collapse' data-target='#menu')
+										span.mr-3 Close
+										img(src="img/icons/close.svg", alt="")
+						
+						//menu, subscribe button, language select
+						.menu-mobile
+
+							.row.align-items-center.justify-content-xl-end.flex-xl-nowrap
+
+								.col-xl-auto.col-md-12
+
+									h2.menu-mobile__title.d-xl-none Menu
+									
+									//menu
+									ul.nav.navbar-nav
+										li.nav-item
+											a.nav-link(href="#0") Makers
+										li.nav-item
+											a.nav-link(href="#0") Streams
+										li.nav-item
+											a.nav-link(href="#0") Game to Play
+										li.nav-item
+											a.nav-link(href="#0") Sign up
+										li.nav-item
+											a.nav-link(href="login.html") Login
+
+								.col-xl-auto
+									
+									//subscribe
+									.btn-subscribe-header__container
+									
+										a.btn.btn-primary.btn-sm.btn-subscribe-header.mb-0(href="#0") Subscribe
+
+								.col-xl-auto
+									
+									//Language - Change text on Language Select - see js/main.js for info
+									.dropdown.language-dropdown(data-language-container='')
+
+										.dropdown-toggle(data-toggle='dropdown')
+											img.icon-left.icon-decrease(src="img/icons/globe-gray.svg", alt="")
+											span.language-dropdown__current(data-language-current='') English
+											img.icon-right.icon-decrease(src="img/icons/chevron-down-gray.svg", alt="")
+
+										.dropdown-menu
+											a.dropdown-item.active(href="#0" data-language-link='') English
+											a.dropdown-item(href="#0" data-language-link='') French
+											a.dropdown-item(href="#0" data-language-link='') Spanish
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

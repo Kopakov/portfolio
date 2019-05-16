@@ -1,0 +1,153 @@
+
+.owl-wrapper
+
+.owl-carousel--full-height
+	
+	&,
+	.owl-stage-outer,
+	.owl-stage,
+	.owl-item
+		height: 100%
+
+.owl-stage
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-box
+	display: box
+
+.owl-carousel
+
+	.owl-dots
+		position: absolute
+		bottom: 50px
+		left: 0
+		width: 100%
+		z-index: 1
+		text-align: center
+
+		button
+
+			+fc
+				outline: none
+
+			&.owl-dot
+				display: inline-flex
+				align-items: center
+				vertical-align: middle
+				width: 20px
+				height: 20px
+
+				+b
+					+ct
+					width: 15px
+					height: 15px
+					border-radius: 50%
+					background: #fff
+					opacity: 0.5
+					+tm
+
+				+hf
+					+b
+						opacity: 1
+					
+
+			&.active
+				
+				+b
+					opacity: 1
+
+	.owl-nav
+		+rem(32)
+		color: #fff
+
+		button
+			position: absolute
+			top: 49%
+			display: block
+			opacity: 0.5
+			+tm
+
+			+h
+				opacity: 1
+
+			+fc
+				outline: 0
+
+			&.owl-prev,
+			&.owl-next
+				padding: 10px 15px !important
+
+				&.disabled
+					// opacity: 0.1
+
+			&.owl-prev
+				left: 0
+
+			&.owl-next
+				right: 0
+
+
+
+
+
+
+// slide
+
+.slide
+	position: relative
+	display: flex
+	height: 100%
+	overflow: hidden
+	background-position: center center
+	background-color: $ph
+	color: #fff
+
+.slide__image
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 0
+
+	+max767
+		display: block !important
+
+.slide__caption
+	position: relative
+	z-index: 1
+	width: 100%
+	margin-top: auto
+	padding-top: 30px
+	padding-bottom: 90px
+	padding-right: 30px
+	padding-left: 30px
+	text-align: center
+
+
+// variantns
+
+// .owl-carousel--login
+
+// 	+max767
+// 		display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

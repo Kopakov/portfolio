@@ -1,0 +1,128 @@
+
+mixin css(href)
+
+	link(rel='stylesheet', href= href)
+
+
+
+
+
+mixin js(filePath)
+
+	script(src= filePath)
+
+
+
+
+
+mixin nf
+
+	//Disable google indexation
+	meta(name="robots" content="noindex")
+	meta(name="robots" content="nofollow")
+
+
+
+
+
+mixin input(type, placeholder, classes)
+	
+	input.form-control(class=classes, type= type, placeholder= placeholder)
+
+
+mixin select(value)
+
+	select.custom-select
+		option= value
+		option Option 2
+		option Option 3
+		option Option 4
+		option Option 5
+
+
+mixin radio(text, name, checked, classes)
+
+
+	.custom-control(class= classes)
+		input.custom-control-input(type='radio' name= name, checked= checked)
+		label.custom-control-label= text
+
+
+
+
+
+
+
+mixin checkbox(id, text, checked, classes)
+	
+	
+	//checkbox
+	span.custom-control.custom-checkbox(class= classes)
+		if checked
+			input.custom-control-input(type='checkbox' id= id, checked)
+		else
+			input.custom-control-input(type='checkbox' id= id)
+		
+		label.custom-control-label(for= id)= text
+
+
+
+
+
+
+mixin progress(color, width)
+
+
+	.progress
+		.progress-bar(class="bg-" + color, style="width: " + width + "%")
+
+
+
+
+
+
+
+
+
+
+mixin toggler(text, classes, classesContainer)
+
+
+	.toggler__container(class= classesContainer, data-toggler-container='')
+		.toggler(class= classes, data-toggler='')
+		.toggler__text= text
+
+		if classes == 'active'
+			input.toggler__input(type='hidden', value='on', data-toggler-input='')
+		else
+			input.toggler__input(type='hidden', value='off', data-toggler-input='')
+
+
+
+
+
+
+
+
+mixin cardHorizontal(date, title, text)
+
+	.card.card--horizontal
+
+		.card-body
+
+			h5.text-muted= date
+			h2.card-title: a(href="#0")= title
+			p.card-text.text-muted.fw400= text
+
+			a.btn(href="#0") RSVP
+
+
+
+
+
+
+
+
+
+
+

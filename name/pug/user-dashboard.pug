@@ -1,0 +1,173 @@
+extends templates/template.pug
+
+block content
+
+
+	.row.h-100.no-gutters
+
+		.col-lg-3.h-lg-100
+			
+			//sidebar - toggleable part (menu)
+			aside.sidebar.sidebar--dashboard.h-100#sidebar
+
+				.vertical-space__container
+
+					//header--dashboard - hidden in tablet/phone
+					.header.header--dashboard-sidebar
+
+						.container-fluid.container--first-level
+
+							.row.align-items-center
+
+								.col-6.col-lg-12
+							
+									//desktop logo
+									a.logo.d-none.d-lg-block(href="#0").note-set
+										img.logo__img(src="img/header/logo.svg", alt="")
+										.note-set__note.color-primary Spectactor
+									
+									//tablet/phone logo
+									a.logo.d-lg-none(href="#0").note-set
+										img.logo__img(src="img/header/logo-white.svg", alt="")
+										.note-set__note.color-primary Spectactor
+
+				
+								.col-6.d-lg-none
+
+									//close menu button
+									a.navbar-toggle-close(href='#0' data-toggle-class='show' data-target='#sidebar')
+										span.mr-3 Close
+										img(src="img/icons/close.svg", alt="")
+						
+
+					//.vertical-space__filler will take all available vertical space
+					.vertical-space__filler
+
+						include inc/_menu-mobile-dashboard.pug
+
+
+
+
+
+
+
+		.col-lg-9.h-100
+			
+			//page content - big right part
+			.page-content.h-100
+
+				.vertical-space__container
+
+					
+					include inc/_search-header.pug
+
+						
+					//.vertical-space__filler will take all available vertical space
+					.vertical-space__filler
+							
+						//one more vertical space for fixed search form in phone view
+						.vertical-space__container
+
+
+							//this search form is for phone. hidden in tablet/desktop
+							.d-md-none.py-2
+								
+								.container-fluid.container--first-level
+
+									include inc/_search-form.pug
+
+
+							//.vertical-space__filler will take all available vertical space
+							.vertical-space__filler
+										
+								//one more vertical space for fixed page title
+								.vertical-space__container
+
+									.container-fluid.container--first-level
+									
+										//title	
+										h2 Feed
+									
+									//.vertical-space__filler will take all available vertical space
+									.vertical-space__filler
+										
+										.container-fluid.container--first-level.h-100
+											
+											.py-3
+
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+												p Lorem.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

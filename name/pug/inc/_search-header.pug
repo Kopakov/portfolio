@@ -1,0 +1,37 @@
+
+//header--dashboard
+.header.header--dashboard-content
+
+	.container-fluid.container--first-level
+
+		.row.align-items-center.row--gutters-phone-sm
+			
+			//logo - visible in tablet/phone
+			.col-md-2.d-lg-none.col-5
+
+				a.logo(href="#0").note-set
+					img.logo__img(src="img/header/logo.svg", alt="")
+					.note-set__note.color-primary Spectactor
+			
+			//this search form is hidden in phone. instead new one is shown below
+			.col-xl-8.col-lg-7.col-md.col-12.hidden-phone
+
+				include _search-form.pug
+
+			.col-auto.mx-md-auto.ml-auto
+
+				include _dropdown-notifications.pug
+
+			.col-auto
+
+				include _user-dropdown.pug
+			
+			//tablet/phone toggler of side-menu
+			.col-auto.d-lg-none
+
+				//menu button
+				button.navbar-toggle(data-toggle-class='show' data-target='#sidebar')
+					span.navbar-toggle__line
+					span.navbar-toggle__line
+					span.navbar-toggle__line
+
