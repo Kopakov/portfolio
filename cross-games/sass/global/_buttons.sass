@@ -1,0 +1,169 @@
+
+// BUTTONS
+// ---------------------------------------------
+.btn
+	font-weight: 600
+
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-link
+	border: none
+
+.btn-secondary,
+.btn-secondary.disabled,
+.btn-outline-secondary
+	color: $black
+
+.btn-outline-secondary
+	// border-color: $black
+
+	+btnH
+		color: $black
+
+.btn-link
+
+.btn--white
+	background-color: #fff
+
+// .btn-success,
+// .btn-warning
+// 	color: #fff
+
+
+
+
+
+// SIZING
+// ---------------------------------------------
+.btn-sm,
+.btn-group-sm > .btn
+
+
+.btn-lg,
+.btn-group-lg > .btn
+
+
+.btn-group-toggle
+
+	.btn
+		// margin-bottom: 15px
+	
+	input[type="radio"]
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 1
+		opacity: 0
+
+	.active
+		background-color: $success !important
+		color: #fff !important
+
+
+// GROUPS
+// ---------------------------------------------
+.btn-group,
+.btn-group-vertical
+
+	.btn,
+	.btn-group
+		margin-bottom: 0
+
+
+.btn-group-toggle
+	
+	.btn
+		cursor: pointer
+
+.btn-group-toggle--buttons-3
+
+	.btn
+		padding-right: 20px
+		padding-left: 20px
+
+		+max991
+			padding-right: 15px
+			padding-left: 15px
+
+
+
+// DIFFERENT
+// ---------------------------------------------
+
+// .btn__icon
+// 	vertical-align: middle
+// 	margin-top: -10px
+// 	margin-bottom: -10px
+// 	font-size: 1.4em
+// 	line-height: 0
+
+// .btn__text
+
+// .btn__icon + .btn__text,
+// .btn__text + .btn__icon,
+// .btn__text + .btn__text
+// 	margin-left: 10px
+
+// .btn-icon
+// 	position: relative
+// 	padding-right: 50px
+// 	padding-left: 50px
+
+// 	.btn__icon
+// 		position: absolute
+// 		top: 50%
+// 		+tf(translateY(-50%))
+// 		z-index: 1
+// 		width: 40px
+// 		text-align: center
+
+// .btn-icon--right
+	
+// 	.btn__icon
+// 		right: 0
+
+
+// .btn-icon--left
+	
+// 	.btn__icon
+// 		left: 0
+
+
+
+
+
+
+
+// VARIANTS
+// ---------------------------------------------
+.btn--download
+	margin-bottom: 0
+	font-weight: 700
+
+	+max767
+		+whl(40)
+		border-radius: 50%
+		padding: 0
+		+remP(24)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

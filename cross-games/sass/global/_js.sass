@@ -1,0 +1,36 @@
+
+.js-animation--body-fade
+	opacity: 0
+	+ts(all 0.2s ease-out)
+
+	&.active
+		opacity: 1
+
+.js-animation
+	display: none
+
+.js-animation--items-from-right
+
+	.js-media
+		opacity: 0
+		+ts(all 0.4s ease-out)
+
+		&.active
+			+tf(translateX(0))
+			opacity: 1
+
+.js-media-1
+	+tf(translateX(80px))
+
+.js-media-2
+	+tf(translateX(90px))
+
+.js-media-3
+	+tf(translateX(100px))
+
+.js-media-4
+	+tf(translateX(110px))
+
+.js-media-5
+	+tf(translateX(120px))
+

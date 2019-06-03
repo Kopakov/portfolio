@@ -1,0 +1,167 @@
+
+
+
+
+// MARGINS
+// ------------------------------------------
+.form-control,
+.custom-select,
+.file-input,
+.form-group,
+// .btn-group-toggle,
+.custom-range,
+.custom-file
+	// margin-bottom: 25px
+	margin-bottom: $mb
+
+	// +max767
+		// margin-bottom: 30px
+
+
+
+
+// ALL INPUTS
+// ------------------------------------------
+.form-control,
+.custom-select,
+.file-input,
+.form-group,
+.btn-group-toggle,
+.custom-control,
+.custom-range,
+.custom-file
+
+	+fc
+		box-shadow: none
+
+
+.form-control--search
+	padding-left: 40px
+	background-image: url(../img/icons/search-gray.svg)
+	background-repeat: no-repeat
+	background-position: center left 15px
+
+
+// FIELDS INPUTS
+// ------------------------------------------
+// .form-control,
+// .custom-select,
+// .file-input,
+// .form-group,
+// .custom-control,
+// .custom-range,
+// .custom-file
+
+
+
+
+
+// CUSTOM SELECT
+// ------------------------------------------
+.custom-select
+	+an
+
+
+
+
+
+// GROUPS
+// ------------------------------------------
+.input-group
+
+	> .btn
+		margin-bottom: 0
+
+
+
+
+// TEXTAREA
+// ------------------------------------------
+textarea,
+textarea.form-control
+	padding-top: 20px
+	height: 150px
+
+
+
+
+
+// CUSTOM FILE INPUT
+// ------------------------------------------
+
+// .file-input
+// 	position: relative
+// 	display: inline-flex
+// 	align-items: center
+
+// 	.btn
+// 		margin-bottom: 0
+
+// .file-input__input
+// 	+abs
+// 	opacity: 0
+// 	cursor: pointer
+
+// .file-input__text
+// 	margin-right: 15px
+// 	+rem(13)
+// 	color: #7F87A9
+
+
+
+
+
+// CUSTOM CHECKBOX/RADIO
+// ------------------------------------------
+
+.custom-control
+	padding-left: 0
+
+.custom-control-label
+	padding-left: $custom-control-gutter + $custom-control-indicator-size
+	
+	+b
+		left: 0
+
+.custom-control-inline
+	margin-right: 15px
+	margin-top: 5px
+	margin-bottom: 5px
+
+
+// RADIO
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before
+	background-color: $gray
+
+// checkbox only
+.custom-control-input:checked ~ .custom-control-label::after
+	left: 0px
+
+// radio only
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after
+	top: 7px
+	left: 5px
+
+	width: 10px
+	height: 10px
+
+	border-radius: 50%
+	background-image: none
+	background-color: $black
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

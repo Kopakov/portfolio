@@ -1,0 +1,25 @@
+include ../_mixins.pug
+
+doctype
+html(lang="zxx")
+
+	include ../inc/_head.pug
+
+	//SCROLLABLE BODY WITH FIXED HEADER AND FOOTER
+	body.body-flex
+		
+		include ../inc/_header.pug
+		
+		//PAGE CONTENT - SCROLLABLE PART
+		//class="js-animation--body-fade" makes body fade in/out when click on links to another pages
+		.page-content.js-animation--body-fade
+			
+			block content
+			
+		
+		include ../inc/_modals.pug
+		
+		include ../inc/_footer.pug
+
+		include ../inc/_scripts.pug
+		

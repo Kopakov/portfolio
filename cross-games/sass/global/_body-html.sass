@@ -1,0 +1,30 @@
+
+html
+	height: 100%
+	font-size: $font-size-base-custom + px
+
+	+max767
+		font-size: $font-size-base-custom-phone + px
+
+body
+	position: relative
+	background-color: $gray
+	+fm
+	word-break: break-word
+	+smooth
+
+.body-flex
+	
+	// scrollable BOX only in tablet/desktop and if screen height is more than 600px
+	@media print, screen and (min-width: 768px) and (min-height: 600px)
+		display: flex
+		flex-direction: column
+		height: 100%
+		+ov
+
+	+max767
+		display: flex
+		flex-direction: column
+		min-height: 100%
+		+ov
+

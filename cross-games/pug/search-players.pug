@@ -1,0 +1,653 @@
+extends templates/_template.pug
+
+block content
+	
+	//VERTICAL SCROLL
+	.page-content__center.h-100
+
+		//SECTION
+		//class="h-100" for BOX max-height
+		.section.h-100
+			
+			//class="h-100" for BOX max-height
+			.container.h-100
+
+				//class="h-xl-100" for SAME HEIGHT BOXES in screens width 1200px +
+				.row.h-xl-100
+					
+
+
+					.col-xl-4
+						
+						//FILTERS TOGGLE - hidden in screens width 1200px +
+						.d-xl-none
+
+							.text-right
+								
+								//FILTERS TOGGLE
+								a.btn.btn--white.filters-toggle(href="#0" data-toggle='collapse' data-target='#filters-players')
+									h4.filters-toggle__text Filters
+									i.filters-toggle__icon.fa.fa-filter
+
+						
+						//TOGGLEABLE BOX WITH FILTERS - in tablet/phone
+						.collapse.d-xl-block.h-xl-100#filters-players
+							
+							//BOX
+							//SAME HEIGHT BOX IN 1200+
+							.box.box--h-xl-100
+
+								.row
+
+									.col-xl-12.col-md-6
+
+										
+										//SUBSECTION
+										.subsection
+											
+											.header-icon
+
+												h2.header-icon__title Search
+
+												include inc/_dropdown-info.pug
+
+											p.text-lg.color-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+											
+											form
+
+												input.form-control.form-control--search(type="search" placeholder='Search for players or games')
+
+									.col-xl-12.col-md-6
+
+										
+										//SUBSECTION
+										.subsection.mb-0
+											
+											.header-icon
+
+												h2.header-icon__title Filter
+
+												include inc/_dropdown-info.pug
+
+											p.text-lg.color-muted Lorem ipsum dolor sit amet
+
+											form
+
+												+select('Sort by')
+
+
+												//BUTTONS TOGGLE
+												.btn-group-toggle.btn-group-toggle--buttons-3(data-toggle='buttons')
+													
+													//ROW GROUP TOGGLE
+													.row.row--group-toggle
+
+														.col-auto
+															
+															label.btn.btn-secondary.active
+																input(type='radio' name='filter-player-type' value='celebs')
+																| Option 1
+
+														.col-auto
+															
+															label.btn.btn-secondary
+																input(type='radio' name='filter-player-type' value='gamers' checked)
+																| Option 2
+
+														.col-auto
+															
+															label.btn.btn-secondary
+																input(type='radio' name='filter-player-type' value='random')
+																| Option 3
+												
+												.row.row--sm
+
+													.col-sm-6.col-md-7.col-xl-12
+														
+														+select('Select')
+												
+													.col-sm-6.col-md-5.col-xl-12
+														
+														+select('Select')
+
+
+
+
+
+					//class="h-xl-100" for BOX max-height in screens width 1200px +
+					.col-xl-8.h-xl-100
+
+						//BOX
+						//SAME HEIGHT BOX IN 1200+
+						.box.box.box--h-xl-100
+
+							+animationDescription
+							.players-list.js-animation.js-animation--items
+										
+								.row
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Julia',
+											'Player',
+											'img/media/players/player-2.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'John Doe',
+											'Player',
+											'img/media/players/player-1.jpg',
+											'',
+											' js-media'
+										)
+
+									.col-md-4.col-sms-6
+
+										+media(
+											'Digi Bon',
+											'PS4',
+											'img/media/players/player-3.jpg',
+											'',
+											' js-media'
+										)
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+

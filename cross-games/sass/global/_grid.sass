@@ -1,0 +1,140 @@
+
+
+// CONTAINERS
+// --------------------------------------
+
+.container,
+.container-fluid
+	position: relative
+	+cl
+
+.container
+	// width: 1200px
+	// max-width: 96%
+
+.container-fluid
+	// max-width: 1820px
+
+
+
+
+// ROW
+// --------------------------------------
+
+
+.row--sm
+	margin-right: -5px
+	margin-left: -5px
+
+	+colAny
+		padding-right: 5px
+		padding-left: 5px
+		
+.row--group-toggle
+	justify-content: space-between
+	flex-wrap: nowrap
+	margin-right: -5px
+	margin-left: -5px
+
+	+max413
+		margin-right: 0
+		margin-left: 0
+
+	+colAny
+		padding-right: 5px
+		padding-left: 5px
+
+		+max413
+			padding-right: 0px
+			padding-left: 0px
+
+ul.row
+	+lu
+	margin-bottom: 0
+
+
+// .row--separator
+
+// 	+min768
+		
+// 		> [class^="col"] + [class^="col"]
+// 			border-left: #fff 1px solid
+
+
+
+
+
+
+// GRID
+// --------------------------------------
+
+$grid-lg-gutter: 20px
+
+.grid-lg
+	
+	+min992
+	
+		> .row
+			margin-right: -$grid-lg-gutter
+			margin-left: -$grid-lg-gutter
+
+			+colAny
+				padding-right: $grid-lg-gutter
+				padding-left: $grid-lg-gutter
+
+
+
+
+// // card-grid
+
+// .card-grid
+// 	margin-top: 35px
+
+// 	+colAny
+// 		margin-bottom: 60px
+
+// 		> .card
+// 			margin-bottom: 0
+
+// 		// +max767
+// 			// margin-bottom: 40px
+
+// 		> .card
+// 			height: 100%
+
+
+
+
+
+
+// CUSTOM COLUMNS
+// --------------------------------------
+	
+// .col-md-1-5
+// 	+col
+
+
+// +min768
+	
+// 	.col-md-1-5
+// 		flex: 0 0 20%
+// 		max-width: 20%
+
+
++colXxl
+
+
++min414-max767
+
+	.col-sms-6
+		flex: 0 0 50%
+		max-width: 50%
+
+
+
+
+
+
+
+
+

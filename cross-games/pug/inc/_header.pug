@@ -1,0 +1,60 @@
+
+
+//HEADER
+header.header
+	
+	//NAVBAR
+	nav.navbar-custom.navbar-expand-xl
+
+		.container
+
+			.row.align-items-center
+
+				.col-auto.order-1.order-xl-1
+					
+					//LOGO
+					a.logo(href="index.html")
+						img.logo__img(src="img/header/logo.svg", alt="")
+
+				.col-xl-auto.order-4.order-xl-2
+					
+					//MENU
+					.collapse.navbar-collapse#menu
+						
+						//ADD class="nav-link active" to make it ACTIVE 
+						// class="js-link-animate-body" animates body fade out/in when redirect to another page
+						ul.navbar-nav
+							li.nav-item
+								a.nav-link.js-link-animate-body.active(href="index.html") How it Works
+							li.nav-item
+								a.nav-link.js-link-animate-body(href="search-players.html") Discover
+							li.nav-item
+								a.nav-link.js-link-animate-body(href="became-a-player.html") Become a Player
+							li.nav-item
+								a.nav-link.js-link-animate-body(href="contact-us.html") Support
+
+		
+
+				.col-auto.ml-auto.order-2.order-xl-3
+					
+					//DOWNLOAD BUTTON
+					a.btn.btn-success.btn--download(href="#0")
+						span.hidden-sm-down Download CrossGames
+						i.d-md-none.fab.fa-apple
+
+
+				.col-auto.d-xl-none.order-3.order-xl-4.pl-0
+					
+					//MENU BUTTON
+					button.navbar-toggler(type='button' data-toggle='collapse' data-target='#menu')
+						i.fa.fa-bars
+
+
+
+
+
+
+
+
+
+

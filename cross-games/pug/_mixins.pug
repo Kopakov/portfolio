@@ -1,0 +1,153 @@
+//- Pug Mixins
+
+
+mixin css(href)
+
+	link(rel='stylesheet', href= href)
+
+
+
+
+
+mixin js(filePath)
+
+	script(src= filePath)
+
+
+
+
+
+mixin nf
+
+	//Disable google indexation
+	meta(name="robots" content="noindex")
+	meta(name="robots" content="nofollow")
+
+
+
+
+
+mixin input(type, placeholder, classes)
+
+	.form-control__container
+		
+		input.form-control(class=classes, type= type, placeholder= placeholder)
+
+
+mixin select(value)
+
+	select.custom-select
+		option= value
+		option Option 2
+		option Option 3
+		option Option 4
+		option Option 5
+
+
+mixin radio(text, name, checked, classes)
+
+
+	.custom-control(class= classes)
+		input.custom-control-input(type='radio' name= name, checked= checked)
+		label.custom-control-label= text
+
+
+
+
+
+
+
+mixin checkbox(id, text, checked, classes)
+	
+	
+	//checkbox
+	span.custom-control.custom-checkbox(class= classes)
+		if checked
+			input.custom-control-input(type='checkbox' id= id, checked)
+		else
+			input.custom-control-input(type='checkbox' id= id)
+		
+		label.custom-control-label(for= id)= text
+
+
+
+
+
+
+mixin progress(color, width)
+
+
+	.progress
+		.progress-bar(class="bg-" + color, style="width: " + width + "%")
+
+
+
+
+
+
+
+
+
+
+mixin toggler(text, classes, classesContainer)
+
+
+	.toggler__container(class= classesContainer, data-toggler-container='')
+		.toggler(class= classes, data-toggler='')
+		.toggler__text= text
+
+		if classes == 'active'
+			input.toggler__input(type='hidden', value='on', data-toggler-input='')
+		else
+			input.toggler__input(type='hidden', value='off', data-toggler-input='')
+
+
+
+
+
+mixin media(title, text, img, badgeText, classes)
+	
+	//MEDIA
+	a.media(href="#0" class= classes)
+
+		if badgeText
+			span.media__badge.badge.badge-success= badgeText
+
+		img.media__img(src= img, alt="")
+
+		.media-body
+
+			// h4.media__title= title
+			h5.media__title= title
+			p.media__text= text
+
+
+
+mixin animationDescription
+
+	//
+		Class="js-animation" - Animate this element on page load.
+		Class="js-animation" hides element with CSS. Class="js-animation--..type.." shows it with JS animation.
+		Animation types: 
+		"js-animation--fade", "", "", "", "", "".
+		See main.js > ANIMATIONS ON PAGE LOAD for more info.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

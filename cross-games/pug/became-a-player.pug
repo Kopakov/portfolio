@@ -1,0 +1,136 @@
+extends templates/_template.pug
+
+block content
+
+	
+	//VERTICAL SCROLL
+	.page-content__center
+
+		//SECTION
+		.section
+			
+			.container
+
+				.row
+
+					.col-xl-10.col-lg-11.mx-auto
+
+						//BOX
+						.box
+
+							.subsection
+
+								.text-center
+									
+									h2 Apply
+									p.text-lg.color-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, consectetur, qui tenetur iure nulla tempore. Lorem ipsum dolor sit amet, consectetur adipisicing
+									hr.mt-0.mb-0
+
+
+							form
+
+								.grid-lg
+
+									.row
+
+										.col-md-6
+
+											+input('text', 'Full Name')
+										
+										.col-md-6
+											+input('email', 'Email Address')
+										
+										.col-lg-6
+
+											+input('tel', 'Phone Number')
+										
+										.col-lg-6
+
+											//BUTTONS TOGGLE
+											.btn-group-toggle.btn-group-toggle--buttons-3(data-toggle='buttons')
+												
+												//ROW GROUP TOGGLE
+												.row.row--group-toggle
+
+													.col-auto
+														
+														label.btn.btn-secondary.active
+															input(type='radio' name='registration-user-type' value='celebrity' checked)
+															| Option 1
+
+													.col-auto
+														
+														label.btn.btn-secondary
+															input(type='radio' name='registration-user-type' value='influencer')
+															| Option 2
+
+													.col-auto
+														
+														label.btn.btn-secondary
+															input(type='radio' name='registration-user-type' value='gamer')
+															| Option 3
+										
+										.col-lg-6
+										
+											+input('url', 'Link to Website')
+										
+										.col-lg-6
+											
+											.form-group
+
+												+animationDescription
+												.mb-3.js-animation--slider
+												
+													//Range Slider
+													//https://github.com/IonDen/ion.rangeSlider
+													//if you want to output value somewhere set attibute data-range-log-to="#some-id-to-log-selected-value"
+													input(type='text' data-range='' data-range-log-to='#range-followers-log')
+											
+
+												p.text-right.color-muted.fw600
+													span.color-success#range-followers-log 0K
+													|  Followers 
+
+
+								
+								.row.align-items-center
+
+									.col-md-8
+
+										.form-group
+
+											.custom-control.custom-checkbox
+												input#checkbox-register-agree.custom-control-input(type='checkbox')
+												label.custom-control-label.color-muted(for='checkbox-register-agree') By checking this box you agree to our confidentiality TOS
+
+
+									.col-md-4
+
+										.form-group
+											
+											.text-right
+
+												button.btn.btn-primary.mb-0(type='submit') Submit Request
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+

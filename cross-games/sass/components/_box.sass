@@ -1,0 +1,33 @@
+
+.box
+	padding: 25px 25px 1px
+	background-color: #fff
+	border-radius: $border-radius
+	+ov
+
+	+max374
+		padding-right: 15px
+		padding-left: 15px
+
+.box__header
+	margin-bottom: 15px
+
+	+hd
+		margin-bottom: 0
+
+.box--h-100
+	height: calc(100% - #{$mb})
+	+ov
+
+.box--h-lg-100
+
+	+min992
+		height: calc(100% - #{$mb})
+		+ov
+
+.box--h-xl-100
+
+	+min1200
+		height: calc(100% - #{$mb})
+		+ov
+

@@ -1,0 +1,158 @@
+extends templates/_template.pug
+
+block content
+	
+	//VERTICAL SCROLL
+	.page-content__center.h-100
+
+		//SECTION
+		.section.h-100
+			
+			.container.h-100
+
+				//class="h-lg-100" for SAME HEIGHT BOXES in screens width 1200px +
+				.row.h-lg-100
+					
+					.col-xl-7.col-lg-7
+
+						//BOX
+						//SAME HEIGHT BOX IN 992+
+						.box.box--h-lg-100
+
+
+							h2 Contact us
+							p.text-lg.color-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae recusandae vitae, dolores eligendi numquam cupiditate maiores?
+
+
+							form
+
+								.grid-lg
+
+									.row.align-items-center
+
+										.col-md-6
+
+											+input('text', 'Full Name')
+										
+										.col-md-6
+										
+											+input('email', 'Email Address')
+
+										.col-md-6
+
+											+select('What is this about?')
+
+										.col-md-6
+
+											.form-group.text-xl-nowrap
+
+												.custom-control.custom-radio.custom-control-inline
+													input.custom-control-input(type='radio', name='contact-to' value='contact-to-business')#contact-to-business
+													label.custom-control-label(for='contact-to-business') Business
+												
+												.custom-control.custom-radio.custom-control-inline
+													input.custom-control-input(type='radio', name='contact-to' value='contact-to-customer-service')#contact-to-customer-service
+													label.custom-control-label(for='contact-to-customer-service') Customer Service
+
+								
+								textarea.form-control(placeholder='Message')
+
+
+								.row.justify-content-center
+
+									.col-xl-4.col-lg-5.col-md-4.col-auto
+										
+										button.btn.btn-block.btn-primary(type='submit') Submit Request
+
+									.col-xl-4.col-lg-5.col-md-4.col-auto
+										
+										a.btn.btn-block.btn-success(href='#0') Live Chat
+
+
+
+					.col-xl-5.col-lg-5
+
+						//BOX
+						//SAME HEIGHT BOX IN 992+
+						.box.box--h-lg-100
+
+							h2 News & Press
+
+							+animationDescription
+							.js-animation--items-from-right
+								
+								.row
+
+									.col-md-6.col-lg-12
+
+										+media(
+											'CrossGames App Update 1.0.4',
+											'Change Log & Improvements',
+											'img/media/media-placeholder.svg',
+											'New',
+											' js-media js-media-1'
+										)
+
+
+									.col-md-6.col-lg-12
+
+										+media(
+											'CrossGames App Update 1.0.4',
+											'Change Log & Improvements',
+											'img/media/media-placeholder.svg',
+											'New',
+											' js-media js-media-2'
+										)
+
+
+									.col-md-6.col-lg-12
+
+										+media(
+											'Tech Crunch App Review ',
+											'5/5 Star App Review',
+											'img/media/media-placeholder.svg',
+											'',
+											' js-media js-media-3'
+										)
+
+
+									.col-md-6.col-lg-12
+
+										+media(
+											'Tech Crunch App Review ',
+											'5/5 Star App Review',
+											'img/media/media-placeholder.svg',
+											'',
+											' js-media js-media-4'
+										)
+
+
+									.col-md-6.col-lg-12
+
+										+media(
+											'Tech Crunch App Review ',
+											'5/5 Star App Review',
+											'img/media/media-placeholder.svg',
+											'',
+											' js-media js-media-5'
+										)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+

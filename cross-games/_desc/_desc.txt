@@ -1,0 +1,27 @@
+App Landing Page + Info Pages
+
+
+
+
+
+Client wanted to represent his App for customers and designed Landing Page and pages with information.
+
+I converted it to responsive Bootstrap HTML.
+
+Design was created too large (1920px width). I suggested how it should be designed. And we optimized it together to make it look great at any device.
+
+Client received his Landing page, info pages and page with components (styleguide) for future development:
+https://kopakov.com/portfolio/cross-games/styleguide.html
+
+Currently he is working on App which will be available for download from Landing page we created.
+
+All pages:
+https://kopakov.com/portfolio/cross-games/pages.html
+
+
+
+
+
+
+
+https://kopakov.com/portfolio/cross-games/

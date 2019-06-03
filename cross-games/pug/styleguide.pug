@@ -1,0 +1,1083 @@
+include _mixins.pug
+
+doctype
+html(lang="zxx")
+
+	include inc/_head.pug
+
+	body.bg-white
+
+		
+		.container.py-3
+			
+
+			#banner.page-header
+				
+				.row
+					
+					.col-lg-8.col-md-7.col-sm-6
+						br
+						h1 Styleguide
+
+			hr
+
+
+			h1
+				| Website use 
+				a.color-primary(href="https://getbootstrap.com/" target="_blank") Bootstrap 4
+
+			h1
+				| Website use 
+				a.color-primary(href="https://fontawesome.com/icons?d=gallery&m=free" target="_blank") Font Awesome 5 Free Version
+
+			hr
+						
+			
+
+			//
+				Buttons
+				==================================================
+			
+			.bs-docs-section
+				.page-header
+					
+					.row
+						
+						.col-lg-12
+							h1#buttons Buttons
+				
+				.row
+					
+					.col-lg-7
+						p.bs-component
+							a.btn.btn-primary(href='#0') Primary
+							a.btn.btn-secondary(href='#0') Secondary
+							a.btn.btn-success(href='#0') Success
+							a.btn.btn-info(href='#0') Info
+							a.btn.btn-warning(href='#0') Warning
+							a.btn.btn-danger(href='#0') Danger
+							a.btn.btn-link(href='#0') Link
+						p.bs-component
+							a.btn.btn-primary.disabled(href='#0') Primary
+							a.btn.btn-secondary.disabled(href='#0') Secondary
+							a.btn.btn-success.disabled(href='#0') Success
+							a.btn.btn-info.disabled(href='#0') Info
+							a.btn.btn-warning.disabled(href='#0') Warning
+							a.btn.btn-danger.disabled(href='#0') Danger
+							a.btn.btn-link.disabled(href='#0') Link
+						p.bs-component
+							a.btn.btn-outline-primary(href='#0') Primary
+							a.btn.btn-outline-secondary(href='#0') Secondary
+							a.btn.btn-outline-success(href='#0') Success
+							a.btn.btn-outline-info(href='#0') Info
+							a.btn.btn-outline-warning(href='#0') Warning
+							a.btn.btn-outline-danger(href='#0') Danger
+
+
+						.bs-component
+							a.btn.btn-primary.btn-lg(href='#0') Large button
+							a.btn.btn-primary(href='#0') Default button
+							a.btn.btn-primary.btn-sm(href='#0') Small button
+							
+							a.btn.btn-primary.btn-block(href='#0') Block button
+						
+						//- .bs-component
+						//- 	.btn-group
+						//- 		button.btn.btn-primary(type='button') Primary
+						//- 		.btn-group
+						//- 			button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+						//- 			.dropdown-menu()
+						//- 				a.dropdown-item(href='#0') Dropdown link
+						//- 				a.dropdown-item(href='#0') Dropdown link
+						//- 	.btn-group(role='group')
+						//- 		button.btn.btn-success(type='button') Success
+						//- 		.btn-group
+						//- 			button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown')
+						//- 			.dropdown-menu()
+						//- 				a.dropdown-item(href='#0') Dropdown link
+						//- 				a.dropdown-item(href='#0') Dropdown link
+						//- 	.btn-group(role='group')
+						//- 		button.btn.btn-info(type='button') Info
+						//- 		.btn-group
+						//- 			button.btn.btn-info.dropdown-toggle(type='button', data-toggle='dropdown')
+						//- 			.dropdown-menu()
+						//- 				a.dropdown-item(href='#0') Dropdown link
+						//- 				a.dropdown-item(href='#0') Dropdown link
+						//- 	.btn-group(role='group')
+						//- 		button.btn.btn-danger(type='button') Danger
+						//- 		.btn-group
+						//- 			button.btn.btn-danger.dropdown-toggle(type='button', data-toggle='dropdown')
+						//- 			.dropdown-menu()
+						//- 				a.dropdown-item(href='#0') Dropdown link
+						//- 				a.dropdown-item(href='#0') Dropdown link
+
+
+
+
+
+
+					
+					.col-lg-5
+						p.bs-component
+							button.btn.btn-primary.btn-lg.btn-block(type='button') Block level button
+						
+						.bs-component
+							.btn-group.btn-group-toggle(data-toggle='buttons')
+								label.btn.btn-secondary.active
+									input(type='checkbox', checked='')
+									|  Active
+								label.btn.btn-secondary
+									input(type='checkbox')
+									|  Check
+								label.btn.btn-secondary
+									input(type='checkbox')
+									|  Check
+
+
+						
+						.bs-component
+							.btn-group.btn-group-toggle(data-toggle='buttons')
+								label.btn.btn-secondary.active
+									input#option1(type='radio', name='options', checked='')
+									|  Active
+								label.btn.btn-secondary
+									input#option2(type='radio', name='options')
+									|  Radio
+								label.btn.btn-secondary
+									input#option3(type='radio', name='options')
+									|  Radio
+						.bs-component
+							.btn-group-vertical
+								a.btn.btn-primary(href='#0') Button
+								a.btn.btn-primary(href='#0') Button
+								a.btn.btn-primary(href='#0') Button
+								a.btn.btn-primary(href='#0') Button
+								a.btn.btn-primary(href='#0') Button
+								a.btn.btn-primary(href='#0') Button
+						
+						.bs-component
+							.btn-group(role='group')
+								a.btn.btn-secondary(href='#0') Left
+								a.btn.btn-secondary(href='#0') Middle
+								a.btn.btn-secondary(href='#0') Right
+						
+						.bs-component
+							.btn-toolbar(role='toolbar')
+								.btn-group.mr-2(role='group')
+									a.btn.btn-secondary(href='#0') 1
+									a.btn.btn-secondary(href='#0') 2
+									a.btn.btn-secondary(href='#0') 3
+									a.btn.btn-secondary(href='#0') 4
+								.btn-group.mr-2(role='group')
+									a.btn.btn-secondary(href='#0') 5
+									a.btn.btn-secondary(href='#0') 6
+									a.btn.btn-secondary(href='#0') 7
+								.btn-group
+									a.btn.btn-secondary(href='#0') 8
+			//
+				Typography
+				==================================================
+			
+			.bs-docs-section
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1#typography Typography
+				// Headings
+				
+				.row
+					
+					.col-lg-4
+						.bs-component
+							h1 Heading 1
+							h2 Heading 2
+							h3 Heading 3
+							h4 Heading 4
+							h5 Heading 5
+							h6 Heading 6
+							h3
+								| Heading
+								small.text-muted  with muted text
+					
+					
+					
+					.col-lg-4
+						.bs-component
+							h2 Example body text
+							p
+								| Nullam quis risus eget 
+								a(href='#0') urna mollis ornare
+								|  vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+							p
+								small This line of text is meant to be treated as fine print.
+							p
+								| The following is 
+								strong rendered as bold text
+								| .
+							p
+								| The following is 
+								em rendered as italicized text
+								| .
+							p
+								| An abbreviation of the word attribute is 
+								abbr attr
+								| .
+							p.lead Lead text. Sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+					
+					.col-lg-4
+						.bs-component
+							h2 Emphasis classes
+							p.text-muted Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+							p.color-primary Nullam id dolor id nibh ultricies vehicula ut id elit.
+							p.color-warning Etiam porta sem malesuada magna mollis euismod.
+							p.color-danger Donec ullamcorper nulla non metus auctor fringilla.
+							p.color-success Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+							p.color-info Maecenas sed diam eget risus varius blandit sit amet non magna.
+				
+
+
+				.bs-component
+					h2.display-1 .display-1
+					h2.display-2 .display-2
+					h2.display-3 .display-3
+					h2.display-4 .display-4
+
+
+			
+			.bs-docs-section
+
+				// Blockquotes
+				
+				.row
+					
+					.col-lg-12
+						h1 Blockquote
+				
+				.row
+					
+					.col-lg-4
+						.bs-component
+							
+							blockquote.blockquote
+								p.mb-0
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+								.blockquote-footer
+									| Someone famous in 
+									cite Source Title
+			
+
+
+
+			
+
+
+			//- //
+			//- 	Dropdown
+			//- 	==================================================
+			
+			//- .bs-docs-section.clearfix
+				
+			//- 	.row
+					
+			//- 		.col-lg-12
+			//- 			.page-header
+			//- 				h1 Dropdown
+
+			//- 			.bs-component
+
+			//- 				.dropdown
+			//- 					a.btn.btn-primary(href='#0', data-toggle='dropdown')
+			//- 						| Dropdown link
+			//- 					.dropdown-menu
+			//- 						a.dropdown-item(href='#0') Action
+			//- 						a.dropdown-item(href='#0') Another action
+			//- 						a.dropdown-item(href='#0') Something else here
+
+
+
+
+
+
+
+
+
+			//
+				Forms
+				==================================================
+			
+			.bs-docs-section
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1 Forms
+				
+				.row
+					
+					.col-lg-6
+						.bs-component
+							form
+								
+								label Inputs
+								
+								input.form-control(type='text', placeholder='Your name')
+									
+								input.form-control(type='password', placeholder='Password')
+								
+								.form-group
+									label Select
+									select.custom-select
+										option 1
+										option 2
+										option 3
+										option 4
+										option 5
+								
+								.form-group
+									label Multiple select
+									select.form-control(multiple='')
+										option 1
+										option 2
+										option 3
+										option 4
+										option 5
+								
+								.form-group
+									label Textarea
+									textarea.form-control
+								
+								.form-group
+									label File input
+									input.form-control-file(type='file')
+									small.form-text.text-muted
+										| This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+								
+								
+								fieldset.form-group
+									legend Radio buttons
+									.form-check
+										label.form-check-label
+											input#optionsRadios1.form-check-input(type='radio', name='optionsRadios', value='option1', checked='')
+											|                         Option one is this and that—be sure to include why it's great
+									.form-check
+										label.form-check-label
+											input#optionsRadios2.form-check-input(type='radio', name='optionsRadios', value='option2')
+											|                         Option two can be something else and selecting it will deselect option one
+									.form-check.disabled
+										label.form-check-label
+											input#optionsRadios3.form-check-input(type='radio', name='optionsRadios', value='option3', disabled='')
+											|                         Option three is disabled
+								
+
+
+								fieldset.form-group
+									legend Checkboxes
+									.form-check
+										label.form-check-label
+											input.form-check-input(type='checkbox', value='', checked='')
+											|                         Option one is this and that—be sure to include why it's great
+									.form-check.disabled
+										label.form-check-label
+											input.form-check-input(type='checkbox', value='', disabled='')
+											|                         Option two is disabled
+								
+								button.btn.btn-primary(type='submit') Submit
+					
+
+					
+					.col-lg-4.offset-lg-1
+						form.bs-component
+							.form-group
+								fieldset(disabled='')
+									label.control-label Disabled input
+									input.form-control(type='text', placeholder='Disabled input here...', disabled='')
+							.form-group
+								fieldset
+									label.control-label Readonly input
+									input.form-control(type='text', placeholder='Readonly input here…', readonly='')
+							.form-group.has-success
+								label.form-control-label Valid input
+								input.form-control.is-valid(type='text', value='correct value')
+								.valid-feedback Success! You've done it.
+							.form-group.has-danger
+								label.form-control-label Invalid input
+								input.form-control.is-invalid(type='text', value='wrong value')
+								.invalid-feedback Sorry, that username's taken. Try another?
+							.form-group
+								label.col-form-label.col-form-label-lg(for='inputLarge') Large input
+								input#inputLarge.form-control.form-control-lg(type='text', placeholder='.form-control-lg')
+							.form-group
+								label.col-form-label(for='inputDefault') Default input
+								input#inputDefault.form-control(type='text', placeholder='Default input')
+							.form-group
+								label.col-form-label.col-form-label-sm(for='inputSmall') Small input
+								input#inputSmall.form-control.form-control-sm(type='text', placeholder='.form-control-sm')
+							
+						.bs-component
+							fieldset
+								legend Custom forms
+								.form-group
+									.custom-control.custom-radio
+										input#customRadio1.custom-control-input(type='radio', name='customRadio', checked='')
+										label.custom-control-label(for='customRadio1') Toggle this custom radio
+									.custom-control.custom-radio
+										input#customRadio2.custom-control-input(type='radio', name='customRadio')
+										label.custom-control-label(for='customRadio2') Or toggle this other custom radio
+									.custom-control.custom-radio
+										input#customRadio3.custom-control-input(type='radio', name='customRadio', disabled='')
+										label.custom-control-label(for='customRadio3') Disabled custom radio
+								.form-group
+
+									.custom-control.custom-checkbox
+										input#customCheck1.custom-control-input(type='checkbox', checked='')
+										label.custom-control-label(for='customCheck1') Check this custom checkbox
+									.custom-control.custom-checkbox
+										input#customCheck2.custom-control-input(type='checkbox', disabled='')
+										label.custom-control-label(for='customCheck2') Disabled custom checkbox
+				
+
+
+
+				
+			//
+				Navs
+				==================================================
+			
+			.bs-docs-section
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1#navs Navs
+				
+				.row
+					
+					.col-lg-6
+						
+						h2 Tabs
+					
+						.bs-component
+
+							ul.nav.nav-tabs
+								li.nav-item
+									a.nav-link.active(data-toggle='tab', href='#home') Home
+								li.nav-item
+									a.nav-link(data-toggle='tab', href='#profile') Profile
+								li.nav-item
+									a.nav-link.disabled(href='#0') Disabled
+								
+							
+							.tab-content#myTabContent
+								
+								.tab-pane.fade.show.active#home
+									.p-3
+										p
+											| Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+								
+								.tab-pane.fade#profile
+									.p-3
+										p
+											| Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+					
+
+
+					.col-lg-6
+						
+				
+				.row
+					
+					.col-lg-6
+						h2#nav-breadcrumbs Breadcrumbs
+						.bs-component
+							ol.breadcrumb
+								li.breadcrumb-item.active Home
+							ol.breadcrumb
+								li.breadcrumb-item
+									a(href='#0') Home
+								li.breadcrumb-item.active Library
+							ol.breadcrumb
+								li.breadcrumb-item
+									a(href='#0') Home
+								li.breadcrumb-item
+									a(href='#0') Library
+								li.breadcrumb-item.active Data
+					
+					.col-lg-6
+						h2#pagination Pagination
+						.bs-component
+							div
+								ul.pagination
+									li.page-item.disabled
+										a.page-link(href='#0') «
+									li.page-item.active
+										a.page-link(href='#0') 1
+									li.page-item
+										a.page-link(href='#0') 2
+									li.page-item
+										a.page-link(href='#0') 3
+									li.page-item
+										a.page-link(href='#0') 4
+									li.page-item
+										a.page-link(href='#0') 5
+									li.page-item
+										a.page-link(href='#0') »
+							div
+								ul.pagination.pagination-lg
+									li.page-item.disabled
+										a.page-link(href='#0') «
+									li.page-item.active
+										a.page-link(href='#0') 1
+									li.page-item
+										a.page-link(href='#0') 2
+									li.page-item
+										a.page-link(href='#0') 3
+									li.page-item
+										a.page-link(href='#0') 4
+									li.page-item
+										a.page-link(href='#0') 5
+									li.page-item
+										a.page-link(href='#0') »
+							div
+								ul.pagination.pagination-sm
+									li.page-item.disabled
+										a.page-link(href='#0') «
+									li.page-item.active
+										a.page-link(href='#0') 1
+									li.page-item
+										a.page-link(href='#0') 2
+									li.page-item
+										a.page-link(href='#0') 3
+									li.page-item
+										a.page-link(href='#0') 4
+									li.page-item
+										a.page-link(href='#0') 5
+									li.page-item
+										a.page-link(href='#0') »
+			//
+				Indicators
+				==================================================
+			
+			.bs-docs-section
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1#indicators Indicators
+				
+				.row
+					
+					.col-lg-12
+						h2 Alerts
+					
+				
+				.row
+					
+					.col-lg-4
+						.bs-component
+							.alert.alert-dismissible.alert-primary
+								button.close(type='button', data-dismiss='alert') ×
+								strong Oh snap!
+								a.alert-link(href='#0') Change a few things up
+								|  and try submitting again.
+					
+					.col-lg-4
+						.bs-component
+							.alert.alert-dismissible.alert-secondary
+								button.close(type='button', data-dismiss='alert') ×
+								strong Oh snap!
+								a.alert-link(href='#0') Change a few things up
+								|  and try submitting again.
+					
+					.col-lg-4
+						.bs-component
+							.alert.alert-dismissible.alert-info
+								button.close(type='button', data-dismiss='alert') ×
+								strong Heads up!
+								|  This 
+								a.alert-link(href='#0') alert needs your attention
+								| , but it's not super important.
+					
+					.col-lg-4
+						.bs-component
+							.alert.alert-dismissible.alert-success
+								button.close(type='button', data-dismiss='alert') ×
+								strong Well done!
+								|  You successfully read 
+								a.alert-link(href='#0') this important alert message
+					
+					.col-lg-4
+						.bs-component
+							.alert.alert-dismissible.alert-warning
+								button.close(type='button', data-dismiss='alert') ×
+								strong Well done!
+								|  You successfully read 
+								a.alert-link(href='#0') this important alert message
+					
+					.col-lg-4
+						.bs-component
+							.alert.alert-dismissible.alert-danger
+								button.close(type='button', data-dismiss='alert') ×
+								strong Oh snap!
+								a.alert-link(href='#0') Change a few things up
+								|  and try submitting again.
+								| .
+				div
+					h2 Badges
+					.bs-component
+						span.badge.badge-primary Primary
+						span.badge.badge-secondary Secondary
+						span.badge.badge-success Success
+						span.badge.badge-danger Danger
+						span.badge.badge-warning Warning
+						span.badge.badge-info Info
+						span.badge.badge-light Light
+						span.badge.badge-dark Dark
+					.bs-component
+						span.badge.badge-pill.badge-primary Primary
+						span.badge.badge-pill.badge-secondary Secondary
+						span.badge.badge-pill.badge-success Success
+						span.badge.badge-pill.badge-danger Danger
+						span.badge.badge-pill.badge-warning Warning
+						span.badge.badge-pill.badge-info Info
+						span.badge.badge-pill.badge-light Light
+						span.badge.badge-pill.badge-dark Dark
+			//
+				Progress
+				==================================================
+			
+			.bs-docs-section
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1#progress Progress
+						
+						
+						h3 Basic
+						.bs-component
+							.progress
+								.progress-bar(style='width: 25%;')
+							.progress
+								.progress-bar.bg-secondary(style='width: 25%;')
+							.progress
+								.progress-bar.bg-success(style='width: 25%')
+							.progress
+								.progress-bar.bg-info(style='width: 50%')
+							.progress
+								.progress-bar.bg-warning(style='width: 75%')
+							.progress
+								.progress-bar.bg-danger(style='width: 100%')
+						
+						h3 Multiple bars
+						.bs-component
+							.progress
+								.progress-bar(style='width: 15%')
+								.progress-bar.bg-success(style='width: 30%')
+								.progress-bar.bg-info(style='width: 20%')
+						
+						h3 Striped
+						.bs-component
+							.progress
+								.progress-bar.progress-bar-striped(style='width: 10%')
+							.progress
+								.progress-bar.progress-bar-striped.bg-success(style='width: 25%')
+							.progress
+								.progress-bar.progress-bar-striped.bg-info(style='width: 50%')
+							.progress
+								.progress-bar.progress-bar-striped.bg-warning(style='width: 75%')
+							.progress
+								.progress-bar.progress-bar-striped.bg-danger(style='width: 100%')
+						
+						h3 Animated
+						.bs-component
+							.progress
+								.progress-bar.progress-bar-striped.progress-bar-animated(style='width: 80%')
+			
+
+
+
+			//
+				Tables
+				==================================================
+			
+			.bs-docs-section
+			
+				.row
+			
+					.col-lg-12
+						.page-header
+							h1 Table
+
+						.bs-component
+							
+							table.table
+								thead
+									tr
+										th Type
+										th Column heading
+										th Column heading
+										th Column heading
+								tbody
+									tr
+										th Default
+										td Column content
+										td Column content
+										td Column content
+									tr
+										th Default
+										td Column content
+										td Column content
+										td Column content
+									tr.table-primary
+										th Primary
+										td Column content
+										td Column content
+										td Column content
+									tr.table-secondary
+										th Secondary
+										td Column content
+										td Column content
+										td Column content
+									tr.table-success
+										th Success
+										td Column content
+										td Column content
+										td Column content
+									tr.table-danger
+										th Danger
+										td Column content
+										td Column content
+										td Column content
+									tr.table-warning
+										th Warning
+										td Column content
+										td Column content
+										td Column content
+									tr.table-info
+										th Info
+										td Column content
+										td Column content
+										td Column content
+									
+			
+
+
+
+
+
+			//
+				Jumbotron
+				==================================================
+			
+			.bs-docs-section
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1 Jumbotron
+
+						.bs-component
+							.jumbotron
+
+								h1.display-3 Hello, world!
+								p.lead
+									| This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+								hr.my-4
+								p
+									| It uses utility classes for typography and spacing to space content out within the larger container.
+								
+								a.btn.btn-primary.btn-lg(href='#0') Learn more
+				
+				.row
+					
+					.col-lg-12
+						h2 List groups
+				
+				.row
+					
+					.col-lg-4
+						.bs-component
+							ul.list-group
+								li.list-group-item.d-flex.justify-content-between.align-items-center
+									| Cras justo odio
+									span.badge.badge-primary.badge-pill 14
+								li.list-group-item.d-flex.justify-content-between.align-items-center
+									| Dapibus ac facilisis in
+									span.badge.badge-primary.badge-pill 2
+								li.list-group-item.d-flex.justify-content-between.align-items-center
+									| Morbi leo risus
+									span.badge.badge-primary.badge-pill 1
+					
+					.col-lg-4
+						.bs-component
+							.list-group
+								a.list-group-item.list-group-item-action.active(href='#0')
+									| Cras justo odio
+								a.list-group-item.list-group-item-action(href='#0')
+									| Dapibus ac facilisis in
+								a.list-group-item.list-group-item-action.disabled(href='#0')
+									| Morbi leo risus
+					
+					.col-lg-4
+						.bs-component
+							.list-group
+								a.list-group-item.list-group-item-action.active(href='#0')
+									h5.mb-1 List group item heading
+									p.mb-1
+										| Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+									small Donec id elit non mi porta.
+								
+								a.list-group-item.list-group-item-action(href='#0')
+									.d-flex.w-100.justify-content-between
+										h5.mb-1 List group item heading
+										small.text-muted 3 days ago
+									p.mb-1
+										| Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+									small.text-muted Donec id elit non mi porta.
+				
+			
+
+			//
+				Cards
+				==================================================
+			
+			.bs-docs-section
+				
+
+				.row
+					
+					.col-lg-12
+						h2 Cards
+				
+				.bs-component
+					
+					.row
+						
+						.col-lg-4
+							
+							.card.color-white.bg-primary
+								.card-header Header
+								.card-body
+									h4.card-title Primary card title
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+							
+						.col-lg-4
+
+							.card.color-black.bg-secondary
+								.card-header Header
+								.card-body
+									h4.card-title Secondary card title
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+							
+						.col-lg-4
+
+							.card.color-white.bg-success
+								.card-header Header
+								.card-body
+									h4.card-title Success card title
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+							
+						.col-lg-4
+
+							.card.color-white.bg-danger
+								.card-header Header
+								.card-body
+									h4.card-title Danger card title
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+							
+						.col-lg-4
+
+							.card.color-white.bg-warning
+								.card-header Header
+								.card-body
+									h4.card-title Warning card title
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+							
+						.col-lg-4
+
+							.card.color-white.bg-info
+								.card-header Header
+								.card-body
+									h4.card-title Info card title
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+							
+						.col-lg-4
+
+							.card.bg-light
+								//- .card-header Header
+								.card-body
+									h4.card-title No header
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+							
+						.col-lg-4
+
+							.card.color-white.bg-dark
+								.card-header Header
+								.card-body
+									h4.card-title Dark card title
+									p.card-text
+										| Some quick example text to build on the card title and make up the bulk of the card's content.
+				
+			
+
+					
+					
+			//
+				Modal
+				==================================================
+			
+			.bs-docs-section
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1#dialogs Modal
+
+						h2: a(href="#0" data-toggle='modal' data-target='#modal-1') Show modal
+						
+						.bs-component
+							
+							.modal.fade#modal-1
+								.modal-dialog
+									.modal-content
+										.modal-header
+											h3.modal-title Modal title
+											button.close(type='button', data-dismiss='modal')
+												span(aria-hidden='true') ×
+										.modal-body
+											p Modal body text goes here.
+										.modal-footer
+											button.btn.btn-primary.mb-0(type='button') Save changes
+											button.btn.btn-secondary.mb-0(type='button', data-dismiss='modal') Close
+			
+
+					
+			//
+				Collapse
+				==================================================
+			
+			.bs-docs-section.clearfix
+				
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1 Collapse
+
+						.bs-component
+							
+							p
+								a.btn.btn-primary(data-toggle='collapse', href='#collapseExample')
+									| Collapse
+
+							.collapse#collapseExample
+								.card.card-body
+									| Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+
+
+						.card.card--collapse
+							.card-header
+								h4.mb-0
+									a.text-decoration-none(href='#0' data-toggle='collapse', data-target='#collapseZero')
+										| Collapse
+
+							.collapse#collapseZero
+								.card-body
+									h4.card-title Card Title
+									p.card-text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+						
+							
+				.row
+					
+					.col-lg-12
+						.page-header
+							h1 Accordion
+
+						.bs-component
+
+							.accordion-custom#accordion
+
+								.card.card--collapse
+									.card-header
+										h4.mb-0
+											a.text-decoration-none(href='#0' data-toggle='collapse', data-target='#collapseOne')
+												| Item #1
+
+									.collapse.show(data-parent='#accordion')#collapseOne
+										.card-body
+											h4.card-title Card Title
+											p.card-text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								
+
+								.card.card--collapse
+									.card-header
+										h5.mb-0
+											a.text-decoration-none(href='#0' data-toggle='collapse', data-target='#collapseTwo')
+												| Item #2
+									.collapse(data-parent='#accordion')#collapseTwo
+										.card-body
+											h4.card-title Card Title
+											p.card-text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								
+
+								.card.card--collapse
+									.card-header
+										h5.mb-0
+											a.text-decoration-none(href='#0' data-toggle='collapse', data-target='#collapseThree')
+												| Item #3
+									.collapse(data-parent='#accordion')#collapseThree
+										.card-body
+											h4.card-title Card Title
+											p.card-text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS..bs-docs-section.clearfix
+				
+
+
+
+
+
+			//- #source-modal.modal.fade
+			//- 	.modal-dialog.modal-lg
+			//- 		.modal-content
+			//- 			.modal-header
+			//- 				h4.modal-title Source Code
+			//- 				button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+			//- 			.modal-body
+			//- 				pre.
+			
+
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+			br
+
+
+		include inc/_scripts.pug
+		
+
+
+
+
+
+
