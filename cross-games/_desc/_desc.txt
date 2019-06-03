@@ -15,9 +15,11 @@ https://kopakov.com/portfolio/cross-games/styleguide.html
 
 Currently he is working on App which will be available for download from Landing page we created.
 
+Home page:
+https://kopakov.com/portfolio/cross-games/
+
 All pages:
 https://kopakov.com/portfolio/cross-games/pages.html
-
 
 Source code:
 https://github.com/Kopakov/portfolio/tree/master/cross-games
